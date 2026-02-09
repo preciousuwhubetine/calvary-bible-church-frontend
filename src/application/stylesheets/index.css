@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src:
+    url("/fonts/satoshi-light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Satoshi Regular";
+  src:
+    url("/fonts/satoshi-regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Satoshi Medium";
+  src:
+    url("/fonts/satoshi-medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Satoshi Bold";
+  src:
+    url("/fonts/satoshi-bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Satoshi Black";
+  src:
+    url("/fonts/satoshi-black.woff2") format("woff2");
+  font-weight: 800;
+}
+
+:root {
+  --content-max-width: 1300px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Satoshi Regular', sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  line-height: 1.15;
+}
+
+a,
+button {
+  transition: scale 0.2s ease-in-out;
+}
+
+a:active,
+button:active {
+  scale: 0.98;
+}
