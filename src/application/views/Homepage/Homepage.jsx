@@ -15,6 +15,16 @@ function Homepage() {
         </video>
 
         <div className={styles['HomepageHeroContent']}>
+          <div className={styles['HomepageHeroCircle']}>
+            <img src="/the-turning-point-circle.png" />
+
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                <path d="M30.545 22.9085L10.1821 38.1806H15.2728V50.9074M30.545 22.9085L50.9079 38.1806H45.8172V50.9074M30.545 22.9085V10.1816M15.2728 50.9074H7.63672M15.2728 50.9074H25.4543M45.8172 50.9074H53.4533M45.8172 50.9074H35.6357M35.6357 50.9074V43.2714C35.6357 41.9212 35.0994 40.6264 34.1447 39.6717C33.19 38.717 31.8951 38.1806 30.545 38.1806C29.1948 38.1806 27.9 38.717 26.9453 39.6717C25.9906 40.6264 25.4543 41.9212 25.4543 43.2714V50.9074M35.6357 50.9074H25.4543M25.4543 15.2724H35.6357" stroke="white" stroke-width="3.80108" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
           <h1>
             Raising a People of Power, Purpose & Dominion
           </h1>
@@ -45,7 +55,7 @@ function Homepage() {
 
           <div>
             <h2>Calvary Bible Church Is A Christ-Centered Family - Rooted In Love For God And People.</h2>
-            <p>Overwhelmed by the grace we've found in Jesus, we are worshippers at heart, lovers of the local church, and carriers of a divine mission to see His Kingdom, come and His will be done on earth.</p>
+            <p>Overwhelmed by the grace we've found in Jesus, we are worshippers at heart, lovers of the local church, and carriers of a divine mission to see His Kingdom come and His will be done on earth.</p>
           </div>
 
           <Link to="/">I'm New</Link>
@@ -79,7 +89,7 @@ function Homepage() {
             <li>
               <img alt="" src="/homepage-loving-community.jpg" />
               <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
-                <path d="M21.584 55.5V52.4167C21.584 48.3279 23.2082 44.4066 26.0994 41.5154C28.9906 38.6243 32.9119 37 37.0007 37M37.0007 37C41.0894 37 45.0107 38.6243 47.9019 41.5154C50.7931 44.4066 52.4173 48.3279 52.4173 52.4167V55.5M37.0007 37C39.4539 37 41.8067 36.0254 43.5414 34.2907C45.2761 32.556 46.2507 30.2033 46.2507 27.75C46.2507 25.2967 45.2761 22.944 43.5414 21.2093C41.8067 19.4746 39.4539 18.5 37.0007 18.5C34.5474 18.5 32.1946 19.4746 30.4599 21.2093C28.7252 22.944 27.7507 25.2967 27.7507 27.75C27.7507 30.2033 28.7252 32.556 30.4599 34.2907C32.1946 36.0254 34.5474 37 37.0007 37ZM3.08398 55.5V52.4167C3.08398 49.9634 4.05854 47.6106 5.79325 45.8759C7.52796 44.1412 9.88073 43.1667 12.334 43.1667M12.334 43.1667C13.9695 43.1667 15.538 42.517 16.6945 41.3605C17.851 40.204 18.5007 38.6355 18.5007 37C18.5007 35.3645 17.851 33.796 16.6945 32.6395C15.538 31.483 13.9695 30.8333 12.334 30.8333C10.6985 30.8333 9.12997 31.483 7.97349 32.6395C6.81702 33.796 6.16732 35.3645 6.16732 37C6.16732 38.6355 6.81702 40.204 7.97349 41.3605C9.12997 42.517 10.6985 43.1667 12.334 43.1667ZM70.9173 55.5V52.4167C70.9173 49.9634 69.9428 47.6106 68.2081 45.8759C66.4733 44.1412 64.1206 43.1667 61.6673 43.1667M61.6673 43.1667C63.3028 43.1667 64.8713 42.517 66.0278 41.3605C67.1843 40.204 67.834 38.6355 67.834 37C67.834 35.3645 67.1843 33.796 66.0278 32.6395C64.8713 31.483 63.3028 30.8333 61.6673 30.8333C60.0318 30.8333 58.4633 31.483 57.3068 32.6395C56.1504 33.796 55.5007 35.3645 55.5007 37C55.5007 38.6355 56.1504 40.204 57.3068 41.3605C58.4633 42.517 60.0318 43.1667 61.6673 43.1667Z" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.584 55.5V52.4167C21.584 48.3279 23.2082 44.4066 26.0994 41.5154C28.9906 38.6243 32.9119 37 37.0007 37M37.0007 37C41.0894 37 45.0107 38.6243 47.9019 41.5154C50.7931 44.4066 52.4173 48.3279 52.4173 52.4167V55.5M37.0007 37C39.4539 37 41.8067 36.0254 43.5414 34.2907C45.2761 32.556 46.2507 30.2033 46.2507 27.75C46.2507 25.2967 45.2761 22.944 43.5414 21.2093C41.8067 19.4746 39.4539 18.5 37.0007 18.5C34.5474 18.5 32.1946 19.4746 30.4599 21.2093C28.7252 22.944 27.7507 25.2967 27.7507 27.75C27.7507 30.2033 28.7252 32.556 30.4599 34.2907C32.1946 36.0254 34.5474 37 37.0007 37ZM3.08398 55.5V52.4167C3.08398 49.9634 4.05854 47.6106 5.79325 45.8759C7.52796 44.1412 9.88073 43.1667 12.334 43.1667M12.334 43.1667C13.9695 43.1667 15.538 42.517 16.6945 41.3605C17.851 40.204 18.5007 38.6355 18.5007 37C18.5007 35.3645 17.851 33.796 16.6945 32.6395C15.538 31.483 13.9695 30.8333 12.334 30.8333C10.6985 30.8333 9.12997 31.483 7.97349 32.6395C6.81702 33.796 6.16732 35.3645 6.16732 37C6.16732 38.6355 6.81702 40.204 7.97349 41.3605C9.12997 42.517 10.6985 43.1667 12.334 43.1667ZM70.9173 55.5V52.4167C70.9173 49.9634 69.9428 47.6106 68.2081 45.8759C66.4733 44.1412 64.1206 43.1667 61.6673 43.1667M61.6673 43.1667C63.3028 43.1667 64.8713 42.517 66.0278 41.3605C67.1843 40.204 67.834 38.6355 67.834 37C67.834 35.3645 67.1843 33.796 66.0278 32.6395C64.8713 31.483 63.3028 30.8333 61.6673 30.8333C60.0318 30.8333 58.4633 31.483 57.3068 32.6395C56.1504 33.796 55.5007 35.3645 55.5007 37C55.5007 38.6355 56.1504 40.204 57.3068 41.3605C58.4633 42.517 60.0318 43.1667 61.6673 43.1667Z" stroke="white" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
 
               <div>
@@ -98,8 +108,8 @@ function Homepage() {
             <li>
               <img alt="" src="/homepage-impactful-outreach.jpg" />
               <svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98" fill="none">
-                <path d="M70 17.5V52.5M70 17.5L59.5 3.5M70 17.5L80.5 3.5M3.5 77L20.608 91.252C23.1239 93.3467 26.2943 94.4935 29.568 94.493H74.662C77.882 94.493 80.5 91.882 80.5 88.662C80.5 82.222 75.278 76.993 68.831 76.993H37.478M94.5 17.5H45.5V52.5H94.5V17.5Z" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M24.5 70L29.75 75.25C31.1424 76.6424 33.0309 77.4246 35 77.4246C36.9691 77.4246 38.8576 76.6424 40.25 75.25C41.6424 73.8576 42.4246 71.9691 42.4246 70C42.4246 68.0309 41.6424 66.1424 40.25 64.75L32.102 56.595C30.8 55.2945 29.2545 54.2634 27.5537 53.5608C25.8529 52.8581 24.0302 52.4976 22.19 52.5H3.5" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M70 17.5V52.5M70 17.5L59.5 3.5M70 17.5L80.5 3.5M3.5 77L20.608 91.252C23.1239 93.3467 26.2943 94.4935 29.568 94.493H74.662C77.882 94.493 80.5 91.882 80.5 88.662C80.5 82.222 75.278 76.993 68.831 76.993H37.478M94.5 17.5H45.5V52.5H94.5V17.5Z" stroke="white" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M24.5 70L29.75 75.25C31.1424 76.6424 33.0309 77.4246 35 77.4246C36.9691 77.4246 38.8576 76.6424 40.25 75.25C41.6424 73.8576 42.4246 71.9691 42.4246 70C42.4246 68.0309 41.6424 66.1424 40.25 64.75L32.102 56.595C30.8 55.2945 29.2545 54.2634 27.5537 53.5608C25.8529 52.8581 24.0302 52.4976 22.19 52.5H3.5" stroke="white" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
 
               <div>
@@ -172,7 +182,7 @@ function Homepage() {
         <h2>WORSHIP WITH US</h2>
 
         <svg xmlns="http://www.w3.org/2000/svg" width="1219" height="915" viewBox="0 0 1219 915" fill="none">
-          <path d="M-39 644.5H751.901L751.901 912L1216 912V0" stroke="#FD9F2B" stroke-width="5" stroke-dasharray="10 10"/>
+          <path d="M-39 644.5H751.901L751.901 912L1216 912V0" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
         </svg>
 
         <div className={styles['HomepageServiceTimesSunday1']}>
@@ -238,8 +248,8 @@ function Homepage() {
             Find us on Google Maps
 
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M3 12L20.5 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14 5L21 12L14 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 12L20.5 12" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M14 5L21 12L14 19" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
         </div>
@@ -255,18 +265,18 @@ function Homepage() {
             View All Events
 
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M3 12L20.5 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14 5L21 12L14 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 12L20.5 12" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M14 5L21 12L14 19" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </Link>
         </div>
 
         <svg className={styles['HomepageEventsLine']} xmlns="http://www.w3.org/2000/svg" width="1439" height="420" viewBox="0 0 1439 420" fill="none">
-          <path d="M-40 2.5H1166.5V417.5H1438.5" stroke="#FD9F2B" stroke-width="5" stroke-dasharray="10 10"/>
+          <path d="M-40 2.5H1166.5V417.5H1438.5" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
         </svg>
 
         <svg className={styles['HomepageEventsCircle']} xmlns="http://www.w3.org/2000/svg" width="71" height="225" viewBox="0 0 71 225" fill="none">
-          <circle cx="112.5" cy="112.5" r="110" stroke="#FD9F2B" stroke-width="5" stroke-dasharray="10 10"/>
+          <circle cx="112.5" cy="112.5" r="110" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
         </svg>
 
         <ul>
@@ -413,7 +423,7 @@ function Homepage() {
       <section className={styles['HomepagePrayers']}>
         <div className={styles['HomepagePrayersContent']}>
           <svg className={styles['HomepagePrayersCircle']} xmlns="http://www.w3.org/2000/svg" width="93" height="93" viewBox="0 0 93 93" fill="none">
-            <circle cx="46.5" cy="46.5" r="44" stroke="#FD9F2B" stroke-width="5" stroke-dasharray="10 10"/>
+            <circle cx="46.5" cy="46.5" r="44" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
           </svg>
 
           <svg className={styles['HomepagePrayersHands']} xmlns="http://www.w3.org/2000/svg" width="291" height="401" viewBox="0 0 291 401" fill="none">
@@ -485,25 +495,7 @@ function Homepage() {
 
       <section className={styles['HomepageTestimonies']}>
         <div className={styles['HomepageTestimoniesHeader']}>
-          <h2>SEE WHAT THE LORD IS DOING</h2>
-
-          <div className={styles['HomepageTestimoniesHeaderControls']}>
-            <button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                <path d="M38.6394 23.0006C38.6394 31.6486 31.6474 38.6406 22.9994 38.6406C14.3514 38.6406 7.35938 31.6486 7.35938 23.0006C7.35938 14.3526 14.3514 7.36062 22.9994 7.36062C31.6474 7.36062 38.6394 14.3526 38.6394 23.0006ZM9.19938 23.0006C9.19938 30.6366 15.3634 36.8006 22.9994 36.8006C30.6354 36.8006 36.7994 30.6366 36.7994 23.0006C36.7994 15.3646 30.6354 9.20062 22.9994 9.20062C15.3634 9.20062 9.19938 15.3646 9.19938 23.0006Z" fill="black"/>
-                <path d="M24.5636 15.3638L16.9276 22.9998L24.5636 30.6358L23.2756 31.9238L14.3516 22.9998L23.2756 14.0758L24.5636 15.3638Z" fill="black"/>
-                <path d="M15.6406 23.9199V22.0799H31.2806V23.9199H15.6406Z" fill="black"/>
-              </svg>
-            </button>
-
-            <button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                <path d="M7.36062 23.0006C7.36062 31.6486 14.3526 38.6406 23.0006 38.6406C31.6486 38.6406 38.6406 31.6486 38.6406 23.0006C38.6406 14.3526 31.6486 7.36062 23.0006 7.36062C14.3526 7.36062 7.36062 14.3526 7.36062 23.0006ZM36.8006 23.0006C36.8006 30.6366 30.6366 36.8006 23.0006 36.8006C15.3646 36.8006 9.20062 30.6366 9.20062 23.0006C9.20062 15.3646 15.3646 9.20062 23.0006 9.20062C30.6366 9.20062 36.8006 15.3646 36.8006 23.0006Z" fill="black"/>
-                <path d="M21.4364 15.3638L29.0724 22.9998L21.4364 30.6358L22.7244 31.9238L31.6484 22.9998L22.7244 14.0758L21.4364 15.3638Z" fill="black"/>
-                <path d="M30.3594 23.9199V22.0799H14.7194V23.9199H30.3594Z" fill="black"/>
-              </svg>
-            </button>
-          </div>
+          <h2>SEE WHAT THE LORD IS DOING!</h2>
         </div>
 
         <ul>

@@ -1,0 +1,129 @@
+.EventsPageHero {
+  padding: 0 20px;
+  padding-top: calc(var(--header-height) + 20px);
+}
+
+.EventsPageHeroContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(var(--content-max-width) - 40px);
+  padding: 0 20px;
+  position: relative;
+}
+
+.EventsPageHeroContent > img {
+  background-color: #ccc;
+  border: 4px solid #eee;
+  border-radius: 16px;
+  filter: brightness(0.6);
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.EventsPageHeroContent h1 {
+  color: white;
+  font-size: 48px;
+  padding: 20px;
+}
+
+.EventsPageHeroSearch {
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 50rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px;
+  max-width: 600px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.EventsPageHeroSearch svg {
+  height: 24px;
+  width: 24px;
+}
+
+.EventsPageHeroContent input {
+  background: none;;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 12px 0;
+  width: 100%;
+}
+
+.EventsPageHeroContent input::placeholder {
+  color: #aaa;
+}
+
+.EventsPageContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 48px 20px;
+  width: 100%;
+}
+
+.EventsPageContent ul {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.EventsPageContent ul li {
+  align-items: start;
+  border-radius: 8px;
+  display: grid;
+  flex: 0 0 auto;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.EventsPageContent ul li img {
+  background-color: #d6d6d6;
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.EventsPageContent ul li:nth-child(even) img {
+  order: 2;
+}
+
+.EventsPageContent ul li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.EventsPageContent ul li > div h3 {
+  font-size: 24px;
+}
+
+.EventsPageContentDate,
+.EventsPageContentTime {
+  align-items: center;
+  color: #777777;
+  display: grid;
+  font-size: 16px;
+  font-style: italic;
+  grid-template-columns: 24px max-content;
+  gap: 8px;
+  justify-items: center;
+}

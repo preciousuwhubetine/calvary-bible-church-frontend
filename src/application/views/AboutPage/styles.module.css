@@ -1,0 +1,665 @@
+.AboutPageBackground {
+  background-color: #e8e8e8;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.AboutPageHero {
+  padding: 0 20px;
+  padding-top: calc(var(--header-height) + 20px);
+}
+
+.AboutPageHeroContent {
+  align-items: flex-end;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 0 20px;
+  position: relative;
+}
+
+.AboutPageHeroCircle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 10%;
+  transform: translateY(-50%);
+  top: 100%;
+  z-index: 2;
+}
+
+.AboutPageHeroCircle img {
+  animation: 10s 'rotate' linear infinite;
+  position: absolute;
+  z-index: -1;
+}
+
+.AboutPageHeroCircle div {
+  align-items: center;
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
+  border-radius: 50%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+}
+
+.AboutPageHeroContent > img {
+  border-radius: 16px;
+  filter: brightness(0.6);
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.AboutPageHeroContent h1 {
+  color: white;
+  font-size: 48px;
+  padding: 20px;
+}
+
+.AboutPageOverview {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 3fr;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: var(--content-max-width);
+  padding: 100px 20px;
+}
+
+.AboutPageOverview h2 {
+  font-size: 32px;
+}
+
+.AboutPageOverview p {
+  font-size: 18px;
+}
+
+.AboutPageWelcomeVideo {
+  height: max-content;
+  overflow-x: clip;
+  padding: 0 20px;
+  position: relative;
+}
+
+.AboutPageWelcomeVideo video {
+  border-radius: 16px;
+  display: block;
+  height: 600px;
+  margin: 0 auto;
+  max-width: calc(var(--content-max-width) - 40px);
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+}
+
+.AboutPageWelcomeVideo h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.AboutPageWelcomeVideoBackground {
+  background-color: #e8e8e8;
+  height: 70%;
+  left: 0;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  z-index: -1;
+}
+
+.AboutPageWelcomeVideoRotatedBackground {
+  background-color: #e8e8e8;
+  position: absolute;
+  width: 150%;
+  top: 110%;
+  left: 50%;
+  height: 500px;
+  transform: rotate(-3deg) translate(-50%, -100%);
+  z-index: -1;
+}
+
+.AboutPageWelcomeVideoBackgroundImage {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform:  rotate(3deg) translate(-50%, -50%);
+  z-index: 1;
+}
+
+.AboutPageBearBurdens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 200px auto 0;
+  max-width: var(--content-max-width);
+  overflow-x: clip;
+  padding: 100px 20px;
+}
+
+.AboutPageBearBurdens > svg {
+  position: absolute;
+  left: 40%;
+  transform: translate(-40%, -65%);
+  width: 100%;
+  z-index: -2;
+}
+
+.AboutPageBearBurdensText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 400px;
+  justify-content: center;
+}
+
+.AboutPageBearBurdensText h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.AboutPageBearBurdensText p {
+  font-size: 18px;
+  max-width: 580px;
+}
+
+.AboutPageBearBurdensImages {
+  position: relative;
+}
+
+.AboutPageBearBurdensImages img:first-child {
+  border-radius: 16px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  right: 200px;
+  top: 200px;
+  width: 250px;
+  z-index: 1;
+}
+
+.AboutPageBearBurdensImages img:last-child {
+  border-radius: 16px;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 350px;
+}
+
+.AboutPageBranches {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 100px;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.AboutPageBranchesBackground {
+  background-color: rgba(255, 185, 30, 0.28);
+  height: 60%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.AboutPageBranchesHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.AboutPageBranchesHeader h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.AboutPageBranchesHeader p {
+  max-width: 500px;
+  text-align: center;
+}
+
+.AboutPageBranchesHeaderControls {
+  display: flex;
+  gap: 8px;
+}
+
+.AboutPageBranchesHeaderControls button {
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  width: 48px;
+}
+
+.AboutPageBranchesHeaderControls button svg {
+  width: 100%;
+  height: 100%;
+}
+
+.AboutPageBranches ul {
+  display: flex;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  overflow-x: auto;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.AboutPageBranches ul li {
+  align-items: flex-end;
+  background-color: #e5e5e5;
+  border-radius: 8px;
+  display: flex;
+  flex: 0 0 300px;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  height: 400px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 24px;
+  position: relative;
+}
+
+.AboutPageBranches ul li img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.AboutPageBranches ul li h3 {
+  color: white;
+  font-size: 24px;
+  position: relative;
+  text-align: center;
+}
+
+.AboutPageVision {
+  display: grid;
+  grid-template-columns: 1fr 32px 1fr;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  overflow-x: clip;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.AboutPageVisionLine {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(3%, 1%);
+  width: 100%;
+  z-index: -1;
+}
+
+.AboutPageVisionCircle {
+  border: 5px dashed #fd9f2b;
+  border-radius: 50%;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0%;
+  transform: translate(-85%, -40%);
+  width: 200px;
+  z-index: -1;
+}
+
+.AboutPageVision h2 {
+  font-size: 32px;
+}
+
+.AboutPageVision ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-column: 3;
+}
+
+.AboutPageVision ul li {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 16px;
+}
+
+.AboutPageVision ul li h3 {
+  align-items: center;
+  border: 2px dashed #fd9f2b;
+  border-radius: 50%;
+  color: #fd9f2b;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+
+.AboutPageVision ul li p {
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.AboutPagePillars {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 100px 20px;
+}
+
+.AboutPagePillarsHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.AboutPagePillarsHeader h2 {
+  font-size: 32px;
+}
+
+.AboutPagePillarsHeader p {
+  color: #474747;
+  font-size: 18px;
+  max-width: 800px;
+}
+
+.AboutPagePillars ul {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.AboutPagePillars ul li {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  display: grid;
+  gap: 24px;;
+  grid-template-columns: 1fr 100px;
+  padding: 24px;
+  position: relative;
+}
+
+.AboutPagePillars ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.AboutPagePillars ul li div h3 {
+  font-size: 24px;
+}
+
+.AboutPagePillars ul li div p {
+  color: #474747;
+  font-size: 16px;
+}
+
+.AboutPagePillars ul li svg {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  width: 100px;
+}
+
+.AboutPageWorship,
+.AboutPageGathering,
+.AboutPageCoreValues,
+.AboutPageWhatWeDo {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 100px 20px;
+  position: relative;
+}
+
+.AboutPageWorship img,
+.AboutPageGathering img,
+.AboutPageCoreValues img,
+.AboutPageWhatWeDo img {
+  border-radius: 16px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center bottom;
+  width: 100%;
+}
+
+.AboutPageWorship div,
+.AboutPageGathering div,
+.AboutPageCoreValues div,
+.AboutPageWhatWeDo div {
+  background-color: white;
+  border-radius: 16px;
+  border-bottom-left-radius: 0;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 450px;
+  padding: 24px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.AboutPageCoreValues div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.AboutPageGathering div,
+.AboutPageWhatWeDo div {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 0;
+  left: 0;
+  max-width: 500px;
+  padding-left: 40px;
+}
+
+.AboutPageLeadership {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 100px 20px;
+}
+
+.AboutPageLeadership h2 {
+  font-size: 40px;
+}
+
+.AboutPageLeadership ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.AboutPageLeadership ul li a {
+  align-items: center;
+  color: #333;
+  display: flex;
+  font-size: 16px;
+  gap: 8px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.AboutPageLeadership ul li:first-child {
+  background-color: #fff0cd;
+  border-radius: 16px;
+  display: grid;
+  gap: 20px;
+  grid-column: span 3;
+  grid-template-columns: 1fr 2fr;
+  padding: 20px;
+}
+
+.AboutPageLeadership ul li:first-child img {
+  background-color: #e5e5e5;
+  border-radius: 16px;
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.AboutPageLeadership ul li:first-child div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.AboutPageLeadership ul li:first-child div h3 {
+  font-size: 28px;
+}
+
+.AboutPageLeadership ul li:first-child div p {
+  font-size: 18px;
+}
+
+.AboutPageLeadership ul li:first-child div a {
+  font-size: 18px;
+  margin-top: auto;
+}
+
+.AboutPageLeadership ul li:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.AboutPageLeadership ul li:not(:first-child) img {
+  background-color: #e5e5e5;
+  border-radius: 16px;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.AboutPageLeadership ul li:not(:first-child) div {
+  background-color: #fff0cd;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+}
+
+.AboutPageLeadership ul li:not(:first-child) div h3 {
+  font-size: 24px;
+}
+
+.AboutPagePeopleAfterGodsHeart {
+  align-items: flex-end;
+  display: flex;
+  height: 600px;
+  margin: 100px auto;
+  max-width: calc(  var(--content-max-width) - 40px);
+  padding: 100px 20px;
+  position: relative;
+  width: calc(100% - 40px);
+}
+
+.AboutPagePeopleAfterGodsHeartCircle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0%;
+  z-index: 2;
+}
+
+.AboutPagePeopleAfterGodsHeartCircle img {
+  animation: 10s 'rotate' linear infinite;
+  position: absolute;
+  z-index: -1;
+}
+
+.AboutPagePeopleAfterGodsHeartCircle div {
+  align-items: center;
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
+  border-radius: 50%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+}
+
+.AboutPagePeopleAfterGodsHeart > img {
+  border-radius: 16px;
+  filter: brightness(0.6);
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.AboutPagePeopleAfterGodsHeartContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.AboutPagePeopleAfterGodsHeartContent h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.AboutPagePeopleAfterGodsHeartContent p {
+  color: white;
+  font-size: 18px;
+}
+
+.AboutPagePeopleAfterGodsHeartContent a {
+  align-items: center;
+  background: linear-gradient(182deg, #FFF 15.32%, #EEF4FF 98.7%);
+  border: 1px solid #f0f6ff;
+  border-radius: 50rem;
+  color: black;
+  grid-column: 2;
+  display: flex;
+  height: 58px;
+  justify-content: center;
+  text-decoration: none;
+  width: 220px;
+}
