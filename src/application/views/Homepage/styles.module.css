@@ -1,3 +1,38 @@
+.HomepageGrayBackgroundSection {
+  height: max-content;
+  overflow-x: clip;
+  position: relative;
+}
+
+.HomepageGrayBackground {
+  background-color: #e8e8e8;
+  height: 70%;
+  left: 0;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  z-index: -1;
+}
+
+.HomepageGrayRotatedBackground {
+  background-color: #e8e8e8;
+  position: absolute;
+  width: 150%;
+  top: 100%;
+  left: 50%;
+  height: 500px;
+  transform: rotate(-3deg) translate(-50%, -100%);
+  z-index: -1;
+}
+
+.HomepageGraybackgroundSectionImage {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform:  rotate(3deg) translate(-50%, -50%);
+  z-index: 1;
+}
+
 .HomepageHero {
   background-color: #444;
   align-items: flex-end;
@@ -7,7 +42,7 @@
 }
 
 .HomepageHeroVideo {
-  filter: brightness(0.4);
+  filter: brightness(0.3);
   height: 100%;
   object-fit: cover;
   object-position: top center;
@@ -114,7 +149,7 @@
   align-items: center;
   background: linear-gradient(182deg, #FFF 15.32%, #EEF4FF 98.7%);
   border: 1px solid #f0f6ff;
-  border-radius: 50px;
+  border-radius: 50rem;
   color: black;
   grid-column: 2;
   display: flex;
@@ -176,4 +211,796 @@
   color: white;
   font-size: 18px;
   opacity: 0.8;
+}
+
+.HomepageLatestSermon {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 100px 20px;
+}
+
+.HomepageLatestSermon h2 {
+  text-align: center;
+}
+
+.HomepageLatestSermon > div {
+  background-color: white;
+  border-radius: 8px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 24px;
+  width: 100%;
+}
+
+.HomepageLatestSermon > div img {
+  background-color: #e8e8e8;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.HomepageLatestSermon ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.HomepageLatestSermon ul li:last-child {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.HomepageLatestSermon ul li h4 {
+  border-bottom: 1px solid #d6d6d6;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.9;
+}
+
+.HomepageLatestSermon ul li h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.HomepageLatestSermon ul li a {
+  align-items: center;
+  border-radius: 50rem;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 8px;
+  justify-content: center;
+  padding: 16px 24px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.HomepageLatestSermon ul li a svg {
+  height: 20px;
+  width: 20px;
+}
+
+.HomepageLatestSermon ul li a:first-child {
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
+  box-shadow: 0 31px 19px 0 rgba(255, 185, 30, 0.35), 0 14px 14px 0 rgba(255, 185, 30, 0.28), 0 3px 8px 0 rgba(255, 225, 159, 0.28);
+  color: white;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.HomepageLatestSermon ul li a:last-child {
+  align-items: center;
+  background: linear-gradient(182deg, #FFF 15.32%, #EEF4FF 98.7%);
+  border: 1px solid #f0f6ff;
+  color: black;
+  grid-column: 2;
+  display: flex;
+  height: 58px;
+  justify-content: center;
+  text-decoration: none;
+  width: 220px;
+}
+
+.HomepageServiceTimes {
+  margin: 300px auto;
+  max-width: var(--content-max-width);
+  padding: 0 20px;
+  position: relative;
+}
+
+.HomepageServiceTimes > svg {
+  position: absolute;
+  left: 40%;
+  transform: translate(-50%, -65%);
+  width: 100%;
+  z-index: -2;
+}
+
+.HomepageServiceTimes h2 {
+  font-size: 32px;
+  margin-bottom: 100px;
+  position: relative;
+  width: max-content;
+}
+
+.HomepageServiceTimes h2:after {
+  background-color: rgba(255, 185, 30, 0.28);
+  border-radius: 50rem;
+  content: '';
+  display: block;
+  height: 160%;
+  opacity: 0.6;
+  position: absolute;
+  top: 50%;
+  transform: translate(40%, -50%);
+  width: 80%;
+}
+
+.HomepageServiceTimes h3 {
+  font-size: 24px;
+}
+
+.HomepageServiceTimes h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+}
+
+.HomepageServiceTimes h4 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.HomepageServiceTimes h5 {
+  font-size: 24px;
+}
+
+.HomepageServiceTimesSunday1 {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 16px;
+  height: 300px;
+  padding: 32px 24px;
+  position: relative;
+  width: 350px;
+}
+
+.HomepageServiceTimesSunday1 div {
+  align-items: center;
+  background: rgba(255, 185, 30, 0.28);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: 50%;
+  padding: 24px;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+}
+
+.HomepageServiceTimesSunday2 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  left: 50%;
+  position: absolute;
+  top: 75%;
+  transform: translateX(-50%);
+  width: 350px;
+}
+
+.HomepageServiceTimesSunday2 h3 {
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 32px 24px;
+}
+
+.HomepageServiceTimesSunday2 div {
+  align-items: center;
+  background: rgba(255, 185, 30, 0.28);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: 50%;
+  padding: 24px;
+}
+
+.HomepageServiceTimesWednesday {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 16px;
+  height: 300px;
+  padding: 32px 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(-10%);
+  width: 350px;
+}
+
+.HomepageServiceTimesWednesday div {
+  align-items: center;
+  background: rgba(255, 185, 30, 0.28);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: 50%;
+  padding: 24px;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+}
+
+.HomepageAddress {
+  padding: 100px 0;
+  position: relative;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+}
+
+.HomepageAddress div {
+  border-radius: 30px;
+  background: rgba(255, 185, 30, 0.28);
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  max-width: 1000px;
+  padding: 64px;
+}
+
+.HomepageAddress div h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  max-width: 500px;
+}
+
+.HomepageAddress img {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  width: 400px;
+}
+
+.HomepageAddress a {
+  align-items: center;
+  color: #333;
+  display: flex;
+  font-size: 20px;
+  gap: 8px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.HomepageAddress a svg {
+  width: 16px;
+  height: 16px;
+}
+
+.HomepageEvents {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  overflow-x: clip;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.HomepageEventsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HomepageEventsHeader h2 {
+  font-size: 32px;
+}
+
+.HomepageEventsHeader a {
+  align-items: center;
+  color: black;
+  display: flex;
+  font-size: 18px;
+  gap: 8px;
+  justify-content: center;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.HomepageEventsHeader a svg {
+  width: 16px;
+  height: 16px;
+}
+
+.HomepageEventsLine {
+  position: absolute;
+  left: 0%;
+  top: 33%;
+  transform: translate(-5%, 0%);
+  width: 100%;
+  z-index: -1;
+}
+
+.HomepageEventsCircle {
+  position: absolute;
+  right: -1%;
+  top: 62%;
+  z-index: -1;
+}
+
+.HomepageEvents ul {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.HomepageEvents ul li {
+  background-color: #e5e5e5;
+  border-radius: 8px;
+  display: grid;
+  flex: 0 0 auto;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
+  padding: 24px;
+}
+
+.HomepageEvents ul li img {
+  background-color: #d6d6d6;
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.HomepageEvents ul li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.HomepageEvents ul li > div h3 {
+  font-size: 24px;
+}
+
+.HomepageEventsDate,
+.HomepageEventsTime {
+  align-items: center;
+  color: #777777;
+  display: grid;
+  font-size: 16px;
+  font-style: italic;
+  grid-template-columns: 24px max-content;
+  gap: 8px;
+  justify-items: center;
+}
+
+.HomepageEventsCountdown {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 120px 20px 0;
+}
+
+.HomepageEventsCountdown h4 {
+  font-size: 18px;
+}
+
+.HomepageEventsCountdownTimer {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+}
+
+.HomepageEventsCountdownTimerItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.HomepageEventsCountdownTimerItem div {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.HomepageEventsCountdownTimerItem div h3 {
+  align-items: center;
+  background: linear-gradient(180deg, #FC8E3388 0%, rgba(0, 0, 0, 0.10) 100%);
+  backdrop-filter: blur(16.685823440551758px);
+  border: 0.5px solid #000;
+  border-radius: 4px;
+  display: flex;
+  font-family: 'Digital Numbers', sans-serif;
+  font-size: 28px;
+  height: 80px;
+  justify-content: center;
+  width: 50px;
+}
+
+.HomepagePrayers {
+  overflow-x: clip;
+  padding: 20px;
+}
+
+.HomepagePrayersContent {
+  border: 5px dashed #fd9f2b;
+  border-bottom: 4.5px dashed #fd9f2b;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
+  margin: 100px auto;
+  max-width: 1200px;
+  min-height: 500px;
+  padding: 40px;
+  position: relative;
+}
+
+.HomepagePrayersHands {
+  background-color: white;
+  padding: 48px 24px;
+  position: absolute;
+  right: -10%;
+  top: 30%;
+}
+
+.HomepagePrayers div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.HomepagePrayers div h2 {
+  font-size: 32px;
+  max-width: 600px;
+}
+
+.HomepagePrayers div p {
+  font-size: 18px;
+  max-width: 600px;
+  opacity: 0.8;
+}
+
+.HomepagePrayers div a {
+  align-items: center;
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
+  box-shadow: 0 31px 19px 0 rgba(255, 185, 30, 0.35), 0 14px 14px 0 rgba(255, 185, 30, 0.28), 0 3px 8px 0 rgba(255, 225, 159, 0.28);
+  color: white;
+  border-radius: 50rem;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 8px;
+  justify-content: center;
+  padding: 16px 24px;
+  text-decoration: none;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  width: max-content;
+}
+
+.HomepageSneakPeek {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.HomepageSneakPeek h2 {
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.HomepageSneakPeek ul {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.HomepageSneakPeek ul li {
+  flex: 0 0 20%;
+}
+
+.HomepageSneakPeek ul li img {
+  background-color: #d6d6d6;
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.HomepageLeadership {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 100px 20px;
+}
+
+.HomepageLeadership h2 {
+  font-size: 36px;
+}
+
+.HomepageLeadershipContent {
+  background-color: #e5e5e5;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 40px;
+  position: relative;
+}
+
+.HomepageLeadershipContentMain {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.HomepageLeadershipContentMain h3 {
+  font-size: 24px;
+}
+
+.HomepageLeadershipContentMain p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.HomepageLeadershipContentMain a {
+  align-items: center;
+  background: linear-gradient(182deg, #FFF 15.32%, #EEF4FF 98.7%);
+  border: 1px solid #f0f6ff;
+  border-radius: 50rem;
+  color: black;
+  grid-column: 2;
+  display: flex;
+  height: 58px;
+  justify-content: center;
+  text-decoration: none;
+  width: 220px;
+}
+
+.HomepageLeadershipContent img {
+  border-radius: 16px;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 45%;
+}
+
+.HomepageTestimonies {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 100px 20px;
+}
+
+.HomepageTestimoniesHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.HomepageTestimoniesHeader h2 {
+  font-size: 40px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.HomepageTestimoniesHeaderControls {
+  display: flex;
+  gap: 8px;
+}
+
+.HomepageTestimoniesHeaderControls button {
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  width: 48px;
+}
+
+.HomepageTestimoniesHeaderControls button svg {
+  width: 100%;
+  height: 100%;
+}
+
+.HomepageTestimonies ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+.HomepageTestimonies ul li {
+  border: 4px dashed #fd9f2b;
+  border-bottom: 3.5px dashed #fd9f2b;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.HomepageTestimonies ul li svg {
+  width: 40px;
+  height: 40px;
+  margin: 16px 0;
+}
+
+.HomepageTestimonies ul li div {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.HomepageTestimonies ul li div img {
+  border: 3px dashed #fd9f2b;
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+  padding: 10px;
+  width: 50px;
+}
+
+.HomepageTestimonies ul li div h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.HomepageTestimonies > button {
+  align-items: center;
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
+  border: none;
+  box-shadow: 0 31px 19px 0 rgba(255, 185, 30, 0.35), 0 14px 14px 0 rgba(255, 185, 30, 0.28), 0 3px 8px 0 rgba(255, 225, 159, 0.28);
+  color: white;
+  border-radius: 50rem;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 8px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px 24px;
+  text-decoration: none;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  width: max-content;
+}
+
+.HomepageFeedback {
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto 100px;
+  max-width: 950px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.HomepageFeedback img {
+  filter: brightness(0.7);
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.HomepageFeedbackText {
+  align-items: flex-end;
+  display: flex;
+}
+
+.HomepageFeedbackText h2 {
+  color: white;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.HomepageFeedback form {
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 24px;
+  width: 100%;
+}
+
+.HomepageFeedback form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.HomepageFeedback form div h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.HomepageFeedback form div p {
+  color: #666;
+  font-size: 14px;
+}
+
+.HomepageFeedback form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.HomepageFeedback form label input {
+  border: 1px solid #e5e5e5;
+  border-radius: 50rem;
+  padding: 12px;
+}
+
+.HomepageFeedback form label input {
+  border: 1px solid #e5e5e5;
+  border-radius: 50rem;
+  padding: 16px 24px;
+}
+
+.HomepageFeedback form label textarea {
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 16px 24px;
+  resize: none;
+}
+
+.HomepageFeedback form button {
+  align-items: center;
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
+  border: none;
+  box-shadow: 0 31px 19px 0 rgba(255, 185, 30, 0.35), 0 14px 14px 0 rgba(255, 185, 30, 0.28), 0 3px 8px 0 rgba(255, 225, 159, 0.28);
+  color: white;
+  border-radius: 50rem;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 8px;
+  justify-content: center;
+  padding: 16px 24px;
 }

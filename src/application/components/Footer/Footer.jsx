@@ -145,7 +145,7 @@ function Footer() {
 
           <div>
             <p>
-              © {new Date().getFullYear()} Calvary bible church. All rights reserved
+              © {new Date().getFullYear()} Calvary Bible Church. All rights reserved.
             </p>
 
             <Link to="/terms-and-conditions">Terms & Conditions</Link>

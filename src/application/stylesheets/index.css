@@ -7,6 +7,13 @@
 }
 
 @font-face {
+  font-family: "Digital Numbers";
+  src:
+    url("/fonts/digital-numbers.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
   font-family: "Satoshi";
   src:
     url("/fonts/satoshi-light.woff2") format("woff2");
@@ -69,7 +76,20 @@ button {
   transition: scale 0.2s ease-in-out;
 }
 
+button:focus {
+  outline: none;
+}
+
 a:active,
 button:active {
   scale: 0.98;
+}
+
+input {
+  font-family: 'Inter', sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
 }
