@@ -86,10 +86,10 @@
   line-height: 1;
   position: absolute;
   text-stroke-color: white;
-  text-stroke-width: 3px;
+  text-strokeWidth: 3px;
 
   -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-strokeWidth: 3px;
 }
 
 .FooterContentBottom div {

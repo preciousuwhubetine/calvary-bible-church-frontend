@@ -1,0 +1,85 @@
+.StorePageCategories {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 40px 80px;
+  width: 100%;
+}
+
+.StorePageCategoriesHeader {
+  align-items: center;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 32px;
+  position: relative;
+}
+
+.StorePageCategoriesHeader h2 {
+  font-size: 40px;
+}
+
+.StorePageCategoriesLine {
+  left: 0%;
+  top: 50%;
+  transform: translate(0, 50%);
+  width: 90%;
+  z-index: -1;
+}
+
+.StorePageCategoriesCircle {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translate(40%, -50%);
+  z-index: -1;
+}
+
+.StorePageCategories ul {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-height: 250px;
+  position: relative;
+}
+
+.StorePageCategoriesBackground {
+  background-color: #ffecc0;
+  border-radius: 20px;
+  height: 80%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  z-index: -1;
+}
+
+.StorePageCategories ul li a {
+  align-items: center;
+  background-color: #555;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  position: relative;
+  text-decoration: none;
+}
+
+.StorePageCategories ul li a h3 {
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  position: relative;
+}
+
+.StorePageCategories ul li a img {
+  border-radius: 16px;
+  filter: brightness(0.4);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 100%;
+}

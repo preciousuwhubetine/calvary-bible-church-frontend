@@ -1,0 +1,128 @@
+.StorePageCategory {
+  margin-bottom: 100px;
+}
+
+.StorePageCategoryHeader {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 0 20px;
+  width: 100%;
+}
+
+.StorePageCategoryHeader nav ul {
+  display: flex;
+  justify-self: center;
+  gap: 16px;
+}
+
+.StorePageCategoryHeader nav ul li button {
+  background: none;
+  border: 1px solid black;
+  border-radius: 50rem;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  width: 100px;
+}
+
+.StorePageCategoryHeader nav ul li .StorePageCategoryHeaderButtonActive {
+  background-color: #fd9f2b;
+  border-color: #fd9f2b;
+  color: white;
+}
+
+.StorePageCategoryItems {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 40px 20px;
+}
+
+.StorePageCategoryItems li {
+  align-content: start;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  gap: 8px;
+}
+
+.StorePageCategoryItems li img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.StorePageCategoryItems li h5 {
+  color: #7d7d7d;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.StorePageCategoryItems li h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.StorePageCategoryItems li h4 {
+  color: #7d7d7d;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.StorePageCategoryItems li div {
+  align-items: center;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 50px;
+}
+
+.StorePageCategoryItems li div button:first-child {
+  background: none;
+  border: 1px solid #929292;
+  border-radius: 50rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+}
+
+.StorePageCategoryItems li div button:last-child {
+  align-items: center;
+  background: none;
+  border: 1px solid #929292;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  justify-content: center;
+  padding: 0;
+  width: 50px;
+}
+
+.StorePageCategoryItems li div button:last-child svg {
+  width: 20px;
+  height: 20px;
+}
+
+.StorePageCategoryItems li p {
+  color: #7d7d7d;
+  display: -webkit-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-clamp: 3;
+  overflow: hidden;
+
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

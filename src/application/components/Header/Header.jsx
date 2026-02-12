@@ -8,7 +8,7 @@ function Header({
     <header className={`${styles['Header']} ${filled ? styles['HeaderFilled'] : ''}`}>
       <div className={styles['HeaderContent']}>
         <Link to="/">
-          <img className={styles['HeaderLogo']} src="logo-dark.png" />
+          <img className={styles['HeaderLogo']} src="/logo-dark.png" />
         </Link>
 
         <nav>

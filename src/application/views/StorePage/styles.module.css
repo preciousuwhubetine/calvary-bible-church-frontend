@@ -1,6 +1,7 @@
 .StorePageHero {
   padding: 0 20px;
   padding-top: calc(var(--header-height) + 20px);
+  margin-bottom: 40px;
 }
 
 .StorePageHeroContent {
@@ -102,77 +103,4 @@
 
 .StorePageHeroContent input::placeholder {
   color: #aaa;
-}
-
-.StorePageContent {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  margin: 0 auto;
-  max-width: var(--content-max-width);
-  padding: 100px 80px;
-  width: 100%;
-}
-
-.StorePageContentHeader {
-  align-items: center;
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 16px;
-  position: relative;
-}
-
-.StorePageContentHeader h2 {
-  font-size: 40px;
-}
-
-.StorePageContentLine {
-  left: 0%;
-  top: 50%;
-  transform: translate(0, 50%);
-  width: 90%;
-  z-index: -1;
-}
-
-.StorePageContentCircle {
-  position: absolute;
-  right: 1%;
-  top: 50%;
-  transform: translate(10%, -50%);
-  z-index: -1;
-}
-
-.StorePageContent ul {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  position: relative;
-}
-
-.StorePageContentBackground {
-  background-color: #ffecc0;
-  border-radius: 20px;
-  height: 80%;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 110%;
-  z-index: -1;
-}
-
-.StorePageContent ul li a {
-  align-items: center;
-  background-color: #555;
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  height: 250px;
-  text-decoration: none;
-}
-
-.StorePageContent ul li a h3 {
-  color: white;
-  font-size: 28px;
-  text-align: center;
 }

@@ -8,6 +8,8 @@ import AboutPage from "../application/views/AboutPage/AboutPage"
 import EventsPage from "../application/views/EventsPage/EventsPage"
 import GivePage from "../application/views/GivePage/GivePage"
 import StorePage from "../application/views/StorePage/StorePage"
+import StorePageCategories from "../application/views/StorePage/StorePageCategories/StorePageCategories"
+import StorePageCategory from "../application/views/StorePage/StorePageCategory/StorePageCategory"
 
 export default function Config () {
   const location = useLocation();
@@ -29,7 +31,10 @@ export default function Config () {
         // )
       }
 
-      <Route path="/store" element={<StorePage />} />
+      <Route path="/store" element={<StorePage />}>
+        <Route path="/store" element={<StorePageCategories />} />
+        <Route path="/store/category/:categoryId/:categoryName" element={<StorePageCategory />} />
+      </Route>
       <Route path="/give" element={<GivePage />} />
       <Route path="/events" element={<EventsPage />} />
       <Route path="/about" element={<AboutPage />} />

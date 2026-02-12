@@ -13,7 +13,7 @@ function AboutPage() {
 
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
-                <path d="M30.545 22.9085L10.1821 38.1806H15.2728V50.9074M30.545 22.9085L50.9079 38.1806H45.8172V50.9074M30.545 22.9085V10.1816M15.2728 50.9074H7.63672M15.2728 50.9074H25.4543M45.8172 50.9074H53.4533M45.8172 50.9074H35.6357M35.6357 50.9074V43.2714C35.6357 41.9212 35.0994 40.6264 34.1447 39.6717C33.19 38.717 31.8951 38.1806 30.545 38.1806C29.1948 38.1806 27.9 38.717 26.9453 39.6717C25.9906 40.6264 25.4543 41.9212 25.4543 43.2714V50.9074M35.6357 50.9074H25.4543M25.4543 15.2724H35.6357" stroke="white" stroke-width="3.80108" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M30.545 22.9085L10.1821 38.1806H15.2728V50.9074M30.545 22.9085L50.9079 38.1806H45.8172V50.9074M30.545 22.9085V10.1816M15.2728 50.9074H7.63672M15.2728 50.9074H25.4543M45.8172 50.9074H53.4533M45.8172 50.9074H35.6357M35.6357 50.9074V43.2714C35.6357 41.9212 35.0994 40.6264 34.1447 39.6717C33.19 38.717 31.8951 38.1806 30.545 38.1806C29.1948 38.1806 27.9 38.717 26.9453 39.6717C25.9906 40.6264 25.4543 41.9212 25.4543 43.2714V50.9074M35.6357 50.9074H25.4543M25.4543 15.2724H35.6357" stroke="white" strokeWidth="3.80108" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
           </div>
@@ -53,7 +53,7 @@ function AboutPage() {
 
       <section className={styles['AboutPageBearBurdens']}>
         <svg xmlns="http://www.w3.org/2000/svg" width="1420" height="894" viewBox="0 0 1420 894" fill="none">
-          <path d="M-118 571H849.356V891L1417 891V0" stroke="#FD9F2B" stroke-width="5" stroke-dasharray="10 10"/>
+          <path d="M-118 571H849.356V891L1417 891V0" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
         </svg>
 
         <div className={styles['AboutPageBearBurdensText']}>
@@ -137,7 +137,7 @@ function AboutPage() {
 
       <section className={styles['AboutPageVision']}>
         <svg className={styles['AboutPageVisionLine']} xmlns="http://www.w3.org/2000/svg" width="1377" height="420" viewBox="0 0 1377 420" fill="none">
-          <path d="M0 2.5H1294V417.5H1540" stroke="#FD9F2B" stroke-width="5" stroke-dasharray="10 10"/>
+          <path d="M0 2.5H1294V417.5H1540" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
         </svg>
 
         <div className={styles['AboutPageVisionCircle']} />
@@ -191,12 +191,12 @@ function AboutPage() {
 
             <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
               <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
                 <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -222,12 +222,12 @@ function AboutPage() {
 
             <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
               <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
                 <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -253,12 +253,12 @@ function AboutPage() {
 
             <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
               <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
                 <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -284,12 +284,12 @@ function AboutPage() {
 
             <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
               <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
                 <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -316,12 +316,12 @@ function AboutPage() {
 
             <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
               <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
                 <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -347,12 +347,12 @@ function AboutPage() {
 
             <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
               <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
                 <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -378,12 +378,12 @@ function AboutPage() {
 
             <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
               <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" stroke-width="8.32" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
                 <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -441,8 +441,8 @@ function AboutPage() {
                 Learn More
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
             </div>
@@ -457,8 +457,8 @@ function AboutPage() {
                 Read Bio
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
             </div>
@@ -473,8 +473,8 @@ function AboutPage() {
                 Read Bio
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
             </div>
@@ -489,8 +489,8 @@ function AboutPage() {
                 Read Bio
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
             </div>
@@ -505,8 +505,8 @@ function AboutPage() {
                 Read Bio
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
             </div>
@@ -521,8 +521,8 @@ function AboutPage() {
                 Read Bio
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
             </div>
@@ -537,8 +537,8 @@ function AboutPage() {
                 Read Bio
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
             </div>
@@ -576,7 +576,7 @@ function AboutPage() {
 
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
-              <path d="M30.545 22.9085L10.1821 38.1806H15.2728V50.9074M30.545 22.9085L50.9079 38.1806H45.8172V50.9074M30.545 22.9085V10.1816M15.2728 50.9074H7.63672M15.2728 50.9074H25.4543M45.8172 50.9074H53.4533M45.8172 50.9074H35.6357M35.6357 50.9074V43.2714C35.6357 41.9212 35.0994 40.6264 34.1447 39.6717C33.19 38.717 31.8951 38.1806 30.545 38.1806C29.1948 38.1806 27.9 38.717 26.9453 39.6717C25.9906 40.6264 25.4543 41.9212 25.4543 43.2714V50.9074M35.6357 50.9074H25.4543M25.4543 15.2724H35.6357" stroke="white" stroke-width="3.80108" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M30.545 22.9085L10.1821 38.1806H15.2728V50.9074M30.545 22.9085L50.9079 38.1806H45.8172V50.9074M30.545 22.9085V10.1816M15.2728 50.9074H7.63672M15.2728 50.9074H25.4543M45.8172 50.9074H53.4533M45.8172 50.9074H35.6357M35.6357 50.9074V43.2714C35.6357 41.9212 35.0994 40.6264 34.1447 39.6717C33.19 38.717 31.8951 38.1806 30.545 38.1806C29.1948 38.1806 27.9 38.717 26.9453 39.6717C25.9906 40.6264 25.4543 41.9212 25.4543 43.2714V50.9074M35.6357 50.9074H25.4543M25.4543 15.2724H35.6357" stroke="white" strokeWidth="3.80108" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
         </div>
