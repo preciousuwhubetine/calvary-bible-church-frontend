@@ -92,15 +92,21 @@
   position: relative;
 }
 
-.AboutPageWelcomeVideo video {
+.AboutPageWelcomeVideoContainer {
   border-radius: 16px;
-  display: block;
-  height: 600px;
+  min-height: 500px;
   margin: 0 auto;
   max-width: calc(var(--content-max-width) - 40px);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.AboutPageWelcomeVideo video {
+  height: max-content;
+  min-height: 500px;
   object-fit: cover;
   object-position: center top;
-  width: 100%;
 }
 
 .AboutPageWelcomeVideo h2 {
@@ -484,99 +490,6 @@
   left: 0;
   max-width: 500px;
   padding-left: 40px;
-}
-
-.AboutPageLeadership {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin: 0 auto;
-  max-width: var(--content-max-width);
-  padding: 100px 20px;
-}
-
-.AboutPageLeadership h2 {
-  font-size: 40px;
-}
-
-.AboutPageLeadership ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-}
-
-.AboutPageLeadership ul li a {
-  align-items: center;
-  color: #333;
-  display: flex;
-  font-size: 16px;
-  gap: 8px;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.AboutPageLeadership ul li:first-child {
-  background-color: #fff0cd;
-  border-radius: 16px;
-  display: grid;
-  gap: 20px;
-  grid-column: span 3;
-  grid-template-columns: 1fr 2fr;
-  padding: 20px;
-}
-
-.AboutPageLeadership ul li:first-child img {
-  background-color: #e5e5e5;
-  border-radius: 16px;
-  height: 400px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.AboutPageLeadership ul li:first-child div {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.AboutPageLeadership ul li:first-child div h3 {
-  font-size: 28px;
-}
-
-.AboutPageLeadership ul li:first-child div p {
-  font-size: 18px;
-}
-
-.AboutPageLeadership ul li:first-child div a {
-  font-size: 18px;
-  margin-top: auto;
-}
-
-.AboutPageLeadership ul li:not(:first-child) {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.AboutPageLeadership ul li:not(:first-child) img {
-  background-color: #e5e5e5;
-  border-radius: 16px;
-  height: 300px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.AboutPageLeadership ul li:not(:first-child) div {
-  background-color: #fff0cd;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 20px;
-}
-
-.AboutPageLeadership ul li:not(:first-child) div h3 {
-  font-size: 24px;
 }
 
 .AboutPagePeopleAfterGodsHeart {

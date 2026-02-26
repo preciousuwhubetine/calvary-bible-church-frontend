@@ -166,7 +166,7 @@ function GivePage() {
               </button>
             </div>
           </div>
-        </section>
+      </section>
     </div>
   )
 }

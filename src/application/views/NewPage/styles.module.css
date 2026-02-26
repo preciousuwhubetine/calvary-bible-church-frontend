@@ -1,0 +1,98 @@
+.NewPageBackground {
+  background-color: #e8e8e8;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.NewPageHero {
+  padding: 0 20px;
+  padding-top: calc(var(--header-height) + 20px);
+}
+
+.NewPageHeroContent {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 0 20px;
+  position: relative;
+}
+
+.NewPageHeroContent > img {
+  border-radius: 16px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.NewPageHeroContent h1 {
+  color: white;
+  font-size: 48px;
+  padding: 20px;
+}
+
+.NewPageLinks {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 100px 20px;
+}
+
+.NewPageLinks ul {
+  display: flex;
+  gap: 24px;
+}
+
+.NewPageLinks li {
+  flex: 1;
+}
+
+.NewPageLinks li a {
+  border: 5px dashed #fd9f2b;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 2fr max-content 1fr;
+  height: 400px;
+  padding: 40px;
+  text-decoration: none;
+}
+
+.NewPageLinks li a div {
+  align-items: center;
+  border: 5px dashed #fd9f2b;
+  border-radius: 50%;
+  color: #fd9f2b;
+  display: flex;
+  font-size: 48px;
+  height: 80px;
+  justify-content: center;
+  width: 80px;
+}
+
+.NewPageLinks li a h3 {
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.NewPageLinks li a span {
+  align-items: center;
+  color: #333;
+  display: flex;
+  font-size: 18px;
+  gap: 8px;
+  text-decoration: underline;
+}
+
+.NewPageLinks li a span svg {
+  width: 16px;
+}

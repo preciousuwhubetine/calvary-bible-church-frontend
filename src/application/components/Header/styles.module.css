@@ -53,7 +53,6 @@
 }
 
 .Header nav ul li a span {
-  /* background-color: #fd9f2b; */
   border-radius: 50rem;
   height: 7px;
   width: 100%;
@@ -75,4 +74,28 @@
 
 .Header nav ul li button svg {
   width: 16px;
+}
+
+@media (max-width: 950px) {
+  .HeaderLogo {
+    width: 120px;
+  }
+
+  .Header nav {
+    height: max-content;
+    padding: 0;
+  }
+
+  .Header nav ul {
+    display: none;
+  }
+
+  .Header nav button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .Header nav button svg {
+    width: 16px;
+  }
 }

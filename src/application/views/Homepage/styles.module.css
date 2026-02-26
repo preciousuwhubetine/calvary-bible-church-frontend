@@ -1,10 +1,10 @@
-.HomepageGrayBackgroundSection {
+.HomePageGrayBackgroundSection {
   height: max-content;
   overflow-x: clip;
   position: relative;
 }
 
-.HomepageGrayBackground {
+.HomePageGrayBackground {
   background-color: #e8e8e8;
   height: 70%;
   left: 0;
@@ -14,7 +14,7 @@
   z-index: -1;
 }
 
-.HomepageGrayRotatedBackground {
+.HomePageGrayRotatedBackground {
   background-color: #e8e8e8;
   position: absolute;
   width: 150%;
@@ -25,7 +25,7 @@
   z-index: -1;
 }
 
-.HomepageGraybackgroundSectionImage {
+.HomePageGraybackgroundSectionImage {
   position: absolute;
   left: 50%;
   top: 100%;
@@ -33,24 +33,25 @@
   z-index: 1;
 }
 
-.HomepageHero {
+.HomePageHero {
   background-color: #444;
   align-items: flex-end;
   display: flex;
   height: 100vh;
   max-height: 750px;
+  overflow-x: clip;
 }
 
-.HomepageHeroVideo {
+.HomePageHeroVideo {
   filter: brightness(0.3);
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center -90%;
   position: absolute;
   width: 100%;
 }
 
-.HomepageHeroContent {
+.HomePageHeroContent {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -61,7 +62,7 @@
   width: 100%;
 }
 
-.HomepageHeroCircle {
+.HomePageHeroCircle {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -72,13 +73,13 @@
   z-index: 2;
 }
 
-.HomepageHeroCircle img {
+.HomePageHeroCircle img {
   animation: 10s 'rotate' linear infinite;
   position: absolute;
   z-index: -1;
 }
 
-.HomepageHeroCircle div {
+.HomePageHeroCircle div {
   align-items: center;
   background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
   border-radius: 50%;
@@ -88,26 +89,26 @@
   width: 100px;
 }
 
-.HomepageHeroContent h1 {
+.HomePageHeroContent h1 {
   color: white;
   font-size: 54px;
   font-weight: 700;
   max-width: 500px;
 }
 
-.HomepageHeroContent p {
+.HomePageHeroContent p {
   color: white;
   font-size: 24px;
   max-width: 700px;
 }
 
-.HomepageHeroContentActions {
+.HomePageHeroContentActions {
   align-items: center;
   display: flex;
   gap: 16px;
 }
 
-.HomepageHeroContentActions a {
+.HomePageHeroContentActions a {
   align-items: center;
   border-radius: 50rem;
   display: flex;
@@ -120,28 +121,28 @@
   width: 200px;
 }
 
-.HomepageHeroContentActions a svg {
+.HomePageHeroContentActions a svg {
   height: 20px;
   width: 20px;
 }
 
-.HomepageHeroContentActions a:first-child {
+.HomePageHeroContentActions a:first-child {
   background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
   box-shadow: 0 31px 19px 0 rgba(255, 185, 30, 0.35), 0 14px 14px 0 rgba(255, 185, 30, 0.28), 0 3px 8px 0 rgba(255, 225, 159, 0.28);
   color: white;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.HomepageHeroContentActions a:last-child {
+.HomePageHeroContentActions a:last-child {
   background-color: white;
   color: black;
 }
 
-.HomepageAbout {
+.HomePageAbout {
   background-color: white;
 }
 
-.HomepageAboutContent {
+.HomePageAboutContent {
   display: grid;
   grid-template-columns: 40px 1fr;
   gap: 32px;
@@ -150,29 +151,29 @@
   padding: 100px 20px;
 }
 
-.HomepageAboutContent svg {
+.HomePageAboutContent svg {
   height: 40px;
   width: 40px;
 }
 
-.HomepageAboutContent div {
+.HomePageAboutContent div {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.HomepageAboutContent h2 {
+.HomePageAboutContent h2 {
   font-size: 32px;
   font-weight: 400;
   max-width: 900px;
 }
 
-.HomepageAboutContent p {
+.HomePageAboutContent p {
   font-size: 18px;
   opacity: 0.7;
 }
 
-.HomepageAboutContent a {
+.HomePageAboutContent a {
   align-items: center;
   background: linear-gradient(182deg, #FFF 15.32%, #EEF4FF 98.7%);
   border: 1px solid #f0f6ff;
@@ -186,7 +187,7 @@
   width: 220px;
 }
 
-.HomepageSellingPoints ul {
+.HomePageSellingPoints ul {
   display: flex;
   gap: 24px;
   justify-content: center;
@@ -195,7 +196,7 @@
   padding: 0 20px;
 }
 
-.HomepageSellingPoints ul li {
+.HomePageSellingPoints ul li {
   border-radius: 16px;
   display: flex;
   flex: 0 0 30%;
@@ -207,7 +208,7 @@
   position: relative;
 }
 
-.HomepageSellingPoints ul li img {
+.HomePageSellingPoints ul li img {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -216,42 +217,44 @@
   width: 100%;
 }
 
-.HomepageSellingPoints ul li svg {
+.HomePageSellingPoints ul li svg {
   width: 64px;
   position: relative;
 }
 
-.HomepageSellingPoints ul li div {
+.HomePageSellingPoints ul li div {
   display: flex;
   flex-direction: column;
   gap: 16px;
   position: relative;
 }
 
-.HomepageSellingPoints ul li h3 {
+.HomePageSellingPoints ul li h3 {
   color: white;
   font-size: 32px;
   font-weight: 400;
 }
 
-.HomepageSellingPoints ul li p {
+.HomePageSellingPoints ul li p {
   color: white;
   font-size: 18px;
   opacity: 0.8;
 }
 
-.HomepageLatestSermon {
+.HomePageLatestSermon {
   display: flex;
   flex-direction: column;
   gap: 48px;
   padding: 100px 20px;
 }
 
-.HomepageLatestSermon h2 {
+.HomePageLatestSermon h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   text-align: center;
 }
 
-.HomepageLatestSermon > div {
+.HomePageLatestSermon > div {
   background-color: white;
   border-radius: 8px;
   display: grid;
@@ -263,7 +266,7 @@
   width: 100%;
 }
 
-.HomepageLatestSermon > div img {
+.HomePageLatestSermon > div img {
   background-color: #e8e8e8;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
@@ -272,32 +275,32 @@
   width: 100%;
 }
 
-.HomepageLatestSermon ul {
+.HomePageLatestSermon ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
   justify-content: center;
 }
 
-.HomepageLatestSermon ul li:last-child {
+.HomePageLatestSermon ul li:last-child {
   align-items: center;
   display: flex;
   gap: 16px;
 }
 
-.HomepageLatestSermon ul li h4 {
+.HomePageLatestSermon ul li h4 {
   border-bottom: 1px solid #d6d6d6;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.9;
 }
 
-.HomepageLatestSermon ul li h3 {
+.HomePageLatestSermon ul li h3 {
   font-size: 24px;
   font-weight: 500;
 }
 
-.HomepageLatestSermon ul li a {
+.HomePageLatestSermon ul li a {
   align-items: center;
   border-radius: 50rem;
   display: flex;
@@ -310,19 +313,19 @@
   width: 200px;
 }
 
-.HomepageLatestSermon ul li a svg {
+.HomePageLatestSermon ul li a svg {
   height: 20px;
   width: 20px;
 }
 
-.HomepageLatestSermon ul li a:first-child {
+.HomePageLatestSermon ul li a:first-child {
   background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
   box-shadow: 0 31px 19px 0 rgba(255, 185, 30, 0.35), 0 14px 14px 0 rgba(255, 185, 30, 0.28), 0 3px 8px 0 rgba(255, 225, 159, 0.28);
   color: white;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.HomepageLatestSermon ul li a:last-child {
+.HomePageLatestSermon ul li a:last-child {
   align-items: center;
   background: linear-gradient(182deg, #FFF 15.32%, #EEF4FF 98.7%);
   border: 1px solid #f0f6ff;
@@ -335,14 +338,14 @@
   width: 220px;
 }
 
-.HomepageServiceTimes {
+.HomePageServiceTimes {
   margin: 300px auto;
   max-width: var(--content-max-width);
   padding: 0 20px;
   position: relative;
 }
 
-.HomepageServiceTimes > svg {
+.HomePageServiceTimes > svg {
   position: absolute;
   left: 40%;
   transform: translate(-50%, -65%);
@@ -350,14 +353,14 @@
   z-index: -2;
 }
 
-.HomepageServiceTimes h2 {
+.HomePageServiceTimes h2 {
   font-size: 32px;
   margin-bottom: 100px;
   position: relative;
   width: max-content;
 }
 
-.HomepageServiceTimes h2:after {
+.HomePageServiceTimes h2:after {
   background-color: rgba(255, 185, 30, 0.28);
   border-radius: 50rem;
   content: '';
@@ -370,27 +373,27 @@
   width: 80%;
 }
 
-.HomepageServiceTimes h3 {
+.HomePageServiceTimes h3 {
   font-size: 24px;
 }
 
-.HomepageServiceTimes h4 {
+.HomePageServiceTimes h4 {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 24px;
 }
 
-.HomepageServiceTimes h4 svg {
+.HomePageServiceTimes h4 svg {
   width: 24px;
   height: 24px;
 }
 
-.HomepageServiceTimes h5 {
+.HomePageServiceTimes h5 {
   font-size: 24px;
 }
 
-.HomepageServiceTimesSunday1 {
+.HomePageServiceTimesSunday1 {
   background-color: white;
   border: 1px solid black;
   border-radius: 16px;
@@ -400,7 +403,7 @@
   width: 350px;
 }
 
-.HomepageServiceTimesSunday1 div {
+.HomePageServiceTimesSunday1 div {
   align-items: center;
   background: rgba(255, 185, 30, 0.28);
   border-radius: 16px;
@@ -415,7 +418,7 @@
   width: 110%;
 }
 
-.HomepageServiceTimesSunday2 {
+.HomePageServiceTimesSunday2 {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -427,13 +430,13 @@
   width: 350px;
 }
 
-.HomepageServiceTimesSunday2 h3 {
+.HomePageServiceTimesSunday2 h3 {
   border: 1px solid black;
   border-radius: 16px;
   padding: 32px 24px;
 }
 
-.HomepageServiceTimesSunday2 div {
+.HomePageServiceTimesSunday2 div {
   align-items: center;
   background: rgba(255, 185, 30, 0.28);
   border-radius: 16px;
@@ -444,7 +447,7 @@
   padding: 24px;
 }
 
-.HomepageServiceTimesWednesday {
+.HomePageServiceTimesWednesday {
   background-color: white;
   border: 1px solid black;
   border-radius: 16px;
@@ -457,7 +460,7 @@
   width: 350px;
 }
 
-.HomepageServiceTimesWednesday div {
+.HomePageServiceTimesWednesday div {
   align-items: center;
   background: rgba(255, 185, 30, 0.28);
   border-radius: 16px;
@@ -472,14 +475,14 @@
   width: 110%;
 }
 
-.HomepageAddress {
+.HomePageAddress {
   padding: 100px 0;
   position: relative;
   margin: 0 auto;
   max-width: var(--content-max-width);
 }
 
-.HomepageAddress div {
+.HomePageAddress div {
   border-radius: 30px;
   background: rgba(255, 185, 30, 0.28);
   border-bottom-left-radius: 0;
@@ -488,21 +491,21 @@
   padding: 64px;
 }
 
-.HomepageAddress div h2 {
+.HomePageAddress div h2 {
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 16px;
   max-width: 500px;
 }
 
-.HomepageAddress img {
+.HomePageAddress img {
   position: absolute;
   left: 50%;
   top: 0%;
   width: 400px;
 }
 
-.HomepageAddress a {
+.HomePageAddress a {
   align-items: center;
   color: #333;
   display: flex;
@@ -512,12 +515,12 @@
   text-underline-offset: 8px;
 }
 
-.HomepageAddress a svg {
+.HomePageAddress a svg {
   width: 16px;
   height: 16px;
 }
 
-.HomepageEvents {
+.HomePageEvents {
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -528,17 +531,17 @@
   position: relative;
 }
 
-.HomepageEventsHeader {
+.HomePageEventsHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.HomepageEventsHeader h2 {
+.HomePageEventsHeader h2 {
   font-size: 32px;
 }
 
-.HomepageEventsHeader a {
+.HomePageEventsHeader a {
   align-items: center;
   color: black;
   display: flex;
@@ -549,12 +552,12 @@
   text-underline-offset: 8px;
 }
 
-.HomepageEventsHeader a svg {
+.HomePageEventsHeader a svg {
   width: 16px;
   height: 16px;
 }
 
-.HomepageEventsLine {
+.HomePageEventsLine {
   position: absolute;
   left: 0%;
   top: 33%;
@@ -563,21 +566,21 @@
   z-index: -1;
 }
 
-.HomepageEventsCircle {
+.HomePageEventsCircle {
   position: absolute;
   right: -1%;
   top: 62%;
   z-index: -1;
 }
 
-.HomepageEvents ul {
+.HomePageEvents ul {
   display: flex;
   gap: 24px;
   overflow-x: auto;
   scrollbar-width: none;
 }
 
-.HomepageEvents ul li {
+.HomePageEvents ul li {
   align-items: start;
   background-color: #e5e5e5;
   border-radius: 8px;
@@ -589,7 +592,7 @@
   padding: 24px;
 }
 
-.HomepageEvents ul li img {
+.HomePageEvents ul li img {
   background-color: #d6d6d6;
   border: 1px solid #c0c0c0;
   border-radius: 8px;
@@ -598,19 +601,19 @@
   width: 100%;
 }
 
-.HomepageEvents ul li > div {
+.HomePageEvents ul li > div {
   display: flex;
   flex-direction: column;
   gap: 8px;
   justify-content: center;
 }
 
-.HomepageEvents ul li > div h3 {
+.HomePageEvents ul li > div h3 {
   font-size: 24px;
 }
 
-.HomepageEventsDate,
-.HomepageEventsTime {
+.HomePageEventsDate,
+.HomePageEventsTime {
   align-items: center;
   color: #777777;
   display: grid;
@@ -621,7 +624,7 @@
   justify-items: center;
 }
 
-.HomepageEventsCountdown {
+.HomePageEventsCountdown {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -629,31 +632,31 @@
   padding: 120px 20px 0;
 }
 
-.HomepageEventsCountdown h4 {
+.HomePageEventsCountdown h4 {
   font-size: 18px;
 }
 
-.HomepageEventsCountdownTimer {
+.HomePageEventsCountdownTimer {
   align-items: center;
   display: flex;
   gap: 32px;
 }
 
-.HomepageEventsCountdownTimerItem {
+.HomePageEventsCountdownTimerItem {
   display: flex;
   flex-direction: column;
   gap: 8px;
   align-items: center;
 }
 
-.HomepageEventsCountdownTimerItem div {
+.HomePageEventsCountdownTimerItem div {
   align-items: center;
   display: flex;
   gap: 8px;
   justify-content: center;
 }
 
-.HomepageEventsCountdownTimerItem div h3 {
+.HomePageEventsCountdownTimerItem div h3 {
   align-items: center;
   background: linear-gradient(180deg, #FC8E3388 0%, rgba(0, 0, 0, 0.10) 100%);
   backdrop-filter: blur(16.685823440551758px);
@@ -667,12 +670,16 @@
   width: 50px;
 }
 
-.HomepagePrayers {
+.HomePageEventsMobileLink {
+  display: none;
+}
+
+.HomePagePrayers {
   overflow-x: clip;
   padding: 20px;
 }
 
-.HomepagePrayersContent {
+.HomePagePrayersContent {
   border: 5px dashed #fd9f2b;
   border-bottom: 4.5px dashed #fd9f2b;
   border-radius: 16px;
@@ -687,7 +694,7 @@
   position: relative;
 }
 
-.HomepagePrayersHands {
+.HomePagePrayersHands {
   background-color: white;
   padding: 48px 24px;
   position: absolute;
@@ -695,24 +702,25 @@
   top: 30%;
 }
 
-.HomepagePrayers div {
+.HomePagePrayers div {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  z-index: 1;
 }
 
-.HomepagePrayers div h2 {
+.HomePagePrayers div h2 {
   font-size: 32px;
   max-width: 600px;
 }
 
-.HomepagePrayers div p {
+.HomePagePrayers div p {
   font-size: 18px;
   max-width: 600px;
   opacity: 0.8;
 }
 
-.HomepagePrayers div a {
+.HomePagePrayers div a {
   align-items: center;
   background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
   box-shadow: 0 31px 19px 0 rgba(255, 185, 30, 0.35), 0 14px 14px 0 rgba(255, 185, 30, 0.28), 0 3px 8px 0 rgba(255, 225, 159, 0.28);
@@ -729,7 +737,7 @@
   width: max-content;
 }
 
-.HomepageSneakPeek {
+.HomePageSneakPeek {
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -737,13 +745,13 @@
   padding: 100px 0;
 }
 
-.HomepageSneakPeek h2 {
+.HomePageSneakPeek h2 {
   font-size: 64px;
   font-weight: 800;
   text-align: center;
 }
 
-.HomepageSneakPeek ul {
+.HomePageSneakPeek ul {
   display: flex;
   gap: 24px;
   justify-content: center;
@@ -751,11 +759,11 @@
   scrollbar-width: none;
 }
 
-.HomepageSneakPeek ul li {
+.HomePageSneakPeek ul li {
   flex: 0 0 300px;
 }
 
-.HomepageSneakPeek ul li img {
+.HomePageSneakPeek ul li img {
   background-color: #d6d6d6;
   border: 1px solid #c0c0c0;
   border-radius: 8px;
@@ -764,7 +772,7 @@
   width: 100%;
 }
 
-.HomepageLeadership {
+.HomePageLeadership {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -773,11 +781,11 @@
   padding: 100px 20px;
 }
 
-.HomepageLeadership h2 {
+.HomePageLeadership h2 {
   font-size: 36px;
 }
 
-.HomepageLeadershipContent {
+.HomePageLeadershipContent {
   background-color: #e5e5e5;
   border-radius: 16px;
   display: grid;
@@ -787,22 +795,22 @@
   position: relative;
 }
 
-.HomepageLeadershipContentMain {
+.HomePageLeadershipContentMain {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.HomepageLeadershipContentMain h3 {
+.HomePageLeadershipContentMain h3 {
   font-size: 24px;
 }
 
-.HomepageLeadershipContentMain p {
+.HomePageLeadershipContentMain p {
   font-size: 16px;
   opacity: 0.8;
 }
 
-.HomepageLeadershipContentMain a {
+.HomePageLeadershipContentMain a {
   align-items: center;
   background: linear-gradient(182deg, #FFF 15.32%, #EEF4FF 98.7%);
   border: 1px solid #f0f6ff;
@@ -816,7 +824,7 @@
   width: 220px;
 }
 
-.HomepageLeadershipContent img {
+.HomePageLeadershipContent img {
   border-radius: 16px;
   height: 100%;
   object-fit: cover;
@@ -826,7 +834,7 @@
   width: 45%;
 }
 
-.HomepageTestimonies {
+.HomePageTestimonies {
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -835,20 +843,20 @@
   padding: 100px 20px;
 }
 
-.HomepageTestimoniesHeader {
+.HomePageTestimoniesHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 }
 
-.HomepageTestimoniesHeader h2 {
+.HomePageTestimoniesHeader h2 {
   font-size: 40px;
   max-width: 400px;
   text-align: center;
 }
 
-.HomepageTestimonies ul {
+.HomePageTestimonies ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
@@ -856,7 +864,7 @@
   max-width: 950px;
 }
 
-.HomepageTestimonies ul li {
+.HomePageTestimonies ul li {
   border: 4px dashed #fd9f2b;
   border-bottom: 3.5px dashed #fd9f2b;
   border-radius: 16px;
@@ -866,33 +874,33 @@
   padding: 24px;
 }
 
-.HomepageTestimonies ul li svg {
+.HomePageTestimonies ul li svg {
   width: 40px;
   height: 40px;
   margin: 16px 0;
 }
 
-.HomepageTestimonies ul li div {
+.HomePageTestimonies ul li div {
   align-items: center;
   display: flex;
   gap: 12px;
 }
 
-.HomepageTestimonies ul li div img {
+.HomePageTestimonies ul li div img {
   border: 3px dashed #fd9f2b;
   border-radius: 50%;
-  height: 50px;
+  height: 40px;
   object-fit: cover;
   padding: 10px;
-  width: 50px;
+  width: 40px;
 }
 
-.HomepageTestimonies ul li div h4 {
+.HomePageTestimonies ul li div h4 {
   font-size: 18px;
   font-weight: 500;
 }
 
-.HomepageTestimonies > button {
+.HomePageTestimonies > button {
   align-items: center;
   background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
   border: none;
@@ -911,7 +919,7 @@
   width: max-content;
 }
 
-.HomepageFeedback {
+.HomePageFeedback {
   border-radius: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -919,32 +927,35 @@
   max-width: 950px;
   overflow: hidden;
   position: relative;
-  padding: 20px;
+  padding: 40px;
 }
 
-.HomepageFeedback img {
+.HomePageFeedback img {
+  border-radius: 16px;
   filter: brightness(0.7);
   height: 100%;
   left: 0;
   object-fit: cover;
   position: absolute;
+  transform: translateX(-50%);
   top: 0;
-  width: 100%;
+  left: 50%;
+  width: 96%;
   z-index: -1;
 }
 
-.HomepageFeedbackText {
+.HomePageFeedbackText {
   align-items: flex-end;
   display: flex;
 }
 
-.HomepageFeedbackText h2 {
+.HomePageFeedbackText h2 {
   color: white;
   font-size: 48px;
   line-height: 1.1;
 }
 
-.HomepageFeedback form {
+.HomePageFeedback form {
   background-color: white;
   border-radius: 16px;
   display: flex;
@@ -955,48 +966,48 @@
   width: 100%;
 }
 
-.HomepageFeedback form div {
+.HomePageFeedback form div {
   display: flex;
   flex-direction: column;
 }
 
-.HomepageFeedback form div h3 {
+.HomePageFeedback form div h3 {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
 
-.HomepageFeedback form div p {
+.HomePageFeedback form div p {
   color: #666;
   font-size: 14px;
 }
 
-.HomepageFeedback form label {
+.HomePageFeedback form label {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.HomepageFeedback form label input {
+.HomePageFeedback form label input {
   border: 1px solid #e5e5e5;
   border-radius: 50rem;
   padding: 12px;
 }
 
-.HomepageFeedback form label input {
+.HomePageFeedback form label input {
   border: 1px solid #e5e5e5;
   border-radius: 50rem;
   padding: 16px 24px;
 }
 
-.HomepageFeedback form label textarea {
+.HomePageFeedback form label textarea {
   border: 1px solid #e5e5e5;
   border-radius: 16px;
   padding: 16px 24px;
   resize: none;
 }
 
-.HomepageFeedback form button {
+.HomePageFeedback form button {
   align-items: center;
   background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
   border: none;
@@ -1009,4 +1020,386 @@
   gap: 8px;
   justify-content: center;
   padding: 16px 24px;
+}
+
+@media (max-width: 1200px) {
+  .HomePageServiceTimes {
+    display: grid;
+    gap: 48px;
+    margin: 120px auto;
+  }
+
+  .HomePageServiceTimes h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .HomePageServiceTimes > svg {
+    display: none;
+  }
+
+  .HomePageServiceTimesSunday1,
+  .HomePageServiceTimesSunday2,
+  .HomePageServiceTimesWednesday {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  .HomePageServiceTimesSunday2 {
+    grid-row: 3;
+  }
+
+  .HomePageServiceTimesSunday1 div,
+  .HomePageServiceTimesSunday2 div,
+  .HomePageServiceTimesWednesday div {
+    left: 0;
+    position: relative;
+    top: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  .HomePageServiceTimes h3 {
+    font-size: 20px;
+  }
+
+  .HomePageServiceTimes h3 br {
+    display: none;
+  }
+
+  .HomePageServiceTimes h4 {
+    font-size: 20px;
+  }
+
+  .HomePageServiceTimes h4 svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .HomePageServiceTimes h5 {
+    font-size: 20px;
+  }
+
+  .HomePageAddress {
+    padding-right: 20px;
+  }
+
+  .HomePageAddress div {
+    column-gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    padding: 64px 20px;
+  }
+
+  .HomePageAddress div h2 {
+    font-size: 32px;
+    max-width: 100%;
+  }
+
+  .HomePageAddress img {
+    grid-column: 2;
+    grid-row: 1;
+    left: 0;
+    position: relative;
+    width: 300px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .HomePageHeroCircle {
+    right: 10%;
+  }
+
+  .HomePageHeroCircle div {
+    height: 60px;
+    width: 60px;
+  }
+
+  .HomePageHeroCircle img {
+    width: 150px;
+  }
+
+  .HomePageHeroCircle svg {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .HomePagePrayersContent {
+    margin: 40px 0;
+    min-height: 400px;
+    padding: 24px;
+  }
+
+  .HomePagePrayersContent > svg:first-of-type {
+    height: 70px;
+    width: 70px;
+  }
+
+  .HomePagePrayersContent div h2 {
+    font-size: 24px;
+    max-width: 100%;
+  }
+
+  .HomePagePrayersContent div p {
+    font-size: 14px;
+    max-width: 70%;
+  }
+
+  .HomePagePrayersContent div a {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .HomePagePrayersHands {
+    width: 200px;
+  }
+
+  .HomePageLeadershipContent {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .HomePageLeadershipContent img {
+    grid-row: 1;
+    height: 400px;
+    object-position: center 10%;
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  .HomePageTestimonies ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .HomePageHero {
+    max-height: 700px;
+  }
+
+  .HomePageHeroContent h1 {
+    font-size: 32px;
+    max-width: 400px;
+  }
+
+  .HomePageHeroContent p {
+    font-size: 16px;
+    max-width: 500px;
+  }
+
+  .HomePageHeroContentActions a {
+    width: 150px;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .HomePageAboutContent {
+    gap: 16px;
+    padding: 180px 20px;
+  }
+
+  .HomePageAboutContent svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  .HomePageAboutContent h2 {
+    font-size: 24px;
+  }
+
+  .HomePageAboutContent p {
+    font-size: 16px;
+  }
+
+  .HomePageAboutContent a {
+    height: 48px;
+    padding: 12px 32px;
+    font-size: 14px;
+    width: max-content;
+  }
+
+  .HomePageSellingPoints ul {
+    flex-direction: column;
+  }
+
+  .HomePageSellingPoints ul li {
+    padding: 20px;
+  }
+
+  .HomePageSellingPoints ul li svg {
+    width: 48px;
+  }
+
+  .HomePageSellingPoints ul li h3 {
+    font-size: 24px;
+  }
+
+  .HomePageSellingPoints ul li p {
+    font-size: 16px;
+  }
+
+  .HomePageLatestSermon > div {
+    grid-template-columns: 1fr;
+  }
+
+  .HomePageAddress div {
+    gap: 48px;
+    grid-template-columns: 1fr;
+  }
+
+  .HomePageAddress div img {
+    grid-column: 1;
+  }
+
+  .HomePageEventsCircle {
+    display: none;
+  }
+
+  .HomePageEventsHeader a {
+    display: none;
+  }
+
+  .HomePageEvents ul {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .HomePageEvents ul li {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .HomePageEvents ul li img {
+    height: 200px;
+  }
+
+  .HomePageEvents ul li > div h3 {
+    font-size: 20px;
+  }
+
+  .HomePageEvents ul li p {
+    font-size: 14px;
+  }
+
+  .HomePageEventsCountdown {
+    padding: 60px 20px 0;
+  }
+
+  .HomePageEventsCountdownTimer {
+    gap: 20px;
+  }
+
+  .HomePageEventsCountdownTimerItem h4 {
+    font-size: 14px;
+  }
+
+  .HomePageEventsCountdownTimerItem div h3 {
+    font-size: 16px;
+    height: 40px;
+    width: 25px;
+  }
+
+  .HomePageEventsMobileLink {
+    align-items: center;
+    background: linear-gradient(182deg, #FFF 15.32%, #EEF4FF 98.7%);
+    border: 1px solid #f0f6ff;
+    border-radius: 50rem;
+    color: black;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    text-decoration: none;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    padding: 16px 24px;
+  }
+
+  .HomePageEventsMobileLink svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .HomePageSneakPeek h2 {
+    font-size: 32px;
+  }
+
+  .HomePageTestimoniesHeader h2 {
+    font-size: 32px;
+  }
+
+  .HomePageFeedback {
+    gap: 200px;
+    grid-template-columns: 1fr;
+  }
+
+  .HomePageFeedback form {
+    grid-row: 1;
+  }
+
+  .HomePageFeedback form label input {
+    padding: 8px 16px;
+  }
+
+  .HomePageFeedback form label textarea {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .HomePageLatestSermon ul li h3 {
+    font-size: 20px;
+  }
+
+  .HomePageLatestSermon ul li h4 {
+    font-size: 12px;
+  }
+
+  .HomePageLatestSermon ul li:last-child {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .HomePageLatestSermon ul li:last-child a {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .HomePageEventsCountdownTimerItem:last-child {
+    display: none;
+  }
+
+  .HomePagePrayersHands {
+    width: 150px;
+  }
+
+  .HomePageSneakPeek ul li img {
+    height: 300px;
+  }
+
+  .HomePageLeadershipContent img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .HomePageHeroContentActions {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .HomePageHeroContentActions a {
+    width: 100%;
+  }
 }

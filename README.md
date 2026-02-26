@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Project Setup](#project-setup)
-- [Developer Documentation](#developer-documentation)
+- [Developer Guide](#developer-guide)
 
 ### Project Overview
 
@@ -30,6 +30,6 @@ This project is the official website for Calvary Bible Church, built using React
   ```
 
 
-### Developer Documentation
+### Developer Guide
 
-[View Developer Documentation](https://www.notion.so/Developer-documentation-3049b3dc8ec780e1a2ecfd85c670c5d9?source=copy_link)
+[View Developer Guide](https://www.notion.so/Developer-documentation-3049b3dc8ec780e1a2ecfd85c670c5d9?source=copy_link)

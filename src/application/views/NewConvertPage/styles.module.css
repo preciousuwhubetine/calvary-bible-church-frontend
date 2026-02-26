@@ -1,0 +1,297 @@
+.NewConvertPageBackground {
+  background-color: #e8e8e8;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.NewConvertPageBackground div {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  gap: 16px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 50%);
+}
+
+.NewConvertPageBackground div h2 {
+  background-color: #fc8e33;
+  border-radius: 50rem;
+  color: white;
+  font-size: 20px;
+  padding: 8px 24px;
+}
+
+.NewConvertPageBackground span {
+  align-items: center;
+  border: 3px dashed #fc8e33;
+  border-radius: 50%;
+  color: #fc8e33;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  padding-top: 4px;
+  width: 48px;
+}
+
+.NewConvertPageVideoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 0 auto;
+  margin-top: calc(300px - var(--header-height));
+  overflow-x: clip;
+  padding: 100px 20px 200px;
+  position: relative;
+}
+
+.NewConvertPageVideoSectionBackground {
+  background-color: #e8e8e8;
+  height: 30%;
+  left: 0;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  z-index: -1;
+}
+
+.NewConvertPageVideoSectionRotatedBackground {
+  background-color: #e8e8e8;
+  position: absolute;
+  width: 150%;
+  top: 90%;
+  left: 50%;
+  height: 500px;
+  transform: rotate(-2deg) translate(-50%, -100%);
+  z-index: -1;
+}
+
+.NewConvertPageVideoSectionBackgroundImage {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform:  rotate(3deg) translate(-50%, -50%);
+  z-index: 1;
+}
+
+.NewConvertPageVideoSection h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.NewConvertPageVideo {
+  background-color: black;
+  border-radius: 16px;
+  height: max-content;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  min-height: 500px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.NewConvertPageVideo video {
+  height: 100%;
+  left: 50% !important;
+  object-fit: cover;
+  object-position: center;
+  position: absolute !important;
+  transform: translateX(-49.25%);
+  width: 110%;
+}
+
+.NewConvertPageCommunity {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 120px 20px;
+}
+
+.NewConvertPageCommunityText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.NewConvertPageCommunityText h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.NewConvertPageCommunityText p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.NewConvertPageBeginJourneyLinks {
+  min-height: 700px;
+  position: relative;
+}
+
+.NewConvertPageBeginJourneyLinks > svg {
+  display: block;
+  position: absolute;
+  left: 150px;
+  width: 350px;
+}
+
+.NewConvertPageBeginJourneyLinks a {
+  color: white;
+  display: block;
+  font-size: 18px;
+  position: relative;
+  width: 300px;
+}
+
+.NewConvertPageBeginJourneyLinks a img {
+  border-radius: 16px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  width: 300px;
+}
+
+.NewConvertPageBeginJourneyLinks a span {
+  align-items: center;
+  bottom: 24px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 16px;
+  left: 24px;
+  position: absolute;
+  text-decoration: underline;
+  width: 80%;
+}
+
+.NewConvertPageBeginJourneyLinks a span svg {
+  height: 16px;
+  width: 16px;
+}
+
+.NewConvertPageBeginJourneyLinks > a:first-of-type {
+  left: 0;
+  position: absolute;
+  top: 64px;
+}
+
+.NewConvertPageBeginJourneyLinks a:last-of-type {
+  position: absolute;
+  left: 360px;
+  top: 260px;
+}
+
+.NewConvertPageBeginJourneyLinksNumberOne,
+.NewConvertPageBeginJourneyLinksNumberTwo {
+  align-items: center;
+  border: 3px dashed #fd9f2b;
+  border-radius: 50%;
+  color: #fd9f2b;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  position: absolute;
+  width: 48px;
+}
+
+.NewConvertPageBeginJourneyLinksNumberOne {
+  left: 150px;
+  top: -32px;
+  transform: translateX(-50%);
+}
+
+.NewConvertPageBeginJourneyLinksNumberTwo {
+  left: 500px;
+  top: 200px;
+  transform: translateX(-50%);
+}
+
+.NewConvertPageFAQ {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 100px 20px;
+}
+
+.NewConvertPageFAQ h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.NewConvertPageFAQ ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewConvertPageFAQ ul li {
+  border-bottom: 1px solid black;
+  display: grid;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  padding: 24px 0;
+}
+
+.NewConvertPageFAQ ul li:last-child {
+  border: none;
+}
+
+.NewConvertPageFAQ ul li div {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NewConvertPageFAQ ul li div h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.NewConvertPageFAQ ul li div span {
+  align-items: center;
+  border-radius: 50%;
+  border: 2px dashed #fd9f2b;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+
+.NewConvertPageFAQ ul li div span svg {
+  transition: transform 0.2s;
+  width: 24px;
+}
+
+.NewConvertPageFAQ ul li div:last-child {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  padding-top: 0px;
+  transition: grid-template-rows 0.2s, padding 0.2s;
+}
+
+.NewConvertPageFAQ ul li div:last-child p {
+  overflow: hidden;
+}

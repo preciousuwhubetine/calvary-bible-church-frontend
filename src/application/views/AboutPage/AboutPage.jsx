@@ -1,7 +1,36 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './styles.module.css'
+import videojs from 'video.js';
+import { useEffect } from 'react';
 
 function AboutPage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+
+    let player;
+
+    try {
+      player = videojs("welcome-video-player");
+    } catch (error) {
+      console.error("Error initializing video player:", error);
+    }
+
+    return () => {
+      if (player) {
+        player.dispose();
+      }
+    };
+  }, [location]);
+
   return (
     <div className={styles['AboutPage']}>
       <div className={styles['AboutPageBackground']} />
@@ -42,9 +71,17 @@ function AboutPage() {
           <img className={styles['AboutPageWelcomeVideoBackgroundImage']} src="/logo-dark.png" />
         </div>
 
-        <video controls>
-          <source src="/videos/welcome-video.mp4" type="video/mp4" />
-        </video>
+        <div className={styles['AboutPageWelcomeVideoContainer']}>
+          <video
+            className="video-js vjs-theme-forest"
+            controls
+            data-setup='{}'
+            id="welcome-video-player"
+            preload="auto"
+          >
+            <source src="/videos/welcome-video.mp4" type="video/mp4" />
+          </video>
+        </div>
 
         <h2>
           Be Part of A People Walking Boldly In Power, Purpose, And Dominion.
@@ -72,7 +109,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className={styles['AboutPageBranches']}>
+      <section className={styles['AboutPageBranches']} id="Branches">
         <div className={styles['AboutPageBranchesHeader']}>
           <h2>Explore Our Branches and Fellowships</h2>
 
@@ -199,8 +236,8 @@ function AboutPage() {
                 <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset dx="-5" dy="4"/>
                   <feComposite in2="hardAlpha" operator="out"/>
@@ -230,8 +267,8 @@ function AboutPage() {
                 <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset dx="-5" dy="4"/>
                   <feComposite in2="hardAlpha" operator="out"/>
@@ -261,8 +298,8 @@ function AboutPage() {
                 <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset dx="-5" dy="4"/>
                   <feComposite in2="hardAlpha" operator="out"/>
@@ -292,8 +329,8 @@ function AboutPage() {
                 <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset dx="-5" dy="4"/>
                   <feComposite in2="hardAlpha" operator="out"/>
@@ -324,8 +361,8 @@ function AboutPage() {
                 <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset dx="-5" dy="4"/>
                   <feComposite in2="hardAlpha" operator="out"/>
@@ -355,8 +392,8 @@ function AboutPage() {
                 <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset dx="-5" dy="4"/>
                   <feComposite in2="hardAlpha" operator="out"/>
@@ -386,8 +423,8 @@ function AboutPage() {
                 <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset dx="-5" dy="4"/>
                   <feComposite in2="hardAlpha" operator="out"/>
@@ -420,130 +457,6 @@ function AboutPage() {
             Every gathering is a family united in purpose. We embrace one another, and create a community where people thrive and lives are transformed.
           </p>
         </div>
-      </section>
-
-      <section className={styles['AboutPageLeadership']}>
-        <h2>Our Leadership</h2>
-
-        <ul>
-          <li>
-            <img />
-
-            <div>
-              <h3>Pastor Name</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta provident molestiae doloremque quia hic, tenetur quisquam eos nihil temporibus eum vero aliquid, laboriosam illo quaerat inventore error. Esse, unde minus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta provident molestiae doloremque quia hic, tenetur quisquam eos nihil temporibus eum vero aliquid, laboriosam illo quaerat inventore error. Esse, unde minus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta provident molestiae doloremque quia hic, tenetur quisquam eos nihil temporibus eum vero aliquid, laboriosam illo quaerat inventore error. Esse, unde minus.
-              </p>
-
-              <a href="#">
-                Learn More
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </li>
-
-          <li>
-            <img />
-
-            <div>
-              <h3>Pastor Name</h3>
-              <a href="#">
-                Read Bio
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </li>
-
-          <li>
-            <img />
-
-            <div>
-              <h3>Pastor Name</h3>
-              <a href="#">
-                Read Bio
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </li>
-
-          <li>
-            <img />
-
-            <div>
-              <h3>Pastor Name</h3>
-              <a href="#">
-                Read Bio
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </li>
-
-          <li>
-            <img />
-
-            <div>
-              <h3>Pastor Name</h3>
-              <a href="#">
-                Read Bio
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </li>
-
-          <li>
-            <img />
-
-            <div>
-              <h3>Pastor Name</h3>
-              <a href="#">
-                Read Bio
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </li>
-
-          <li>
-            <img />
-
-            <div>
-              <h3>Pastor Name</h3>
-              <a href="#">
-                Read Bio
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2.0013 8.00195H13.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9.33333 3.33464L14 8.0013L9.33333 12.668" stroke="black" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </li>
-        </ul>
       </section>
 
       <section className={styles['AboutPageCoreValues']}>
@@ -587,7 +500,7 @@ function AboutPage() {
           <h2>A People After God's Heart</h2>
           <p>We live to honor God, love others, and worship Him in spirit and truth.</p>
 
-          <Link to="/about">
+          <Link to="/new">
             I'm New
           </Link>
         </div>

@@ -1,0 +1,155 @@
+.PastSermonsPageBackground {
+  background-color: #e8e8e8;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.PastSermonsPageBackground div {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  gap: 16px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 50%);
+}
+
+.PastSermonsPageBackground div h2 {
+  background-color: #fc8e33;
+  border-radius: 50rem;
+  color: white;
+  font-size: 20px;
+  padding: 8px 24px;
+}
+
+.PastSermonsPageBackground span {
+  align-items: center;
+  border: 3px dashed #fc8e33;
+  border-radius: 50%;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  padding-top: 4px;
+  width: 48px;
+}
+
+.PastSermonsPageBackground span svg {
+  width: 32px;
+}
+
+.PastSermonsPageContent {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin: 0 auto;
+  margin-top: calc(300px - var(--header-height));
+  max-width: var(--content-max-width);
+  padding: 100px 20px;
+}
+
+.PastSermonsPageSearch {
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 50rem;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: max-content 1fr;
+  padding: 8px 16px;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.PastSermonsPageSearch svg {
+  width: 24px;
+}
+
+.PastSermonsPageSearch input {
+  border: none;
+  font-size: 16px;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.PastSermonsPageSermonList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.PastSermonsPageSermonList > li {
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex: 0 1 calc(33.333% - 16px);
+  flex-direction: column;
+  gap: 24px;
+}
+
+.PastSermonsPageSermonListThumbnail {
+  cursor: pointer;
+  position: relative;
+}
+
+.PastSermonsPageSermonListThumbnailPlayButton {
+  align-items: center;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+}
+
+.PastSermonsPageSermonListThumbnailPlayButton svg {
+  color: white;
+  height: 32px;
+  width: 32px;
+}
+
+.PastSermonsPageSermonListThumbnail img {
+  background-color: #f0f0f0;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.PastSermonsPageSermonListDetails h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.PastSermonsPageSermonListDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.PastSermonsPageSermonListDetails ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.PastSermonsPageSermonListDetails ul li {
+  align-items: center;
+  border-top: 1px solid #dadada;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.PastSermonsPageSermonListDetails ul li span {
+  color: #a0a0a0;
+}

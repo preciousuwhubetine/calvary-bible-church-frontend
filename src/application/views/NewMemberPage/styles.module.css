@@ -1,0 +1,393 @@
+.NewMemberPageBackground {
+  background-color: #e8e8e8;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.NewMemberPageBackground div {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  gap: 16px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 50%);
+}
+
+.NewMemberPageBackground div h2 {
+  background-color: #fc8e33;
+  border-radius: 50rem;
+  color: white;
+  font-size: 20px;
+  padding: 8px 24px;
+}
+
+.NewMemberPageBackground span {
+  align-items: center;
+  border: 3px dashed #fc8e33;
+  border-radius: 50%;
+  color: #fc8e33;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  padding-top: 4px;
+  width: 48px;
+}
+
+.NewMemberPageVideoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 0 auto;
+  margin-top: calc(300px - var(--header-height));
+  overflow-x: clip;
+  padding: 100px 20px 200px;
+  position: relative;
+}
+
+.NewMemberPageVideoSectionBackground {
+  background-color: #e8e8e8;
+  height: 30%;
+  left: 0;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  z-index: -1;
+}
+
+.NewMemberPageVideoSectionRotatedBackground {
+  background-color: #e8e8e8;
+  position: absolute;
+  width: 150%;
+  top: 90%;
+  left: 50%;
+  height: 500px;
+  transform: rotate(-2deg) translate(-50%, -100%);
+  z-index: -1;
+}
+
+.NewMemberPageVideoSectionBackgroundImage {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform:  rotate(3deg) translate(-50%, -50%);
+  z-index: 1;
+}
+
+.NewMemberPageVideoSection h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.NewMemberPageVideo {
+  background-color: black;
+  border-radius: 16px;
+  height: max-content;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  min-height: 500px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.NewMemberPageVideo video {
+  height: 100%;
+  left: 50% !important;
+  object-fit: cover;
+  object-position: center;
+  position: absolute !important;
+  transform: translateX(-49.25%);
+  width: 110%;
+}
+
+.NewMemberPageCommunity {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 120px 20px;
+}
+
+.NewMemberPageCommunityText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.NewMemberPageCommunityText h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.NewMemberPageCommunityText p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.NewMemberPageCommunityLinks {
+  min-height: 700px;
+  position: relative;
+}
+
+.NewMemberPageCommunityLinks > svg {
+  display: block;
+  position: absolute;
+  left: 150px;
+  width: 350px;
+}
+
+.NewMemberPageCommunityLinks a {
+  color: white;
+  display: block;
+  font-size: 18px;
+  position: relative;
+  width: 300px;
+}
+
+.NewMemberPageCommunityLinks a img {
+  border-radius: 16px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  width: 300px;
+}
+
+.NewMemberPageCommunityLinks a span {
+  align-items: center;
+  bottom: 24px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 16px;
+  left: 24px;
+  position: absolute;
+  text-decoration: underline;
+  width: 80%;
+}
+
+.NewMemberPageCommunityLinks a span svg {
+  height: 16px;
+  width: 16px;
+}
+
+.NewMemberPageCommunityLinks > a:first-of-type {
+  left: 0;
+  position: absolute;
+  top: 64px;
+}
+
+.NewMemberPageCommunityLinks a:last-of-type {
+  position: absolute;
+  left: 360px;
+  top: 260px;
+}
+
+.NewMemberPageCommunityLinksNumberOne,
+.NewMemberPageCommunityLinksNumberTwo {
+  align-items: center;
+  border: 3px dashed #fd9f2b;
+  border-radius: 50%;
+  color: #fd9f2b;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  position: absolute;
+  width: 48px;
+}
+
+.NewMemberPageCommunityLinksNumberOne {
+  left: 150px;
+  top: -32px;
+  transform: translateX(-50%);
+}
+
+.NewMemberPageCommunityLinksNumberTwo {
+  left: 500px;
+  top: 200px;
+  transform: translateX(-50%);
+}
+
+.NewMemberPagePresence {
+  padding: 100px 20px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+}
+
+.NewMemberPagePresenceContent {
+  background-image: url(/new-page-step-into-his-presence-image.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  height: 500px;
+  max-width: 800px;
+  position: relative;
+}
+
+.NewMemberPagePresenceContent::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.NewMemberPagePresenceCircle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  top: 0%;
+  z-index: 2;
+}
+
+.NewMemberPagePresenceCircle img {
+  animation: 10s 'rotate' linear infinite;
+  position: absolute;
+  z-index: -1;
+}
+
+.NewMemberPagePresenceCircle div {
+  align-items: center;
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
+  border-radius: 50%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+}
+
+.NewMemberPagePresenceText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: 64px;
+  position: absolute;
+  bottom: 64px;
+}
+
+.NewMemberPagePresenceText h2 {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.NewMemberPagePresenceText p {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  max-width: 400px;
+}
+
+.NewMemberPagePresenceText a {
+  align-items: center;
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
+  border: none;
+  box-shadow: 0 31px 19px 0 rgba(255, 185, 30, 0.35), 0 14px 14px 0 rgba(255, 185, 30, 0.28), 0 3px 8px 0 rgba(255, 225, 159, 0.28);
+  color: white;
+  border-radius: 50rem;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 16px 48px;
+  text-decoration: none;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  width: max-content;
+}
+
+.NewMemberPageFAQ {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 100px 20px;
+}
+
+.NewMemberPageFAQ h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.NewMemberPageFAQ ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewMemberPageFAQ ul li {
+  border-bottom: 1px solid black;
+  display: grid;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  padding: 24px 0;
+}
+
+.NewMemberPageFAQ ul li:last-child {
+  border: none;
+}
+
+.NewMemberPageFAQ ul li div {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NewMemberPageFAQ ul li div h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.NewMemberPageFAQ ul li div span {
+  align-items: center;
+  border-radius: 50%;
+  border: 2px dashed #fd9f2b;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+
+.NewMemberPageFAQ ul li div span svg {
+  transition: transform 0.2s;
+  width: 24px;
+}
+
+.NewMemberPageFAQ ul li div:last-child {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  padding-top: 0px;
+  transition: grid-template-rows 0.2s, padding 0.2s;
+}
+
+.NewMemberPageFAQ ul li div:last-child p {
+  overflow: hidden;
+}
