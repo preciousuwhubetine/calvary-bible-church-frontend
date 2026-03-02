@@ -6,7 +6,7 @@ import _404 from "../application/views/404/404"
 import AboutPage from "../application/views/AboutPage/AboutPage"
 import CounsellingPage from "../application/views/CounsellingPage/CounsellingPage"
 import EventsPage from "../application/views/EventsPage/EventsPage"
-import HomePage from "../application/views/HomePage/HomePage.jsx"
+// import HomePage from "../application/views/HomePage/HomePage.jsx"
 import GivePage from "../application/views/GivePage/GivePage"
 import GroupsPage from "../application/views/GroupsPage/GroupsPage"
 import HouseFelllowshipPage from "../application/views/HouseFellowshipPage/HouseFellowshipPage"
@@ -68,7 +68,7 @@ export default function Config () {
         <Route path="/store/category/:categoryId/:categoryName" element={<StorePageCategory />} />
       </Route>
       <Route path="/study" element={<StudyPage />} />
-      <Route path="/" element={<HomePage />} />
+      {/* <Route path="/" element={<HomePage />} /> */}
       <Route path="*" element={<_404 />} />
     </Routes>
   )
