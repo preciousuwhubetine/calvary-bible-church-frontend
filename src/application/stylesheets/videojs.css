@@ -1,3 +1,8 @@
+.video-js {
+  height: 100%;
+  width: 100%;
+}
+
 .video-js .vjs-control-bar {
   margin-left: auto;
   margin-right: auto;

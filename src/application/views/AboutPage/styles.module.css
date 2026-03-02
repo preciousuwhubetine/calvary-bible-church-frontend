@@ -11,6 +11,7 @@
 .AboutPageHero {
   padding: 0 20px;
   padding-top: calc(var(--header-height) + 20px);
+  overflow-x: clip;
 }
 
 .AboutPageHeroContent {
@@ -54,9 +55,11 @@
   border-radius: 16px;
   filter: brightness(0.6);
   height: 100%;
+  left: 0;
   object-fit: cover;
   object-position: center 10%;
   position: absolute;
+  top: 0;
   width: 100%;
   z-index: -1;
 }
@@ -94,7 +97,7 @@
 
 .AboutPageWelcomeVideoContainer {
   border-radius: 16px;
-  min-height: 500px;
+  height: 600px;
   margin: 0 auto;
   max-width: calc(var(--content-max-width) - 40px);
   overflow: hidden;
@@ -103,8 +106,6 @@
 }
 
 .AboutPageWelcomeVideo video {
-  height: max-content;
-  min-height: 500px;
   object-fit: cover;
   object-position: center top;
 }
@@ -483,10 +484,18 @@
   padding-left: 20px;
 }
 
+.AboutPageWorship div,
+.AboutPageCoreValues div {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .AboutPageGathering div,
 .AboutPageWhatWeDo div {
-  border-bottom-left-radius: 16px;
+  border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
   left: 0;
   max-width: 500px;
   padding-left: 40px;
@@ -575,4 +584,264 @@
   justify-content: center;
   text-decoration: none;
   width: 220px;
+}
+
+@media (max-width: 1100px) {
+  .AboutPageHeroCircle {
+    right: 10%;
+  }
+
+  .AboutPageHeroCircle div {
+    height: 60px;
+    width: 60px;
+  }
+
+  .AboutPageHeroCircle img {
+    width: 150px;
+  }
+
+  .AboutPageHeroCircle svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .AboutPageVisionLine,
+  .AboutPageVisionCircle {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .AboutPageBearBurdens {
+    gap: 64px;
+    grid-template-columns: 1fr;
+    margin: 100px 0 0;
+  }
+
+  .AboutPageBearBurdensText{
+    gap: 16px;
+    height: max-content;
+  }
+
+  .AboutPageBearBurdens > svg {
+    display: none;
+  }
+
+  .AboutPageBearBurdensImages {
+    margin-left: auto;
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .AboutPageBearBurdensImages img:first-child {
+    position: relative;
+    right: 0;
+  }
+
+  .AboutPageBearBurdensImages img:last-child {
+    right: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .AboutPageHeroContent {
+    height: 300px;
+    padding: 0;
+  }
+
+  .AboutPageHero h1 {
+    font-size: 32px;
+    max-width: 400px;
+  }
+
+  .AboutPageOverview {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .AboutPageWelcomeVideo h2 {
+    font-size: 24px;
+  }
+
+  .AboutPageVision {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 20px;
+  }
+
+  .AboutPageVision ul {
+    grid-column: 1;
+  }
+
+  .AboutPagePillars {
+    padding: 60px 20px;
+  }
+
+  .AboutPagePillars ul {
+    grid-template-columns: 1fr;
+  }
+
+  .AboutPageWorship,
+  .AboutPageGathering,
+  .AboutPageCoreValues,
+  .AboutPageWhatWeDo {
+    padding: 20px;
+  }
+
+  .AboutPageWorship div,
+  .AboutPageGathering div,
+  .AboutPageCoreValues div,
+  .AboutPageWhatWeDo div {
+    bottom: 20px;
+    max-width: 80%;
+  }
+
+  .AboutPageGathering div,
+  .AboutPageWhatWeDo div {
+    left: 20px;
+    padding-left: 20px;
+  }
+
+  .AboutPageWorship img,
+  .AboutPageGathering img,
+  .AboutPageCoreValues img,
+  .AboutPageWhatWeDo img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 650px) {
+  .AboutPageOverview h2 {
+    font-size: 24px;
+  }
+
+  .AboutPageOverview p {
+    font-size: 14px;
+  }
+
+  .AboutPageWelcomeVideoContainer {
+    height: 300px;
+  }
+
+  .AboutPageBearBurdens h2 {
+    font-size: 24px;
+  }
+
+  .AboutPageBearBurdens p {
+    font-size: 14px;
+  }
+
+  .AboutPageBranches h2 {
+    font-size: 24px;
+  }
+
+  .AboutPageBranches p {
+    font-size: 14px;
+  }
+
+  .AboutPageBranches ul li {
+    flex: 0 0 250px;
+    height: 300px;
+  }
+
+  .AboutPageBranches ul li h3 {
+    font-size: 20px;
+  }
+
+  .AboutPageVision h2 {
+    font-size: 24px;
+  }
+
+  .AboutPageVision ul li h3 {
+    font-size: 16px;
+    height: 28px;
+    width: 28px;
+  }
+
+  .AboutPageVision ul li p {
+    font-size: 14px;
+  }
+
+  .AboutPagePillars h2 {
+    font-size: 24px;
+  }
+
+  .AboutPagePillars p {
+    font-size: 14px;
+  }
+
+  .AboutPagePillars ul li {
+    grid-template-columns: 1fr 40px;
+  }
+
+  .AboutPagePillars ul li div h3 {
+    font-size: 20px;
+  }
+
+  .AboutPagePillars ul li div p {
+    font-size: 14px;
+  }
+
+  .AboutPagePillars ul li svg {
+    width: 80px;
+  }
+
+  .AboutPageWorship div,
+  .AboutPageGathering div,
+  .AboutPageCoreValues div,
+  .AboutPageWhatWeDo div {
+    gap: 8px;
+  }
+
+  .AboutPageWorship h2,
+  .AboutPageGathering h2,
+  .AboutPageCoreValues h2,
+  .AboutPageWhatWeDo h2 {
+    font-size: 20px;
+  }
+
+  .AboutPageWorship p,
+  .AboutPageGathering p,
+  .AboutPageCoreValues p,
+  .AboutPageWhatWeDo p,
+  .AboutPageCoreValues div ul li {
+    font-size: 14px;
+  }
+
+  .AboutPagePeopleAfterGodsHeartCircle img {
+    width: 150px;
+  }
+
+  .AboutPagePeopleAfterGodsHeartCircle div {
+    height: 60px;
+    width: 60px;
+  }
+
+  .AboutPagePeopleAfterGodsHeartCircle svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .AboutPagePeopleAfterGodsHeart h2 {
+    font-size: 32px;
+  }
+
+  .AboutPagePeopleAfterGodsHeart p {
+    font-size: 14px;
+  }
+
+  .AboutPagePeopleAfterGodsHeartContent a {
+    font-size: 14px;
+    height: 48px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .AboutPageHero h1 {
+    padding: 60px 20px;
+
+  }
 }

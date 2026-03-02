@@ -31,7 +31,7 @@ function GivePage() {
         <div className={styles['GivePageScriptureCircle']} />
 
         <p>
-          “Honor the Lord with your wealth and with the first fruits of all your produce; then your barns will be filled with plenty, and your vats will be bursting with wine.” – Proverbs 3:9–10. Giving is an act of worship. It reflects your gratitude, trust, and obedience to God. Whether it's your tithe, offering, or a seed of faith, every gift is a statement that God is your Source. We encourage you to give prayerfully and purposefully. As the Apostle Paul wrote, “Whoever sows generously will also reap generously” (2 Corinthians 9:6).
+          <b>“Honor the Lord with your wealth and with the first fruits of all your produce; then your barns will be filled with plenty, and your vats will be bursting with wine.” - Proverbs 3:9-10.</b> <br /><br />Giving is an act of worship. It reflects your gratitude, trust, and obedience to God. Whether it's your tithe, offering, or a seed of faith, every gift is a statement that God is your Source. We encourage you to give prayerfully and purposefully. As the Apostle Paul wrote, “Whoever sows generously will also reap generously” (2 Corinthians 9:6).
         </p>
       </section>
 

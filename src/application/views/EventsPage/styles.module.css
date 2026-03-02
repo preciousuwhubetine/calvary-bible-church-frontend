@@ -127,3 +127,34 @@
   gap: 8px;
   justify-items: center;
 }
+
+@media (max-width: 750px) {
+  .EventsPageHeroContent {
+    height: 300px;
+  }
+
+  .EventsPageHeroContent h1 {
+    font-size: 32px;
+  }
+
+  .EventsPageHeroSearch svg {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .EventsPageHeroSearch input {
+    font-size: 14px;
+  }
+
+  .EventsPageContent ul li {
+    grid-template-columns: 1fr;
+  }
+
+  .EventsPageContent ul li img {
+    height: 250px;
+  }
+
+  .EventsPageContent ul li:nth-child(even) img {
+    order: 0;
+  }
+}

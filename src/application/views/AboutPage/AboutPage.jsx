@@ -95,7 +95,7 @@ function AboutPage() {
 
         <div className={styles['AboutPageBearBurdensText']}>
           <h2>
-            Bear one another’s burdens, and so fulfill the law of Christ. 
+            Bear one another's burdens, and so fulfill the law of Christ. 
           </h2>
 
           <p>

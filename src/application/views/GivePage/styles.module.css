@@ -1,4 +1,5 @@
 .GivePageHero {
+  overflow-x: clip;
   padding: 0 20px;
   padding-top: calc(var(--header-height) + 20px);
 }
@@ -211,6 +212,7 @@
 
 .GiveOnline {
   overflow-x: clip;
+  padding: 20px;
 }
 
 .GiveOnlineContent {
@@ -274,4 +276,136 @@
 .GiveOnline div button img {
   height: 60px;
   width: auto;
+}
+
+@media (max-width: 1100px) {
+  .GivePageHeroCircle {
+    right: 10%;
+  }
+
+  .GivePageHeroCircle div {
+    height: 60px;
+    width: 60px;
+  }
+
+  .GivePageHeroCircle img {
+    width: 150px;
+  }
+
+  .GivePageHeroCircle svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .GivePageAccounts ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .GivePageScriptureLine {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .GivePageHeroContent {
+    height: 300px;
+  }
+
+  .GivePageHeroContent h1 {
+    font-size: 32px;
+  }
+
+  .GivePageScripture {
+    margin: 60px 0 0;
+  }
+
+  .GivePageScriptureCircle {
+    height: 120px;
+    width: 120px;
+  }
+
+  .GivePageScripture p {
+    font-size: 14px;
+  }
+
+  .GivePageAccountsToggle {
+    padding: 8px;
+  }
+
+  .GivePageAccountsToggleIndicator {
+    height: calc(100% - 16px);
+    left: 8px;
+    width: calc(50% - 16px);
+  }
+
+  .GivePageAccountsToggleButton {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .GivePageAccounts ul li {
+    padding: 16px;
+  }
+
+  .GivePageAccounts ul li img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .GivePageAccounts ul li div h3 {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+
+  .GivePageAccounts ul li div:last-of-type h3 {
+    font-size: 20px;
+  }
+
+  .GiveOnlineContent {
+    border: 3px dashed #fd9f2b;
+  }
+
+  .GiveOnlineHands {
+    right: 0;
+    top: -20%;
+    width: 150px;
+  }
+
+  .GiveOnline svg {
+    height: 50px;
+    width: 50px;
+  }
+
+  .GiveOnline div h2 {
+    font-size: 24px;
+  }
+
+  .GiveOnline div p {
+    font-size: 16px;
+  }
+
+  .GiveOnline div button {
+    font-size: 16px;
+    padding: 4px 24px;
+  }
+
+  .GiveOnline div button img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .GivePageAccounts ul {
+    grid-template-columns: 1fr;
+  }
+
+  .GivePageAccounts ul li {
+    height: 200px;
+  }
+
+  .GiveOnlineContent {
+    padding: 20px;
+  }
 }
