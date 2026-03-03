@@ -41,6 +41,14 @@ function HomePage() {
 
       container.scrollTo({ left: scrollPercentage * maxScroll * speed, top: 0, behavior: 'smooth' });
     });
+
+    window.addEventListener('resize', () => {
+      const eventsContainer = eventsContainerRef.current;
+
+      if (eventsContainer) {
+        eventsContainer.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+      }
+    });
   })
 
   const {

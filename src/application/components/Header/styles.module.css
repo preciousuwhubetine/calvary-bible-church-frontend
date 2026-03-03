@@ -1,12 +1,29 @@
 .Header {
   position: fixed;
   top: 0;
+  transition: 0.5s transform ease-in-out, 0.2s background-color ease-in-out;
   width: 100%;
   z-index: 1000;
 }
 
+.HeaderLogoLink {
+  display: flex;
+}
+
 .HeaderFilled {
   background-color: white;
+}
+
+.HeaderLogoDark {
+  display: none;
+}
+
+.HeaderFilled .HeaderLogoDark {
+  display: block;
+}
+
+.HeaderFilled .HeaderLogoWhite {
+  display: none;
 }
 
 .HeaderContent {
@@ -38,6 +55,11 @@
 .Header nav ul {
   align-items: center;
   display: flex;
+  height: 100%;
+}
+
+.Header nav ul li {
+  height: 100%;
 }
 
 .Header nav ul li a {
@@ -46,12 +68,13 @@
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  gap: 8px;
   height: 100%;
+  justify-content: space-between;
   padding: 0 32px;
   text-decoration: none;
 }
 
+.Header nav ul li a div,
 .Header nav ul li a span {
   border-radius: 50rem;
   height: 7px;
@@ -76,6 +99,10 @@
   width: 16px;
 }
 
+.Header nav ul li .HeaderLinkActive span{
+  background-color: #fd9f2b;
+}
+
 @media (max-width: 950px) {
   .HeaderLogo {
     width: 120px;
@@ -91,8 +118,23 @@
   }
 
   .Header nav button {
+    background-color: white;
+    color: black;
     font-size: 14px;
     padding: 8px 20px;
+  }
+
+  .Header nav button svg path {
+    fill: black;
+  }
+
+  .HeaderFilled nav button {
+    background-color: black;
+    color: white;
+  }
+
+  .HeaderFilled nav button svg path {
+    fill: white;
   }
 
   .Header nav button svg {

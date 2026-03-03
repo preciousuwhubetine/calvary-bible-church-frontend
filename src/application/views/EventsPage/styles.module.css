@@ -93,11 +93,11 @@
 }
 
 .EventsPageContent ul li img {
-  background-color: #d6d6d6;
+  background-color: black;
   border: 1px solid #c0c0c0;
   border-radius: 8px;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
 }
 
@@ -119,10 +119,8 @@
 .EventsPageContentDate,
 .EventsPageContentTime {
   align-items: center;
-  color: #777777;
   display: grid;
   font-size: 16px;
-  font-style: italic;
   grid-template-columns: 24px max-content;
   gap: 8px;
   justify-items: center;
@@ -141,7 +139,7 @@
     height: 20px;
     width: 20px;
   }
-  
+
   .EventsPageHeroSearch input {
     font-size: 14px;
   }

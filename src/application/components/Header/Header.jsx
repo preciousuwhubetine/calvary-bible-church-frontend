@@ -1,44 +1,76 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './styles.module.css'
+import { useEffect, useRef, useState } from 'react'
 
-function Header({
-  filled = true,
-}) {
+function Header() {
+  const header = useRef(null);
+  const location = useLocation();
+
+  const [filled, setFilled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 100) {
+        setFilled(true);
+      } else {
+        setFilled(false);
+      }
+    };
+
+    if (location.pathname === '/') {
+      window.addEventListener('scroll', handleScroll);
+      setFilled(false);
+    } else {
+      header.current.classList.add(styles['HeaderFilled']);
+      setFilled(true);
+    }
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [location.pathname])
+
   return (
-    <header className={`${styles['Header']} ${filled ? styles['HeaderFilled'] : ''}`}>
+    <header className={`${styles['Header']} ${filled ? styles['HeaderFilled'] : ''}`} ref={header}>
       <div className={styles['HeaderContent']}>
-        <Link to="/">
-          <img className={styles['HeaderLogo']} src="/logo-dark.png" />
+        <Link className={styles['HeaderLogoLink']} to="/">
+          <img className={`${styles['HeaderLogo']} ${styles['HeaderLogoDark']}`} src="/logo-dark.png" />
+          <img className={`${styles['HeaderLogo']} ${styles['HeaderLogoWhite']}`} src="/logo-white.png" />
         </Link>
 
         <nav>
           <ul>
             <li>
-              <Link to="/">
+              <Link to="/" className={location.pathname === '/' ? styles['HeaderLinkActive'] : ''}>
+                <div />
                 Home
                 <span />
               </Link>
             </li>
             <li>
-              <Link to="/about">
+              <Link to="/about" className={location.pathname === '/about' ? styles['HeaderLinkActive'] : ''}>
+                <div />
                 About
                 <span />
               </Link>
             </li>
             <li>
-              <Link to="/events">
+              <Link to="/events" className={location.pathname === '/events' ? styles['HeaderLinkActive'] : ''}>
+                <div />
                 Events
                 <span />
               </Link>
             </li>
             <li>
-              <Link to="/give">
+              <Link to="/give" className={location.pathname === '/give' ? styles['HeaderLinkActive'] : ''}>
+                <div />
                 Give
                 <span />
               </Link>
             </li>
             <li>
-              <Link to="/store">
+              <Link to="/store" className={location.pathname.indexOf('/store') === 0 ? styles['HeaderLinkActive'] : ''}>
+                <div />
                 Store
                 <span />
               </Link>

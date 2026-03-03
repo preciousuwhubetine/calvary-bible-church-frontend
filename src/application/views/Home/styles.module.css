@@ -46,7 +46,7 @@
   filter: brightness(0.3);
   height: 100%;
   object-fit: cover;
-  object-position: center -90%;
+  object-position: center;
   position: absolute;
   width: 100%;
 }
@@ -479,18 +479,18 @@
 }
 
 .HomePageAddress {
-  padding: 100px 0;
+  background: rgba(255, 185, 30, 0.28);
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 100px 0;
   position: relative;
-  margin: 0 auto;
-  max-width: var(--content-max-width);
+  width: 80%;
 }
 
 .HomePageAddress div {
-  border-radius: 30px;
-  background: rgba(255, 185, 30, 0.28);
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  max-width: 1000px;
+  margin: 0 auto;
+  max-width: 1100px;
   padding: 64px;
 }
 
@@ -504,7 +504,7 @@
 .HomePageAddress img {
   position: absolute;
   left: 50%;
-  top: 0%;
+  top: -10%;
   width: 400px;
 }
 
@@ -1123,12 +1123,12 @@
 
   .HomePageAddress {
     padding-right: 20px;
+    width: 90%;
   }
 
   .HomePageAddress div {
-    column-gap: 32px;
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 1fr;
     padding: 64px 20px;
   }
 
@@ -1140,8 +1140,9 @@
   .HomePageAddress img {
     grid-row: 1;
     left: 0;
+    max-width: 300px;
     position: relative;
-    width: 300px;
+    width: 80%;
   }
 }
 
@@ -1290,11 +1291,6 @@
   }
 
   .HomePageLatestSermon > div {
-    grid-template-columns: 1fr;
-  }
-
-  .HomePageAddress div {
-    gap: 48px;
     grid-template-columns: 1fr;
   }
 
