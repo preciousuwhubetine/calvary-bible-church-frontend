@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { Link, useLocation } from 'react-router-dom'
 import styles from './styles.module.css'
@@ -7,9 +7,16 @@ import {
   index as events_index,
 } from '../../services/api/v1/events'
 
+import {
+  index as past_sermons_index,
+} from '../../services/api/v1/past_sermons'
+
 function HomePage() {
   const dispatch = useDispatch();
   const location = useLocation();
+
+  const eventsContainerRef = useRef(null);
+  const sneakPeekListRef = useRef(null);
 
   useEffect(() => {
     if (location.hash) {
@@ -22,9 +29,27 @@ function HomePage() {
     }
   }, [location]);
 
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      const container = sneakPeekListRef.current
+      const speed = 1.2;
+
+      const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      const scrollPercentage = currentScrollTop / (document.documentElement.scrollHeight - window.innerHeight);
+      const maxScroll = container.scrollWidth - window.innerWidth;
+
+      container.scrollTo({ left: scrollPercentage * maxScroll * speed, top: 0, behavior: 'smooth' });
+    });
+  })
+
   const {
     events,
   } = useSelector((state) => state.events);
+
+  const {
+    past_sermons,
+  } = useSelector((state) => state.past_sermons);
 
   const [timeToNextEvent, setTimeToNextEvent] = useState({
     message: null,
@@ -42,9 +67,16 @@ function HomePage() {
   }, [dispatch]);
 
   useEffect(() => {
+    dispatch(past_sermons_index({
+      page: 1,
+      per_page: 1
+    }))
+  }, [dispatch]);
+
+  useEffect(() => {
     if (events.length === 0) return;
 
-    const nextEventDate = new Date(Array.from(events).sort((a, b) => new Date(b.start_date) - new Date(a.start_date))[0].start_date);
+    const nextEventDate = new Date(Array.from(events).sort((a, b) => new Date(a.start_date) - new Date(b.start_date))[0].start_date);
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -140,7 +172,7 @@ function HomePage() {
       <section className={styles['HomePageGrayBackgroundSection']}>
         <div className={styles['HomePageGrayBackground']} />
         <div className={styles['HomePageGrayRotatedBackground']}>
-          <img className={styles['HomePageGraybackgroundSectionImage']} src="/logo-dark.png" />
+          <img className={styles['HomePageGraybackgroundSectionImage']} src="/icon.png" />
         </div>
 
         <section className={styles['HomePageSellingPoints']}>
@@ -202,55 +234,50 @@ function HomePage() {
           </ul>
         </section>
 
-        <section className={styles['HomePageLatestSermon']}>
-          <h2>LATEST SERMON</h2>
+        {
+          past_sermons.length > 0 && (
+            <section className={styles['HomePageLatestSermon']}>
+              <h2>LATEST SERMON</h2>
 
-          <div>
-            <img />
+              <div>
+                <img src={past_sermons[0].cover_image} alt="Latest Sermon" />
 
-            <ul>
-              <li>
-                <h4>
-                  SERMON SERIES
-                </h4>
-                <h3>
-                  Sermon Series Title
-                </h3>
-              </li>
+                <ul>
+                  <li>
+                    <h4>
+                      SERMON TITLE
+                    </h4>
+                    <h3>
+                      {past_sermons[0].series_title}
+                    </h3>
+                  </li>
 
-              <li>
-                <h4>
-                  SERMON TITLE
-                </h4>
-                <h3>
-                  Sermon Title
-                </h3>
-              </li>
+                  <li>
+                    <h4>
+                      PREACHER
+                    </h4>
+                    <h3>
+                      {past_sermons[0].minister}
+                    </h3>
+                  </li>
 
-              <li>
-                <h4>
-                  PREACHER
-                </h4>
-                <h3>
-                  Preacher Name
-                </h3>
-              </li>
+                  <li>
+                    <Link to={past_sermons[0].video_url} target="_blank" rel="noopener noreferrer">
+                      Watch Now
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M2 2H22V4H21V18H14.414L18.414 22L17 23.414L12 18.414L7 23.414L5.586 22L9.586 18H3V4H2V2ZM5 4V16H19V4H5ZM10 6.5L14.667 10L10 13.5V6.5Z" fill="white"/>
+                      </svg>
+                    </Link>
 
-              <li>
-                <Link to="/">
-                  Watch Now
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M2 2H22V4H21V18H14.414L18.414 22L17 23.414L12 18.414L7 23.414L5.586 22L9.586 18H3V4H2V2ZM5 4V16H19V4H5ZM10 6.5L14.667 10L10 13.5V6.5Z" fill="white"/>
-                  </svg>
-                </Link>
-
-                <Link to="/past-sermons">
-                  All Sermons
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </section>
+                    <Link to="/past-sermons">
+                      All Sermons
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          )
+        }
       </section>
 
       <section className={styles['HomePageServiceTimes']}>
@@ -363,50 +390,77 @@ function HomePage() {
                 <circle cx="112.5" cy="112.5" r="110" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
               </svg>
 
-              <ul>
-                {
-                  Array.from(events).sort((a, b) => new Date(b.start_date) - new Date(a.start_date)).map((event, index) => (
-                    <li key={index}>
-                      <img src={event.cover_image} />
+              <div className={styles['HomePageEventsContent']}>
+                <button onClick={() => {
+                  const currentChild = parseInt(eventsContainerRef.current.dataset.currentChild) || 0;
+                  if (eventsContainerRef.current) {
+                    const nextChild = Math.max(currentChild - 1, 0);
+                    eventsContainerRef.current.children[nextChild].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    eventsContainerRef.current.dataset.currentChild = nextChild;
+                  }
+                }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M14.4006 17.2798L8.64062 11.5198L14.4006 5.75977" stroke="black" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
 
-                      <div>
-                        <h3>{event.title}</h3>
+                <ul data-current-child={0} ref={eventsContainerRef}>
+                  {
+                    Array.from(events).sort((a, b) => new Date(a.start_date) - new Date(b.start_date)).map((event, index) => (
+                      <li key={index}>
+                        <img src={event.cover_image} />
 
-                        <hr />
+                        <div>
+                          <h3>{event.title}</h3>
 
-                        <div className={styles['HomePageEventsDate']}>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19 4H17V3C17 2.73478 16.8946 2.48043 16.7071 2.29289C16.5196 2.10536 16.2652 2 16 2C15.7348 2 15.4804 2.10536 15.2929 2.29289C15.1054 2.48043 15 2.73478 15 3V4H9V3C9 2.73478 8.89464 2.48043 8.70711 2.29289C8.51957 2.10536 8.26522 2 8 2C7.73478 2 7.48043 2.10536 7.29289 2.29289C7.10536 2.48043 7 2.73478 7 3V4H5C4.20435 4 3.44129 4.31607 2.87868 4.87868C2.31607 5.44129 2 6.20435 2 7V19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7956 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V7C22 6.20435 21.6839 5.44129 21.1213 4.87868C20.5587 4.31607 19.7956 4 19 4ZM20 19C20 19.2652 19.8946 19.5196 19.7071 19.7071C19.5196 19.8946 19.2652 20 19 20H5C4.73478 20 4.48043 19.8946 4.29289 19.7071C4.10536 19.5196 4 19.2652 4 19V12H20V19ZM20 10H4V7C4 6.73478 4.10536 6.48043 4.29289 6.29289C4.48043 6.10536 4.73478 6 5 6H7V7C7 7.26522 7.10536 7.51957 7.29289 7.70711C7.48043 7.89464 7.73478 8 8 8C8.26522 8 8.51957 7.89464 8.70711 7.70711C8.89464 7.51957 9 7.26522 9 7V6H15V7C15 7.26522 15.1054 7.51957 15.2929 7.70711C15.4804 7.89464 15.7348 8 16 8C16.2652 8 16.5196 7.89464 16.7071 7.70711C16.8946 7.51957 17 7.26522 17 7V6H19C19.2652 6 19.5196 6.10536 19.7071 6.29289C19.8946 6.48043 20 6.73478 20 7V10Z" fill="#777777"/>
-                          </svg>
+                          <hr />
 
-                          {(new Date(event.start_date)).toLocaleDateString('en-US', {
-                            month: 'long',
-                            day: 'numeric',
-                            year: 'numeric'
-                          })}
+                          <div className={styles['HomePageEventsDate']}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M19 4H17V3C17 2.73478 16.8946 2.48043 16.7071 2.29289C16.5196 2.10536 16.2652 2 16 2C15.7348 2 15.4804 2.10536 15.2929 2.29289C15.1054 2.48043 15 2.73478 15 3V4H9V3C9 2.73478 8.89464 2.48043 8.70711 2.29289C8.51957 2.10536 8.26522 2 8 2C7.73478 2 7.48043 2.10536 7.29289 2.29289C7.10536 2.48043 7 2.73478 7 3V4H5C4.20435 4 3.44129 4.31607 2.87868 4.87868C2.31607 5.44129 2 6.20435 2 7V19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7956 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V7C22 6.20435 21.6839 5.44129 21.1213 4.87868C20.5587 4.31607 19.7956 4 19 4ZM20 19C20 19.2652 19.8946 19.5196 19.7071 19.7071C19.5196 19.8946 19.2652 20 19 20H5C4.73478 20 4.48043 19.8946 4.29289 19.7071C4.10536 19.5196 4 19.2652 4 19V12H20V19ZM20 10H4V7C4 6.73478 4.10536 6.48043 4.29289 6.29289C4.48043 6.10536 4.73478 6 5 6H7V7C7 7.26522 7.10536 7.51957 7.29289 7.70711C7.48043 7.89464 7.73478 8 8 8C8.26522 8 8.51957 7.89464 8.70711 7.70711C8.89464 7.51957 9 7.26522 9 7V6H15V7C15 7.26522 15.1054 7.51957 15.2929 7.70711C15.4804 7.89464 15.7348 8 16 8C16.2652 8 16.5196 7.89464 16.7071 7.70711C16.8946 7.51957 17 7.26522 17 7V6H19C19.2652 6 19.5196 6.10536 19.7071 6.29289C19.8946 6.48043 20 6.73478 20 7V10Z" fill="#000000"/>
+                            </svg>
+
+                            {(new Date(event.start_date)).toLocaleDateString('en-US', {
+                              month: 'long',
+                              day: 'numeric',
+                              year: 'numeric'
+                            })}
+                          </div>
+
+                          <div className={styles['HomePageEventsTime']}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path d="M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0ZM10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2ZM10 4C10.2449 4.00003 10.4813 4.08996 10.6644 4.25272C10.8474 4.41547 10.9643 4.63975 10.993 4.883L11 5V9.586L13.707 12.293C13.8863 12.473 13.9905 12.7144 13.9982 12.9684C14.006 13.2223 13.9168 13.4697 13.7488 13.6603C13.5807 13.8508 13.3464 13.9703 13.0935 13.9944C12.8406 14.0185 12.588 13.9454 12.387 13.79L12.293 13.707L9.293 10.707C9.13758 10.5514 9.03776 10.349 9.009 10.131L9 10V5C9 4.73478 9.10536 4.48043 9.29289 4.29289C9.48043 4.10536 9.73478 4 10 4Z" fill="#000000"/>
+                            </svg>
+
+                            {event.time}
+                          </div>
+
+                          <hr />
+
+                          <p>
+                            {event.description}
+                          </p>
                         </div>
+                      </li>
+                    ))
+                  }
+                </ul>
 
-                        <div className={styles['HomePageEventsTime']}>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0ZM10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2ZM10 4C10.2449 4.00003 10.4813 4.08996 10.6644 4.25272C10.8474 4.41547 10.9643 4.63975 10.993 4.883L11 5V9.586L13.707 12.293C13.8863 12.473 13.9905 12.7144 13.9982 12.9684C14.006 13.2223 13.9168 13.4697 13.7488 13.6603C13.5807 13.8508 13.3464 13.9703 13.0935 13.9944C12.8406 14.0185 12.588 13.9454 12.387 13.79L12.293 13.707L9.293 10.707C9.13758 10.5514 9.03776 10.349 9.009 10.131L9 10V5C9 4.73478 9.10536 4.48043 9.29289 4.29289C9.48043 4.10536 9.73478 4 10 4Z" fill="#777777"/>
-                          </svg>
+                <button onClick={() => {
+                  let currentChild = parseInt(eventsContainerRef.current.dataset.currentChild) || 0;
 
-                          {(new Date(event.start_date)).toLocaleTimeString('en-US', {
-                            hour: '2-digit',
-                            minute: '2-digit'
-                          })}
-                        </div>
+                  if (eventsContainerRef.current) {
+                    const nextChild = Math.min(currentChild + 1, eventsContainerRef.current.children.length - 1);
+                    eventsContainerRef.current.children[nextChild].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    eventsContainerRef.current.dataset.currentChild = nextChild;
+                  }
+                }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8.63937 17.2798L14.3994 11.5198L8.63937 5.75977" stroke="black" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
 
-                        <hr />
-
-                        <p>
-                          {event.description}
-                        </p>
-                      </div>
-                    </li>
-                  ))
-                }
-              </ul>
+              </div>
 
               {
                 timeToNextEvent.seconds === null ? null : (
@@ -504,30 +558,51 @@ function HomePage() {
       <section className={styles['HomePageSneakPeek']}>
         <h2>SNEAK PEEK</h2>
 
-        <ul>
+        <ul ref={sneakPeekListRef}>
           <li>
-            <img />
+            <img src="/sneak-peek-image-1.jpg" />
           </li>
           <li>
-            <img />
+            <img src="/sneak-peek-image-2.jpg" />
           </li>
           <li>
-            <img />
+            <img src="/sneak-peek-image-3.jpg" />
           </li>
           <li>
-            <img />
+            <img src="/sneak-peek-image-4.jpg" />
           </li>
           <li>
-            <img />
+            <img src="/sneak-peek-image-5.jpg" />
           </li>
           <li>
-            <img />
+            <img src="/sneak-peek-image-6.jpg" />
           </li>
           <li>
-            <img />
+            <img src="/sneak-peek-image-7.jpg" />
           </li>
           <li>
-            <img />
+            <img src="/sneak-peek-image-8.jpg" />
+          </li>
+          <li>
+            <img src="/sneak-peek-image-9.jpg" />
+          </li>
+          <li>
+            <img src="/sneak-peek-image-10.jpg" />
+          </li>
+          <li>
+            <img src="/sneak-peek-image-11.jpg" />
+          </li>
+          <li>
+            <img src="/sneak-peek-image-12.jpg" />
+          </li>
+          <li>
+            <img src="/sneak-peek-image-13.jpg" />
+          </li>
+          <li>
+            <img src="/sneak-peek-image-14.jpg" />
+          </li>
+          <li>
+            <img src="/sneak-peek-image-15.jpg" />
           </li>
         </ul>
       </section>
