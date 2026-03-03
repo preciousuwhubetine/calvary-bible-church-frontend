@@ -6,10 +6,10 @@
 
 .HomePageGrayBackground {
   background-color: #e8e8e8;
-  height: 70%;
+  height: 45%;
   left: 0;
   position: absolute;
-  top: 20%;
+  top: 42%;
   width: 100%;
   z-index: -1;
 }
@@ -92,7 +92,7 @@
 .HomePageHeroContent h1 {
   color: white;
   font-size: 54px;
-  font-weight: 700;
+  font-weight: 600;
   max-width: 500px;
 }
 
@@ -193,7 +193,7 @@
   justify-content: center;
   margin: 0 auto;
   max-width: var(--content-max-width);
-  padding: 0 20px;
+  padding: 0 20px 100px;
 }
 
 .HomePageSellingPoints ul li {
@@ -244,12 +244,13 @@
 .HomePageLatestSermon {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 60px;
   padding: 100px 20px;
 }
 
 .HomePageLatestSermon h2 {
   font-family: 'Inter', sans-serif;
+  font-size: 32px;
   font-weight: 600;
   text-align: center;
 }
@@ -297,7 +298,7 @@
 
 .HomePageLatestSermon ul li h3 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .HomePageLatestSermon ul li a {
@@ -382,6 +383,7 @@
   align-items: center;
   gap: 8px;
   font-size: 24px;
+  font-weight: 400;
 }
 
 .HomePageServiceTimes h4 svg {
@@ -391,6 +393,7 @@
 
 .HomePageServiceTimes h5 {
   font-size: 24px;
+  font-weight: 400;
 }
 
 .HomePageServiceTimesSunday1 {
@@ -524,7 +527,7 @@
 .HomePageEvents {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 60px;
   margin: 0 auto;
   max-width: var(--content-max-width);
   overflow-x: clip;
@@ -598,9 +601,10 @@
 }
 
 .HomePageEvents ul {
+  border-radius: 8px;
   display: flex;
   gap: 24px;
-  overflow-x: auto;
+  overflow: hidden;
   scrollbar-width: none;
 }
 
@@ -657,7 +661,7 @@
 }
 
 .HomePageEventsCountdown h4 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .HomePageEventsCountdownTimer {
@@ -954,7 +958,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto 100px;
-  max-width: 950px;
+  max-width: 1200px;
   overflow: hidden;
   position: relative;
   padding: 40px;
@@ -1214,6 +1218,10 @@
 }
 
 @media (max-width: 750px) {
+  .HomePageGrayBackground {
+    top: 51%;
+  }
+
   .HomePageHero {
     max-height: 700px;
   }
@@ -1236,7 +1244,8 @@
 
   .HomePageAboutContent {
     gap: 16px;
-    padding: 180px 20px;
+    grid-template-columns: 1fr;
+    padding: 120px 20px 90px;
   }
 
   .HomePageAboutContent svg {
@@ -1256,6 +1265,7 @@
     height: 48px;
     padding: 12px 32px;
     font-size: 14px;
+    grid-column: 1;
     width: max-content;
   }
 
@@ -1288,9 +1298,17 @@
     grid-template-columns: 1fr;
   }
 
+  .HomePageLatestSermon h2 {
+    font-size: 28px;
+  }
+
   .HomePageLatestSermon > div img {
     height: 100%;
     width: 100%;
+  }
+
+  .HomePageLatestSermon h4, .HomePageLatestSermon h3 {
+    padding: 4px 0;
   }
 
   .HomePageEventsCircle {

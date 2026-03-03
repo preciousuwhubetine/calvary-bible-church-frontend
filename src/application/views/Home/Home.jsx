@@ -395,12 +395,12 @@ function HomePage() {
                   const currentChild = parseInt(eventsContainerRef.current.dataset.currentChild) || 0;
                   if (eventsContainerRef.current) {
                     const nextChild = Math.max(currentChild - 1, 0);
-                    eventsContainerRef.current.children[nextChild].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    eventsContainerRef.current.children[nextChild].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                     eventsContainerRef.current.dataset.currentChild = nextChild;
                   }
                 }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M14.4006 17.2798L8.64062 11.5198L14.4006 5.75977" stroke="black" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.4006 17.2798L8.64062 11.5198L14.4006 5.75977" stroke="black" strokeWidth="1.28" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </button>
 
@@ -451,12 +451,12 @@ function HomePage() {
 
                   if (eventsContainerRef.current) {
                     const nextChild = Math.min(currentChild + 1, eventsContainerRef.current.children.length - 1);
-                    eventsContainerRef.current.children[nextChild].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    eventsContainerRef.current.children[nextChild].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                     eventsContainerRef.current.dataset.currentChild = nextChild;
                   }
                 }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M8.63937 17.2798L14.3994 11.5198L8.63937 5.75977" stroke="black" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.63937 17.2798L14.3994 11.5198L8.63937 5.75977" stroke="black" strokeWidth="1.28" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </button>
 

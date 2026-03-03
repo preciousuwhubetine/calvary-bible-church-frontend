@@ -93,7 +93,7 @@ function NewConvertPage() {
 
         <div className={styles['NewConvertPageBeginJourneyLinks']}>
           <svg xmlns="http://www.w3.org/2000/svg" width="438" height="214" viewBox="0 0 438 214" fill="none">
-            <path d="M1.67578 0V87C1.67578 106.054 17.122 121.5 36.1758 121.5H401.676C420.73 121.5 436.176 136.946 436.176 156V213.5" stroke="#FD9F2B" stroke-width="3.34951" stroke-dasharray="6.7 6.7"/>
+            <path d="M1.67578 0V87C1.67578 106.054 17.122 121.5 36.1758 121.5H401.676C420.73 121.5 436.176 136.946 436.176 156V213.5" stroke="#FD9F2B" strokeWidth="3.34951" strokeDasharray="6.7 6.7"/>
           </svg>
 
           <div className={styles['NewConvertPageBeginJourneyLinksNumberOne']}>1</div>
@@ -106,8 +106,8 @@ function NewConvertPage() {
               Fill This Form
 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M3 12L20.5 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M14 5L21 12L14 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 12L20.5 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M14 5L21 12L14 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
           </a>
@@ -119,8 +119,8 @@ function NewConvertPage() {
               Register For Membership Class
 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M3 12L20.5 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M14 5L21 12L14 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 12L20.5 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M14 5L21 12L14 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
           </Link>

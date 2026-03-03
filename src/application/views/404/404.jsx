@@ -12,8 +12,8 @@ function _404() {
         Go back to Home
 
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M2.0013 8H13.668" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M9.33333 3.33332L14 7.99999L9.33333 12.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.0013 8H13.668" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M9.33333 3.33332L14 7.99999L9.33333 12.6667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </Link>
     </div>

@@ -41,7 +41,7 @@ function GroupsPage() {
 
       <section className={styles['GroupsPageIntro']}>
         <svg className={styles['GroupsPageIntroLine']} xmlns="http://www.w3.org/2000/svg" width="1199" height="392" viewBox="0 0 1199 392" fill="none">
-          <path d="M0 109.14H150.22V389H1196V0" stroke="#FD9F2B" strokeWidth="5" stroke-dasharray="10 10"/>
+          <path d="M0 109.14H150.22V389H1196V0" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
         </svg>
 
         <div className={styles['GroupsPageIntroCircle']} />
