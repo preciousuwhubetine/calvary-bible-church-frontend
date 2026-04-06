@@ -49,7 +49,7 @@ function StorePage() {
             </button>
           </div>
 
-          <img src="/store-hero-section-bg.jpg" />
+          <img fetchPriority="high" src="/store-hero-section-bg.jpg" />
         </div>
       </section>
 

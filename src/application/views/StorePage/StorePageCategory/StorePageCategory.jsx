@@ -95,7 +95,7 @@ function StorePageCategory() {
             return store_item.item_type === filter;
           }).map((store_item) => (
             <li key={store_item.id}>
-              <img src={store_item.cover_image} />
+              <img fetchPriority="high" src={store_item.cover_image} />
               <h5>{capitalizeFirstLetter(store_item.item_type)}</h5>
               <h3>{store_item.title}</h3>
               <h4>{store_item.price}</h4>

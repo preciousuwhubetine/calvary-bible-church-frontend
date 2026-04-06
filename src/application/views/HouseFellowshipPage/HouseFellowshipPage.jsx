@@ -22,7 +22,7 @@ function HouseFelllowshipPage() {
       <section className={styles['HouseFelllowshipPageHero']}>
         <div className={styles['HouseFelllowshipPageHeroContent']}>
           <div className={styles['HouseFelllowshipPageHeroCircle']}>
-            <img src="/the-turning-point-circle.png" />
+            <img fetchPriority="high" src="/the-turning-point-circle.png" />
 
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
@@ -50,7 +50,7 @@ function HouseFelllowshipPage() {
                   <h4>Coordinator</h4>
                   <div>
                     <span>
-                      <img src={house_fellowship_centre.coordinator_image} />
+                      <img loading="lazy" src={house_fellowship_centre.coordinator_image} />
                       {house_fellowship_centre.coordinator_name}
                     </span>
 

@@ -72,7 +72,7 @@ function AboutPage() {
             CALVARY BIBLE CHURCH
           </h1>
 
-          <img src="/about-page-hero-image.jpg" />
+          <img fetchPriority="high" src="/about-page-hero-image.jpg" />
         </div>
       </section>
 
@@ -87,7 +87,7 @@ function AboutPage() {
       <section className={styles['AboutPageWelcomeVideo']}>
         <div className={styles['AboutPageWelcomeVideoBackground']} />
         <div className={styles['AboutPageWelcomeVideoRotatedBackground']}>
-          <img className={styles['AboutPageWelcomeVideoBackgroundImage']} src="/logo-dark.png" />
+          <img loading="lazy" className={styles['AboutPageWelcomeVideoBackgroundImage']} src="/logo-dark.png" />
         </div>
 
         <div className={styles['AboutPageWelcomeVideoContainer']}>
@@ -123,8 +123,8 @@ function AboutPage() {
         </div>
 
         <div className={styles['AboutPageBearBurdensImages']}>
-          <img src="/about-page-bear-burdens-1.jpg" />
-          <img src="/about-page-bear-burdens-2.jpg" />
+          <img loading="lazy" src="/about-page-bear-burdens-1.jpg" />
+          <img loading="lazy" src="/about-page-bear-burdens-2.jpg" />
         </div>
       </section>
 
@@ -173,7 +173,7 @@ function AboutPage() {
           {
             branches.map((branch) => (
               <li>
-                <img src={branch.branch_image} />
+                <img loading="lazy" src={branch.branch_image} />
                 <h3>{branch.name}</h3>
               </li>
             ))
@@ -448,7 +448,7 @@ function AboutPage() {
       </section>
 
       <section className={styles['AboutPageWorship']}>
-        <img src="/about-page-section-bg-2.jpg" alt="Worship" />
+        <img loading="lazy" src="/about-page-section-bg-2.jpg" alt="Worship" />
         <div>
           <h2>Those who worship Him, must worship in spirit and truth.</h2>
           <p>
@@ -459,7 +459,7 @@ function AboutPage() {
       </section>
 
       <section className={styles['AboutPageGathering']}>
-        <img src="/about-page-section-bg-1.jpg" alt="Gathering" />
+        <img loading="lazy" src="/about-page-section-bg-1.jpg" alt="Gathering" />
         <div>
           <h2>Where two or three are gathered, He is there.</h2>
           <p>
@@ -469,7 +469,7 @@ function AboutPage() {
       </section>
 
       <section className={styles['AboutPageCoreValues']}>
-        <img src="/about-page-section-bg-2.jpg" alt="Worship" />
+        <img loading="lazy" src="/about-page-section-bg-2.jpg" alt="Worship" />
         <div>
           <h2>Our Core Values</h2>
 
@@ -483,7 +483,7 @@ function AboutPage() {
       </section>
 
       <section className={styles['AboutPageWhatWeDo']}>
-        <img src="/about-page-section-bg-1.jpg" alt="Gathering" />
+        <img loading="lazy" src="/about-page-section-bg-1.jpg" alt="Gathering" />
         <div>
           <h2>What We Do</h2>
           <p>
@@ -494,7 +494,7 @@ function AboutPage() {
 
       <section className={styles['AboutPagePeopleAfterGodsHeart']}>
         <div className={styles['AboutPagePeopleAfterGodsHeartCircle']}>
-          <img src="/the-turning-point-circle.png" />
+          <img loading="lazy" src="/the-turning-point-circle.png" />
 
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
@@ -503,7 +503,7 @@ function AboutPage() {
           </div>
         </div>
 
-        <img src="/about-page-people-after-gods-heart-image.jpg" alt="" />
+        <img loading="lazy" src="/about-page-people-after-gods-heart-image.jpg" alt="" />
 
         <div className={styles['AboutPagePeopleAfterGodsHeartContent']}>
           <h2>A People After God's Heart</h2>

@@ -63,7 +63,7 @@ function NewMemberPage() {
       <section className={styles['NewMemberPageVideoSection']}>
         <div className={styles['NewMemberPageVideoSectionBackground']} />
         <div className={styles['NewMemberPageVideoSectionRotatedBackground']}>
-          <img className={styles['NewMemberPageVideoSectionBackgroundImage']} src="/logo-dark.png" />
+          <img fetchPriority="high" className={styles['NewMemberPageVideoSectionBackgroundImage']} src="/logo-dark.png" />
         </div>
 
         <h1>
@@ -100,7 +100,7 @@ function NewMemberPage() {
           <div className={styles['NewMemberPageCommunityLinksNumberTwo']}>2</div>
 
           <a href="/">
-            <img src="/new-page-fill-form-link-bg.jpg" />
+            <img loading="lazy" src="/new-page-fill-form-link-bg.jpg" />
 
             <span>
               Fill This Form
@@ -113,7 +113,7 @@ function NewMemberPage() {
           </a>
 
           <Link to="/membership-class">
-            <img src="/new-page-membership-class-link-bg.jpg" />
+            <img loading="lazy" src="/new-page-membership-class-link-bg.jpg" />
 
             <span>
               Register For Membership Class
@@ -130,7 +130,7 @@ function NewMemberPage() {
       <section className={styles['NewMemberPagePresence']}>
         <div className={styles['NewMemberPagePresenceContent']}>
           <div className={styles['NewMemberPagePresenceCircle']}>
-            <img src="/the-turning-point-circle.png" />
+            <img loading="lazy" src="/the-turning-point-circle.png" />
 
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">

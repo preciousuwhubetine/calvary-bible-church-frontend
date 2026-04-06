@@ -26,7 +26,7 @@ function NewPage() {
             YOU'RE NEW?
           </h1>
 
-          <img src="/new-page-hero-image.jpg" />
+          <img fetchPriority="high" src="/new-page-hero-image.jpg" />
         </div>
       </section>
 

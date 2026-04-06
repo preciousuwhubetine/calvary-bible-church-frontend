@@ -9,7 +9,7 @@ function GivePage() {
       <section className={styles['GivePageHero']}>
         <div className={styles['GivePageHeroContent']}>
           <div className={styles['GivePageHeroCircle']}>
-            <img src="/the-turning-point-circle.png" />
+            <img loading="lazy" src="/the-turning-point-circle.png" />
 
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
@@ -22,7 +22,7 @@ function GivePage() {
             Give
           </h1>
 
-          <img />
+          <img loading="lazy" />
         </div>
       </section>
 
@@ -55,7 +55,7 @@ function GivePage() {
           currentView === 'naira' && (
             <ul>
               <li>
-                <img src="/gtbank.jpg" />
+                <img loading="lazy" src="/gtbank.jpg" />
 
                 <div>
                   <h3>0016453018</h3>
@@ -70,7 +70,7 @@ function GivePage() {
               </li>
 
               <li>
-                <img src="/zenith.png" />
+                <img loading="lazy" src="/zenith.png" />
 
                 <div>
                   <h3>1010342016</h3>
@@ -85,7 +85,7 @@ function GivePage() {
               </li>
 
               <li>
-                <img src="/fbn.jpg" />
+                <img loading="lazy" src="/fbn.jpg" />
 
                 <div>
                   <h3>2018457003</h3>
@@ -100,7 +100,7 @@ function GivePage() {
               </li>
 
               <li>
-                <img src="stanbic-bank.png" />
+                <img loading="lazy" src="stanbic-bank.png" />
 
                 <div>
                   <h3>0015067615</h3>
@@ -117,7 +117,7 @@ function GivePage() {
               <li>
                 <div>
                   <h3>Power Partners</h3>
-                  <img src="/fbn.jpg" />
+                  <img loading="lazy" src="/fbn.jpg" />
                 </div>
 
                 <div>
@@ -135,7 +135,7 @@ function GivePage() {
               <li>
                 <div>
                   <h3>Club 50</h3>
-                  <img src="/fcmb.jpg" />
+                  <img loading="lazy" src="/fcmb.jpg" />
                 </div>
 
                 <div>
@@ -157,7 +157,7 @@ function GivePage() {
           currentView === 'domiciliary' && (
             <ul>
               <li>
-                <img src="/gtbank.jpg" />
+                <img loading="lazy" src="/gtbank.jpg" />
 
                 <div>
                   <h3>0016453118</h3>
@@ -174,7 +174,7 @@ function GivePage() {
               </li>
 
               <li>
-                <img src="/zenith.png" />
+                <img loading="lazy" src="/zenith.png" />
 
                 <div>
                   <h3>0016453132</h3>
@@ -200,7 +200,7 @@ function GivePage() {
               <circle cx="46.5" cy="46.5" r="44" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
             </svg>
 
-            <img className={styles['GiveOnlineHands']} src="/giving-hands.svg" />
+            <img loading="lazy" className={styles['GiveOnlineHands']} src="/giving-hands.svg" />
 
             <div>
               <h2>Give Online</h2>
@@ -209,7 +209,7 @@ function GivePage() {
 
               <button onClick={() => alert('Coming soon!')}>
                 <span>Pay With</span>
-                <img src="/paystack.png" />
+                <img loading="lazy" src="/paystack.png" />
               </button>
             </div>
           </div>

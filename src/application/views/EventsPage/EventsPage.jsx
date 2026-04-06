@@ -53,7 +53,7 @@ function EventsPage() {
             events.length === 0 ? null : (
               Array.from(events).sort((a, b) => new Date(a.start_date) - new Date(b.start_date)).map((event) => (
                 <li key={event.id}>
-                  <img src={event.cover_image} />
+                  <img loading="lazy" src={event.cover_image} />
 
                   <div>
                     <h3>{event.title}</h3>

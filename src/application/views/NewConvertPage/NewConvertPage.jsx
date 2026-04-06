@@ -63,7 +63,7 @@ function NewConvertPage() {
       <section className={styles['NewConvertPageVideoSection']}>
         <div className={styles['NewConvertPageVideoSectionBackground']} />
         <div className={styles['NewConvertPageVideoSectionRotatedBackground']}>
-          <img className={styles['NewConvertPageVideoSectionBackgroundImage']} src="/logo-dark.png" />
+          <img fetchPriority="high" className={styles['NewConvertPageVideoSectionBackgroundImage']} src="/logo-dark.png" />
         </div>
 
         <h1>
@@ -100,7 +100,7 @@ function NewConvertPage() {
           <div className={styles['NewConvertPageBeginJourneyLinksNumberTwo']}>2</div>
 
           <a href="/">
-            <img src="/new-page-fill-form-link-bg.jpg" />
+            <img loading="lazy" src="/new-page-fill-form-link-bg.jpg" />
 
             <span>
               Fill This Form
@@ -113,7 +113,7 @@ function NewConvertPage() {
           </a>
 
           <Link to="/membership-class">
-            <img src="/new-page-membership-class-link-bg.jpg" />
+            <img loading="lazy" src="/new-page-membership-class-link-bg.jpg" />
 
             <span>
               Register For Membership Class

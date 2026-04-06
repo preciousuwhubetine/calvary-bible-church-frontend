@@ -22,7 +22,7 @@ function GroupsPage() {
       <section className={styles['GroupsPageHero']}>
         <div className={styles['GroupsPageHeroContent']}>
           <div className={styles['GroupsPageHeroCircle']}>
-            <img src="/the-turning-point-circle.png" />
+            <img fetchPriority="high" src="/the-turning-point-circle.png" />
 
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
@@ -63,7 +63,7 @@ function GroupsPage() {
         {
           departments.map((department) => (
             <li key={department.id} className={styles['GroupsPageGroup']}>
-              <img src={department.image_url} alt="" />
+              <img loading="lazy" src={department.image_url} alt="" />
 
               <div className={styles['GroupsPageGroupContent']}>
                 <h3>{department.name}</h3>
