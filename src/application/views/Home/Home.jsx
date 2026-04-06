@@ -28,6 +28,7 @@ function HomePage() {
 
   const [showPrayerRequestPopup, setShowPrayerRequestPopup] = useState(false);
   const [showTestimonyPopup, setShowTestimonyPopup] = useState(false);
+  const [heroSectionVideoLoaded, setHeroSectionVideoLoaded] = useState(false);
 
   useEffect(() => {
     if (location.hash) {
@@ -165,10 +166,17 @@ function HomePage() {
       }
 
       <section className={styles['HomePageHero']}>
+        {
+          !heroSectionVideoLoaded && (
+            <img className={styles['HomePageHeroFallbackImage']} src="/homepage-hero-section-fallback-image.jpg" alt="" />
+          )
+        }
         <video
           autoPlay
           className={styles['HomePageHeroVideo']}
           loop
+          playsInline
+          onCanPlay={() => setHeroSectionVideoLoaded(true)}
           muted
         >
           <source src="/videos/homepage-hero-section-video.mp4" type="video/mp4" />

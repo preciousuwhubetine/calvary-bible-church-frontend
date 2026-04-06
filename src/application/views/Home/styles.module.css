@@ -49,6 +49,18 @@
   object-position: center;
   position: absolute;
   width: 100%;
+  z-index: 0;
+}
+
+.HomePageHeroFallbackImage {
+  background-color: black;
+  filter: brightness(0.3);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .HomePageHeroContent {
@@ -60,6 +72,7 @@
   padding: 100px 20px;
   position: relative;
   width: 100%;
+  z-index: 2;
 }
 
 .HomePageHeroCircle {
