@@ -12,6 +12,7 @@ import {
 } from '../../../services/api/v1/store_items'
 
 import { capitalizeFirstLetter } from '../../../libraries/string';
+import Loader from '../../../components/Loader/Loader';
 
 function StorePageCategory() {
   const dispatch = useDispatch();
@@ -20,10 +21,13 @@ function StorePageCategory() {
 
   const {
     store_item_category,
+
+    loading: store_item_category_loading,
   } = useSelector((state) => state.store_item_categories);
 
   const {
     store_items,
+    loading: store_items_loading,
   } = useSelector((state) => state.store_items);
 
   const {
@@ -65,16 +69,24 @@ function StorePageCategory() {
                 Books
               </button>
             </li>
-            <li>
+            {/* <li>
               <button className={filter === 'liked' ? styles['StorePageCategoryHeaderButtonActive'] : ''} onClick={() => setFilter('liked')}>
                 Liked
               </button>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
         <div />
       </div>
+
+      {
+        (store_item_category_loading || store_items_loading) && (
+          <div className={styles['StorePageCategoryLoader']}>
+            <Loader size={40} />
+          </div>
+        )
+      }
 
       <ul className={styles['StorePageCategoryItems']}>
         {
@@ -89,11 +101,11 @@ function StorePageCategory() {
               <h4>{store_item.price}</h4>
               <div>
                 <button>Add to cart</button>
-                <button>
+                {/* <button>
                   <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                     <path d="M8.12533 4.33399C4.8347 4.33399 2.16699 7.00169 2.16699 10.2923C2.16699 16.2507 9.20866 21.6673 13.0003 22.9272C16.792 21.6673 23.8337 16.2507 23.8337 10.2923C23.8337 7.00169 21.1659 4.33399 17.8753 4.33399C15.8603 4.33399 14.0782 5.33444 13.0003 6.86574C12.4508 6.08324 11.7209 5.44462 10.8723 5.00393C10.0237 4.56324 9.0815 4.33345 8.12533 4.33399Z" stroke="#212121" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                </button>
+                </button> */}
               </div>
               <p>{store_item.description}</p>
             </li>

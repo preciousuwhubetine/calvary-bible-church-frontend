@@ -6,11 +6,13 @@ import styles from './styles.module.css'
 import {
   index as store_item_categories_index,
 } from '../../../services/api/v1/store_item_categories'
+import Loader from '../../../components/Loader/Loader';
 
 function StorePageCategories() {
   const dispatch = useDispatch();
 
   const {
+    loading: store_item_categories_loading,
     store_item_categories,
   } = useSelector((state) => state.store_item_categories);
 
@@ -27,12 +29,16 @@ function StorePageCategories() {
           <svg className={styles['StorePageCategoriesLine']} xmlns="http://www.w3.org/2000/svg" width="994" height="5" viewBox="0 0 994 5" fill="none">
             <path d="M0 2.5H993.5" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
           </svg>
-
-          <svg className={styles['StorePageCategoriesCircle']} xmlns="http://www.w3.org/2000/svg" width="94" height="185" viewBox="0 0 94 185" fill="none">
-            <circle cx="92.5" cy="92.5" r="90" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
-          </svg>
         </div>
       </div>
+
+      {
+        store_item_categories_loading && (
+          <div className={styles['StorePageCategoriesLoader']}>
+            <Loader size={40} />
+          </div>
+        )
+      }
 
       <ul>
         <li className={styles['StorePageCategoriesBackground']} />

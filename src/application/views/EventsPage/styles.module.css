@@ -74,6 +74,13 @@
   width: 100%;
 }
 
+.EventsPageContentLoading {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 .EventsPageContent ul {
   display: flex;
   flex-direction: column;

@@ -35,6 +35,13 @@
   color: white;
 }
 
+.StorePageCategoryLoader {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
 .StorePageCategoryItems {
   display: grid;
   gap: 40px;
@@ -81,7 +88,7 @@
   align-items: center;
   display: grid;
   gap: 8px;
-  grid-template-columns: 1fr 50px;
+  /* grid-template-columns: 1fr 50px; */
 }
 
 .StorePageCategoryItems li div button:first-child {
@@ -94,7 +101,7 @@
   padding: 12px;
 }
 
-.StorePageCategoryItems li div button:last-child {
+/* .StorePageCategoryItems li div button:last-child {
   align-items: center;
   background: none;
   border: 1px solid #929292;
@@ -112,7 +119,7 @@
 .StorePageCategoryItems li div button:last-child svg {
   width: 20px;
   height: 20px;
-}
+} */
 
 .StorePageCategoryItems li p {
   color: #7d7d7d;

@@ -5,6 +5,7 @@ import styles from './styles.module.css'
 import {
   index as events_index,
 } from '../../services/api/v1/events'
+import Loader from '../../components/Loader/Loader';
 
 function EventsPage() {
   const dispatch = useDispatch();
@@ -43,7 +44,7 @@ function EventsPage() {
         {
           events_index_loading ? (
             <div className={styles['EventsPageContentLoading']}>
-              <p>Loading events...</p>
+              <Loader size={40} />
             </div>
           ) : null
         }
