@@ -591,6 +591,14 @@
   padding: 20px;
 }
 
+.HomePageEventsLoading {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 .HomePageEventsContent button {
   align-items: center;
   background-color: white;
@@ -1057,8 +1065,9 @@
   font-size: 16px;
   font-weight: 500;
   gap: 8px;
+  height: 40px;
   justify-content: center;
-  padding: 16px 24px;
+  padding: 0 24px;
 }
 
 .HomePageFeedback form button:disabled {

@@ -267,6 +267,15 @@
   height: 100%;
 }
 
+.AboutPageBranchesLoading {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
 .AboutPageBranches ul {
   display: flex;
   gap: 24px;

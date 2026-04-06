@@ -11,6 +11,8 @@ function EventsPage() {
 
   const {
     events,
+
+    loading: events_index_loading,
   } = useSelector((state) => state.events);
 
   useEffect(() => {
@@ -38,6 +40,13 @@ function EventsPage() {
       </section>
 
       <section className={styles['EventsPageContent']}>
+        {
+          events_index_loading ? (
+            <div className={styles['EventsPageContentLoading']}>
+              <p>Loading events...</p>
+            </div>
+          ) : null
+        }
         <ul>
           {
             events.length === 0 ? null : (

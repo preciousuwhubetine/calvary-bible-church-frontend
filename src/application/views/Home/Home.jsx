@@ -17,6 +17,7 @@ import {
 
 import PrayerRequestPopup from '../../components/Popups/PrayerRequest/PrayerRequest';
 import TestimonyPopup from '../../components/Popups/Testimony/Testimony';
+import Loader from '../../components/Loader/Loader';
 
 function HomePage() {
   const dispatch = useDispatch();
@@ -66,6 +67,8 @@ function HomePage() {
 
   const {
     events,
+
+    loading: events_index_loading,
   } = useSelector((state) => state.events);
 
   const {
@@ -424,13 +427,25 @@ function HomePage() {
         </div>
 
         {
-          events.length === 0 ? (
+          events_index_loading && (
+            <div className={styles['HomePageEventsLoading']}>
+              <Loader size={40} />
+            </div>
+          )
+        }
+
+        {
+          !events_index_loading && events.length === 0 && (
             <div className={styles['HomePageEventsNoEvents']}>
               <h3>
                 No upcoming events at the moment. Check back later!
               </h3>
             </div>
-          ) : (
+          )
+        }
+
+        {
+          !events_index_loading && events.length > 0 && (
             <>
               <svg className={styles['HomePageEventsLine']} xmlns="http://www.w3.org/2000/svg" width="1439" height="420" viewBox="0 0 1439 420" fill="none">
                 <path d="M-40 2.5H1166.5V417.5H1438.5" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
@@ -756,7 +771,7 @@ function HomePage() {
           </label>
 
           <button disabled={feedbackCreateLoading} type="submit">
-            {feedbackCreateLoading ? 'Submitting...' : 'Submit'}
+            {feedbackCreateLoading ? <Loader size={20} /> : 'Submit'}
           </button>
         </form>
       </section>

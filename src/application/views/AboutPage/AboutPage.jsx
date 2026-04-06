@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   index as branches_index,
 } from '../../services/api/v1/branches'
+import Loader from '../../components/Loader/Loader';
 
 function AboutPage() {
   const location = useLocation();
@@ -79,7 +80,7 @@ function AboutPage() {
         <h2>Overview</h2>
 
         <p>
-          Calvary Bible church is a vibrant Bible-Centered church devoted to proclaiming Christ’s finished work at Calvary and nurturing transformative faith in everyday life. We are deeply rooted in the Word of God as brethren gather together for powerful worship, life-changing house fellowships and communion with the Holy Spirit. Our Church Shift teams carry the Gospel into prisons, hospitals and neighborhoods where it is needed most – reaching  the unreached with the light of Christ. We are a people who believe in a wholesome expression of the gospel, ensuring that faith is expressed in word and in deed. At Calvary Bible Church, every believer belongs, grows and has a testimony that endures in Christ. 
+          Calvary Bible church is a vibrant Bible-Centered church devoted to proclaiming Christ’s finished work at Calvary and nurturing transformative faith in everyday life. We are deeply rooted in the Word of God as brethren gather together for powerful worship, life-changing house fellowships and communion with the Holy Spirit. Our Church Shift teams carry the Gospel into prisons, hospitals and neighborhoods where it is needed most – reaching the unreached with the light of Christ. We are a people who believe in a wholesome expression of the gospel, ensuring that faith is expressed in word and in deed. At Calvary Bible Church, every believer belongs, grows and has a testimony that endures in Christ.
         </p>
       </section>
 
@@ -113,11 +114,11 @@ function AboutPage() {
 
         <div className={styles['AboutPageBearBurdensText']}>
           <h2>
-            Bear one another's burdens, and so fulfill the law of Christ. 
+            Bear one another's burdens, and so fulfill the law of Christ.
           </h2>
 
           <p>
-            At Calvary Bible Church, prayer is our first response and our steadfast anchor. We believe in standing in the gap for each other in love, and seeking God’s face in every need and desire. 
+            At Calvary Bible Church, prayer is our first response and our steadfast anchor. We believe in standing in the gap for each other in love, and seeking God’s face in every need and desire.
           </p>
         </div>
 
@@ -156,9 +157,9 @@ function AboutPage() {
 
         <ul ref={branchesListRef}>
           {
-            branches_index_loading && (
+            branches_index_loading && branches.length === 0 && (
               <div className={styles['AboutPageBranchesLoading']}>
-                <p>Loading branches...</p>
+                <Loader size={40} />
               </div>
             )
           }

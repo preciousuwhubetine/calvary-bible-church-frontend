@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 import {
   create as prayer_requests_create,
 } from '../../../services/api/v1/prayer_requests'
+import Loader from '../../Loader/Loader'
 
 function PrayerRequestPopup({
   close
@@ -35,7 +36,7 @@ function PrayerRequestPopup({
         <div className={styles['PrayerRequestPopupHeader']}>
           <div>
             <h2>Submit Prayer Request</h2>
-            <p>Share your prayer requests</p>
+            <p>Share your prayer request</p>
           </div>
 
           <button onClick={close}>
@@ -59,11 +60,10 @@ function PrayerRequestPopup({
           <textarea id="body" name="body" required placeholder="Your prayer request" rows={6}></textarea>
 
           <button type="submit" disabled={createLoading}>
-            {createLoading ? 'Submitting...' : 'Submit Request'}
+            {createLoading ? <Loader size={20} /> : 'Submit Request'}
           </button>
         </form>
       </div>
-
     </div>
   )
 }

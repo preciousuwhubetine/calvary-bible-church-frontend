@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 import {
   create as testimonies_create,
 } from '../../../services/api/v1/testimonies'
+import Loader from '../../Loader/Loader'
 
 function TestimonyPopup({
   close
@@ -59,7 +60,7 @@ function TestimonyPopup({
           <textarea id="body" name="body" required placeholder="Your testimony" rows={6}></textarea>
 
           <button type="submit" disabled={createLoading}>
-            {createLoading ? 'Submitting...' : 'Submit Testimony'}
+            {createLoading ? <Loader size={20} /> : 'Submit Testimony'}
           </button>
         </form>
       </div>
