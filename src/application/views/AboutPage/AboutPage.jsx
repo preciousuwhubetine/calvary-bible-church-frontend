@@ -1,10 +1,24 @@
 import { Link, useLocation } from 'react-router-dom'
 import styles from './styles.module.css'
 import videojs from 'video.js';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
+import {
+  index as branches_index,
+} from '../../services/api/v1/branches'
 
 function AboutPage() {
   const location = useLocation();
+  const dispatch = useDispatch();
+
+  const branchesListRef = useRef(null);
+
+  const {
+    branches,
+
+    loading: branches_index_loading,
+  } = useSelector((store) => store.branches);
 
   useEffect(() => {
     if (location.hash) {
@@ -30,6 +44,10 @@ function AboutPage() {
       }
     };
   }, [location]);
+
+  useEffect(() => {
+    dispatch(branches_index({}))  ;
+  }, [dispatch]);
 
   return (
     <div className={styles['AboutPage']}>
@@ -116,7 +134,7 @@ function AboutPage() {
           <p>Join us at our branches or online as we worship, disciple, and serve together.</p>
 
           <div className={styles['AboutPageBranchesHeaderControls']}>
-            <button>
+            <button onClick={() => branchesListRef.current.scrollBy({ left: -300, behavior: 'smooth' })}>
               <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
                 <path d="M38.6394 23.0006C38.6394 31.6486 31.6474 38.6406 22.9994 38.6406C14.3514 38.6406 7.35938 31.6486 7.35938 23.0006C7.35938 14.3526 14.3514 7.36062 22.9994 7.36062C31.6474 7.36062 38.6394 14.3526 38.6394 23.0006ZM9.19938 23.0006C9.19938 30.6366 15.3634 36.8006 22.9994 36.8006C30.6354 36.8006 36.7994 30.6366 36.7994 23.0006C36.7994 15.3646 30.6354 9.20062 22.9994 9.20062C15.3634 9.20062 9.19938 15.3646 9.19938 23.0006Z" fill="black"/>
                 <path d="M24.5636 15.3638L16.9276 22.9998L24.5636 30.6358L23.2756 31.9238L14.3516 22.9998L23.2756 14.0758L24.5636 15.3638Z" fill="black"/>
@@ -124,7 +142,7 @@ function AboutPage() {
               </svg>
             </button>
 
-            <button>
+            <button onClick={() => branchesListRef.current.scrollBy({ left: 300, behavior: 'smooth' })}>
               <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
                 <path d="M7.36062 23.0006C7.36062 31.6486 14.3526 38.6406 23.0006 38.6406C31.6486 38.6406 38.6406 31.6486 38.6406 23.0006C38.6406 14.3526 31.6486 7.36062 23.0006 7.36062C14.3526 7.36062 7.36062 14.3526 7.36062 23.0006ZM36.8006 23.0006C36.8006 30.6366 30.6366 36.8006 23.0006 36.8006C15.3646 36.8006 9.20062 30.6366 9.20062 23.0006C9.20062 15.3646 15.3646 9.20062 23.0006 9.20062C30.6366 9.20062 36.8006 15.3646 36.8006 23.0006Z" fill="black"/>
                 <path d="M21.4364 15.3638L29.0724 22.9998L21.4364 30.6358L22.7244 31.9238L31.6484 22.9998L22.7244 14.0758L21.4364 15.3638Z" fill="black"/>
@@ -136,39 +154,29 @@ function AboutPage() {
 
         <div className={styles['AboutPageBranchesBackground']} />
 
-        <ul>
-          <li>
-            <img />
-            <h3>Branch Name</h3>
-          </li>
-          <li>
-            <img />
-            <h3>Branch Name</h3>
-          </li>
-          <li>
-            <img />
-            <h3>Branch Name</h3>
-          </li>
-          <li>
-            <img />
-            <h3>Branch Name</h3>
-          </li>
-          <li>
-            <img />
-            <h3>Branch Name</h3>
-          </li>
-          <li>
-            <img />
-            <h3>Branch Name</h3>
-          </li>
-          <li>
-            <img />
-            <h3>Branch Name</h3>
-          </li>
-          <li>
-            <img />
-            <h3>Branch Name</h3>
-          </li>
+        <ul ref={branchesListRef}>
+          {
+            branches_index_loading && (
+              <div className={styles['AboutPageBranchesLoading']}>
+                <p>Loading branches...</p>
+              </div>
+            )
+          }
+          {
+            !branches_index_loading && branches.length === 0 && (
+              <div className={styles['AboutPageBranchesNoData']}>
+                <p>No branches available.</p>
+              </div>
+            )
+          }
+          {
+            branches.map((branch) => (
+              <li>
+                <img src={branch.branch_image} />
+                <h3>{branch.name}</h3>
+              </li>
+            ))
+          }
         </ul>
       </section>
 
