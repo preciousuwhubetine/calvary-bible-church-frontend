@@ -1439,6 +1439,10 @@
 }
 
 @media (max-width: 500px) {
+  .HomePageHeroCircle {
+    right: 20%;
+  }
+  
   .HomePageLatestSermon ul li h3 {
     font-size: 20px;
   }
