@@ -91,24 +91,18 @@
 }
 
 .NewConvertPageVideo {
-  background-color: black;
   border-radius: 16px;
-  height: max-content;
+  height: 600px;
   margin: 0 auto;
-  max-width: var(--content-max-width);
-  min-height: 500px;
+  max-width: calc(var(--content-max-width) - 40px);
   overflow: hidden;
+  position: relative;
   width: 100%;
 }
 
 .NewConvertPageVideo video {
-  height: 100%;
-  left: 50% !important;
   object-fit: cover;
-  object-position: center;
-  position: absolute !important;
-  transform: translateX(-49.25%);
-  width: 110%;
+  object-position: center top;
 }
 
 .NewConvertPageCommunity {
@@ -294,4 +288,10 @@
 
 .NewConvertPageFAQ ul li div:last-child p {
   overflow: hidden;
+}
+
+@media (max-width: 650px) {
+  .NewConvertPageVideo {
+    height: 300px;
+  }
 }

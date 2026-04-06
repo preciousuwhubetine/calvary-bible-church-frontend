@@ -33,7 +33,7 @@ function NewMemberPage() {
     let player;
 
     try {
-      player = videojs("welcome-video-player");
+      player = videojs("new-member-video-player");
     } catch (error) {
       console.error("Error initializing video player:", error);
     }
@@ -75,7 +75,7 @@ function NewMemberPage() {
             className="video-js vjs-theme-forest"
             controls
             data-setup='{}'
-            id="welcome-video-player"
+            id="new-member-video-player"
             preload="auto"
           >
             <source src="/videos/welcome-video.mp4" type="video/mp4" />

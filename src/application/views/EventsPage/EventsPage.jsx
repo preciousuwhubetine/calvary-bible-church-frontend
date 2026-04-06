@@ -33,7 +33,7 @@ function EventsPage() {
             <input placeholder="Search for an event" />
           </div>
 
-          <img src="" />
+          <img src={null} />
         </div>
       </section>
 

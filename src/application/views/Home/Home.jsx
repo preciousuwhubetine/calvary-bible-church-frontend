@@ -11,12 +11,22 @@ import {
   index as past_sermons_index,
 } from '../../services/api/v1/past_sermons'
 
+import {
+  create as feedbacks_create,
+} from '../../services/api/v1/feedbacks'
+
+import PrayerRequestPopup from '../../components/Popups/PrayerRequest/PrayerRequest';
+import TestimonyPopup from '../../components/Popups/Testimony/Testimony';
+
 function HomePage() {
   const dispatch = useDispatch();
   const location = useLocation();
 
   const eventsContainerRef = useRef(null);
   const sneakPeekListRef = useRef(null);
+
+  const [showPrayerRequestPopup, setShowPrayerRequestPopup] = useState(false);
+  const [showTestimonyPopup, setShowTestimonyPopup] = useState(false);
 
   useEffect(() => {
     if (location.hash) {
@@ -32,6 +42,9 @@ function HomePage() {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const container = sneakPeekListRef.current
+
+      if (!container) return;
+
       const speed = 1.2;
 
       const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -59,6 +72,10 @@ function HomePage() {
     past_sermons,
   } = useSelector((state) => state.past_sermons);
 
+  const {
+    createLoading: feedbackCreateLoading,
+  } = useSelector((state) => state.feedbacks);
+
   const [timeToNextEvent, setTimeToNextEvent] = useState({
     message: null,
     days: null,
@@ -66,6 +83,23 @@ function HomePage() {
     minutes: null,
     seconds: null,
   });
+
+  const handleFeedbackFormSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    const data = Object.fromEntries(formData.entries());
+
+    dispatch(feedbacks_create({
+      feedback: data
+    })).then(() => {
+      alert('Feedback submitted successfully!')
+
+      e.target.reset();
+    }).catch(() => {
+      alert('Failed to submit feedback. Please try again.')
+    })
+  };
 
   useEffect(() => {
     dispatch(events_index({
@@ -119,6 +153,14 @@ function HomePage() {
 
   return (
     <div className={styles['HomePage']}>
+      {
+        showPrayerRequestPopup && <PrayerRequestPopup close={() => setShowPrayerRequestPopup(false)} />
+      }
+
+      {
+        showTestimonyPopup && <TestimonyPopup close={() => setShowTestimonyPopup(false)} />
+      }
+
       <section className={styles['HomePageHero']}>
         <video
           autoPlay
@@ -354,7 +396,7 @@ function HomePage() {
             Rehoboth Multi-Purpose Hall, Calvary Bus Stop, Ikotun, 257 Ikotun - Idimu Rd, Ikotun, Lagos
           </h2>
 
-          <a href="#">
+          <a href="https://maps.app.goo.gl/NpgPGhLSRfodkWmb9" target="_blank">
             Find us on Google Maps
 
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -556,9 +598,9 @@ function HomePage() {
 
             <p>Prayer is not our last resort—it is our first response. “Call to Me and I will answer you” (Jeremiah 33:3). When we pray, God answers in love, in power, and in time.</p>
 
-            <Link to="/">
+            <button onClick={() => setShowPrayerRequestPopup(true)}>
               Submit Prayer Request
-            </Link>
+            </button>
           </div>
         </div>
       </section>
@@ -626,9 +668,9 @@ function HomePage() {
               Pastor Olumide Emmanuel has been the heart and soul of Calvary Bible Church for over 35 years. As the founding Overseer, he has transformed a small gathering into a vibrant, Bible-centered community where members are inspired to live out their faith as true value creators. He is a prolific author with more than 100 books to his name, and an esteemed speaker in demand globally. His teachings emphasize practical applications of faith, encouraging people to become resilient, purpose-driven leaders who address real-world challenges with integrity and hope. Under his leadership, Calvary Bible Church thrives as a beacon of light in the city. Pastor Emmanuel continues to foster a culture of empowerment and growth, equipping each member to fulfill their God-given purpose and make a meaningful impact in their communities.
             </p>
 
-            <a href="/leadership">
+            <Link to="/leadership">
               See All Our Leaders
-            </a>
+            </Link>
           </div>
 
           <img src="/homepage-leadership-overseers-image.jpg" />
@@ -674,7 +716,9 @@ function HomePage() {
           </li>
         </ul>
 
-        <button>Share Your Testimony</button>
+        <button onClick={() => setShowTestimonyPopup(true)}>
+          Share Your Testimony
+        </button>
       </section>
 
       <section className={styles['HomePageFeedback']}>
@@ -690,7 +734,7 @@ function HomePage() {
           </h2>
         </div>
 
-        <form>
+        <form onSubmit={handleFeedbackFormSubmit}>
           <div>
             <h3>FEEDBACK FORM</h3>
             <p>Share your feedback</p>
@@ -698,20 +742,22 @@ function HomePage() {
 
           <label>
             Name
-            <input type="text" placeholder="Name" />
+            <input name="name" type="text" placeholder="Name" required />
           </label>
 
           <label>
             Email
-            <input type="email" placeholder="Email" />
+            <input name="email" type="email" placeholder="Email" required />
           </label>
 
           <label>
             Feedback
-            <textarea rows={10} />
+            <textarea name="comments" required rows={10} />
           </label>
 
-          <button type="submit">Submit</button>
+          <button disabled={feedbackCreateLoading} type="submit">
+            {feedbackCreateLoading ? 'Submitting...' : 'Submit'}
+          </button>
         </form>
       </section>
     </div>

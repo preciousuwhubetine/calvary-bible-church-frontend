@@ -1,4 +1,6 @@
 .Header {
+  max-height: 100vh;
+  overflow: auto;
   position: fixed;
   top: 0;
   transition: 0.5s transform ease-in-out, 0.2s background-color ease-in-out;
@@ -24,6 +26,18 @@
 
 .HeaderFilled .HeaderLogoWhite {
   display: none;
+}
+
+.HeaderDark {
+  background-color: black;
+}
+
+.HeaderDark .HeaderLogoDark {
+  display: none;
+}
+
+.HeaderDark .HeaderLogoWhite {
+  display: block;
 }
 
 .HeaderContent {
@@ -95,12 +109,110 @@
   padding: 8px 26px;
 }
 
-.Header nav ul li button svg {
+.Header nav button svg {
   width: 16px;
+  height: 16px;
 }
 
 .Header nav ul li .HeaderLinkActive span{
   background-color: #fd9f2b;
+}
+
+.HeaderMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 60px 20px 60px 20px;
+}
+
+.HeaderMenuLinks {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.HeaderMenuLinks div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 20%;
+}
+
+.HeaderMenuLinks div h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.HeaderMenuLinks div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.HeaderMenuLinks div ul li a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.HeaderMenuSlogan {
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.HeaderMenuSlogan h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.HeaderMenuSlogan p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.HeaderMenuSocials ul {
+  display: flex;
+  gap: 16px;
+}
+
+.HeaderMenuSocials ul li a {
+  align-items: center;
+  background-color: #fd9f2b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+.HeaderMenuSocials ul li a svg {
+  height: 24px;
+  width: 24px;
+}
+
+.HeaderMenuSocials ul li:nth-child(3) a svg {
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 1200px) {
+  .HeaderMenuLinks {
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: flex-start;
+  }
+
+  .HeaderMenuLinks div {
+    width: 30%;
+  }
 }
 
 @media (max-width: 950px) {
@@ -137,7 +249,50 @@
     fill: white;
   }
 
+  .HeaderDark nav button {
+    background-color: white;
+    color: black;
+  }
+
+  .HeaderDark nav button svg path {
+    fill: black;
+  }
+
   .Header nav button svg {
     width: 16px;
+  }
+}
+
+@media (max-width: 750px) {
+  .HeaderMenu {
+    padding: 64px 20px 20px 20px;
+  }
+
+  .HeaderMenuLinks {
+    row-gap: 64px;
+  }
+
+  .HeaderMenuLinks div {
+    width: 40%;
+  }
+
+  .HeaderMenuSlogan {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .HeaderMenuSlogan h3 {
+    font-size: 28px;
+  }
+
+  .HeaderMenuSlogan p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .HeaderMenuLinks div {
+    width: 100%;
   }
 }
