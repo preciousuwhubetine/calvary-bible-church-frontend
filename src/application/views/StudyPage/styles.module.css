@@ -47,7 +47,6 @@
   scroll-margin-top: 120px;
 }
 
-.StudyPageContentDevotional,
 .StudyPageContentBible {
   display: flex;
   flex-direction: column;
@@ -110,28 +109,6 @@
   color: white;
 }
 
-.StudyPageContentDevotionalMain {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.StudyPageContentDevotionalMainHeader {
-  border-bottom: 5px dashed #fd9f2b;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding-bottom: 16px;
-}
-
-.StudyPageContentDevotionalMainHeader p {
-  font-size: 14px;
-}
-
-.StudyPageContentDevotionalMainHeader h2 {
-  font-size: 40px;
-}
-
 .StudyPageContentFooter {
   align-items: center;
   display: flex;
@@ -153,55 +130,4 @@
 .StudyPageContentFooter button svg {
   height: 24px;
   width: 16px;
-}
-
-.StudyPageContentBible {
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-}
-
-.StudyPageContentBibleChaptersList {
-  align-items: center;
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-}
-
-.StudyPageContentBibleChaptersList button {
-  background: none;
-  border: 1px solid black;
-  border-radius: 50rem;
-  cursor: pointer;
-  font-size: 16px;
-  gap: 12px;
-  height: 40px;
-  padding: 8px 32px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.StudyPageContentBibleChaptersList button.StudyPageContentBibleChaptersListButtonActive {
-  background-color: black;
-  color: white;
-}
-
-.StudyPageContentBibleMain {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.StudyPageContentBibleMainHeader {
-  align-items: center;
-  display: flex;
-  gap: 8px;
-}
-
-.StudyPageContentBibleMainHeader svg {
-  height: 24px;
-}
-
-.StudyPageContentBibleMainHeader p {
-  font-size: 16px;
-  font-style: italic;
 }

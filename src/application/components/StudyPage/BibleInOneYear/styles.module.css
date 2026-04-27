@@ -1,0 +1,52 @@
+
+.BibleInOneYear {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+}
+
+.BibleInOneYearChaptersList {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.BibleInOneYearChaptersList button {
+  background: none;
+  border: 1px solid black;
+  border-radius: 50rem;
+  cursor: pointer;
+  font-size: 16px;
+  gap: 12px;
+  height: 40px;
+  padding: 8px 32px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.BibleInOneYearChaptersList button.BibleInOneYearChaptersListButtonActive {
+  background-color: black;
+  color: white;
+}
+
+.BibleInOneYearMain {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.BibleInOneYearMainHeader {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.BibleInOneYearMainHeader svg {
+  height: 24px;
+}
+
+.BibleInOneYearMainHeader p {
+  font-size: 16px;
+  font-style: italic;
+}

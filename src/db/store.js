@@ -1,7 +1,9 @@
 
 import { configureStore } from "@reduxjs/toolkit";
+import bible_readings from "../application/services/api/v1/bible_readings";
 import branches from "../application/services/api/v1/branches";
 import departments from "../application/services/api/v1/departments";
+import devotionals from "../application/services/api/v1/devotionals";
 import events from "../application/services/api/v1/events";
 import feedbacks from "../application/services/api/v1/feedbacks";
 import house_fellowship_centres from "../application/services/api/v1/house_fellowship_centres";
@@ -13,8 +15,10 @@ import testimonies from "../application/services/api/v1/testimonies";
 
 export const store = configureStore({
   reducer: {
+    bible_readings: bible_readings.reducer,
     branches: branches.reducer,
     departments: departments.reducer,
+    devotionals: devotionals.reducer,
     events: events.reducer,
     feedbacks: feedbacks.reducer,
     house_fellowship_centres: house_fellowship_centres.reducer,

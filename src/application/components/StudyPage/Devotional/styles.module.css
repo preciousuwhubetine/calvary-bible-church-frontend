@@ -1,0 +1,59 @@
+
+.Devotional {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.DevotionalMain {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.DevotionalMainLoader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.DevotionalMainHeader {
+  border-bottom: 5px dashed #fd9f2b;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.DevotionalMainHeader p {
+  font-size: 14px;
+}
+
+.DevotionalMainHeader h2 {
+  font-size: 40px;
+}
+
+.DevotionalFooter {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.DevotionalFooter a {
+  align-items: center;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.DevotionalFooter a svg {
+  height: 24px;
+  width: 16px;
+}
