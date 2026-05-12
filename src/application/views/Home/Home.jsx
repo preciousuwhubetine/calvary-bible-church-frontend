@@ -42,21 +42,6 @@ function HomePage() {
   }, [location]);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      const container = sneakPeekListRef.current
-
-      if (!container) return;
-
-      const speed = 1.2;
-
-      const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
-
-      const scrollPercentage = currentScrollTop / (document.documentElement.scrollHeight - window.innerHeight);
-      const maxScroll = container.scrollWidth - window.innerWidth;
-
-      container.scrollTo({ left: scrollPercentage * maxScroll * speed, top: 0, behavior: 'smooth' });
-    });
-
     window.addEventListener('resize', () => {
       const eventsContainer = eventsContainerRef.current;
 
@@ -713,7 +698,6 @@ function HomePage() {
 
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro illum debitis natus tempore necessitatibus sequi similique dolore, tenetur quo iusto eius amet quia, quisquam, omnis sapiente cupiditate laboriosam delectus.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro illum debitis natus tempore necessitatibus sequi similique dolore, tenetur quo iusto eius amet quia, quisquam, omnis sapiente cupiditate laboriosam delectus.
             </p>
 
             <div>
@@ -728,7 +712,6 @@ function HomePage() {
             </svg>
 
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro illum debitis natus tempore necessitatibus sequi similique dolore, tenetur quo iusto eius amet quia, quisquam, omnis sapiente cupiditate laboriosam delectus.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro illum debitis natus tempore necessitatibus sequi similique dolore, tenetur quo iusto eius amet quia, quisquam, omnis sapiente cupiditate laboriosam delectus.
             </p>
 

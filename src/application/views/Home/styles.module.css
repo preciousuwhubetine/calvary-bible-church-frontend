@@ -796,6 +796,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  overflow-x: clip;
   padding: 100px 0;
 }
 
@@ -806,10 +807,10 @@
 }
 
 .HomePageSneakPeek ul {
+  animation: 'scroll' 10s infinite linear;
   display: flex;
   gap: 24px;
   justify-content: center;
-  overflow: hidden;
   padding: 40px 0;
   scrollbar-width: none;
 }
@@ -1340,8 +1341,26 @@
     padding: 4px 0;
   }
 
+  .HomePageAddress {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .HomePageAddress div {
+    justify-items: center;
+  }
+
+  .HomePageAddress h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
   .HomePageEventsCircle {
     display: none;
+  }
+
+  .HomePageEventsHeader h2 {
+    text-align: center;
   }
 
   .HomePageEventsHeader a {
@@ -1416,13 +1435,22 @@
     flex: 0 0 200px;
   }
 
+  .HomePageLeadership {
+    padding: 40px 20px;
+  }
+
+  .HomePageLeadership a {
+    width: 100%;
+  }
+
   .HomePageTestimoniesHeader h2 {
     font-size: 32px;
   }
 
   .HomePageFeedback {
-    gap: 200px;
+    gap: 100px;
     grid-template-columns: 1fr;
+    padding: 16px 24px;
   }
 
   .HomePageFeedback form {
@@ -1440,9 +1468,9 @@
 
 @media (max-width: 500px) {
   .HomePageHeroCircle {
-    right: 20%;
+    right: 15%;
   }
-  
+
   .HomePageLatestSermon ul li h3 {
     font-size: 20px;
   }
@@ -1461,12 +1489,38 @@
     width: 100%;
   }
 
+  .HomePageEventsContent {
+    grid-template-columns: auto auto;
+  }
+
+  .HomePageEventsContent > ul {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .HomePageEventsContent button:last-of-type {
+    justify-self: end;
+  }
+
   .HomePageEventsCountdownTimerItem:last-child {
     display: none;
   }
 
+  .HomePagePrayers svg:first-child {
+    display: none;
+  }
+
   .HomePagePrayersHands {
+    height: auto;
+    padding: 0;
+    position: relative;
     width: 150px;
+  }
+
+  .HomePagePrayersContent div p,
+  .HomePagePrayersContent div button {
+    max-width: 100%;
+    width: 100%;
   }
 
   .HomePageSneakPeek ul li img {

@@ -118,6 +118,15 @@ section {
   }
 }
 
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 950px) {
   :root {
     --header-height: 80px;
