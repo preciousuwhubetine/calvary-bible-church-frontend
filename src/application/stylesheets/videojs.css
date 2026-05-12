@@ -8,3 +8,18 @@
   margin-right: auto;
   width: 90%;
 }
+
+.video-js .vjs-big-play-button {
+  border-radius: 50%;
+  height: 64px;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  width: 64px;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  font-size: 40px;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
