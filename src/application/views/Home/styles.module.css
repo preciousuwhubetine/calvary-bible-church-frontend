@@ -496,7 +496,6 @@
   border-radius: 30px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  margin: 100px 0;
   position: relative;
   width: 80%;
 }
@@ -1354,6 +1353,10 @@
     text-align: center;
   }
 
+  .HomePageEvents {
+    padding: 40px 0;
+  }
+
   .HomePageEventsCircle {
     display: none;
   }
@@ -1422,11 +1425,16 @@
     height: 16px;
   }
 
+  .HomePageSneakPeek {
+    padding: 20px 0;
+  }
+
   .HomePageSneakPeek h2 {
     font-size: 32px;
   }
 
   .HomePageSneakPeek ul {
+    animation: 'scroll' 2s infinite linear;
     gap: 16px;
   }
 
@@ -1444,6 +1452,10 @@
 
   .HomePageTestimoniesHeader h2 {
     font-size: 32px;
+  }
+
+  .HomePageFeedback h2 {
+    font-size: 36px;
   }
 
   .HomePageFeedback {
