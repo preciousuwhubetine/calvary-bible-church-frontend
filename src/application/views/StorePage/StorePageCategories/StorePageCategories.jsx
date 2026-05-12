@@ -47,7 +47,7 @@ function StorePageCategories() {
           store_item_categories.map((store_item_category) => (
             <li key={store_item_category.id}>
               <Link to={`/store/category/${store_item_category.id}/${store_item_category.name}`}>
-                <img loading="lazy" src={store_item_category.cover_image} />
+                <img draggable="false" loading="lazy" src={store_item_category.cover_image} />
                 <h3>{store_item_category.name}</h3>
               </Link>
             </li>
