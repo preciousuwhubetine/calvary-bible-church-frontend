@@ -104,3 +104,17 @@
 .StorePageHeroContent input::placeholder {
   color: #aaa;
 }
+
+@media (max-width: 768px) {
+  .StorePageHero {
+    padding: 0;
+  }
+
+  .StorePageHeroContent {
+    padding: 40px;
+  }
+
+  .StorePageHero img {
+    border-radius: 0;
+  }
+}
