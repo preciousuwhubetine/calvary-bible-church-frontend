@@ -1,12 +1,13 @@
 .Loader {
-  width: 50px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  padding: 3px;
+  width: 100px;
+  height: 16px;
+  border-radius: 20px;
   background:
-    radial-gradient(farthest-side,#ffa516 95%,#0000) 50% 0/12px 12px no-repeat,
-    radial-gradient(farthest-side,#0000 calc(100% - 5px),#ffa516 calc(100% - 4px)) content-box;
-  animation: l6 2s infinite ;
+   linear-gradient(#fd9f2b 0 0) 0/0% no-repeat
+   rgb(226, 238, 243);
+  animation: l2 2s infinite steps(10);
 }
 
-@keyframes l6 {to{transform: rotate(1turn)}}
+@keyframes l2 {
+  100% {background-size:110%}
+}
