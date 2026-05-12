@@ -37,7 +37,7 @@
 .NewPageHeroContent h1 {
   color: white;
   font-size: 48px;
-  padding: 20px;
+  text-align: center;
 }
 
 .NewPageLinks {
@@ -80,7 +80,7 @@
 .NewPageLinks li a h3 {
   color: black;
   font-family: 'Inter', sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 600;
 }
 
@@ -90,9 +90,39 @@
   display: flex;
   font-size: 18px;
   gap: 8px;
-  text-decoration: underline;
 }
 
 .NewPageLinks li a span svg {
   width: 16px;
+}
+
+@media (max-width: 670px) {
+  .NewPageHeroContent {
+    height: 250px;
+  }
+
+  .NewPageHeroContent h1 {
+    font-size: 36px;
+  }
+
+  .NewPageLinks {
+    padding: 40px 20px;
+  }
+
+  .NewPageLinks ul {
+    flex-direction: column;
+  }
+
+  .NewPageLinks li a {
+    border-width: 3px;
+    height: 250px;
+    padding: 20px;
+  }
+
+  .NewPageLinks li a div {
+    border-width: 3px;
+    font-size: 32px;
+    height: 60px;
+    width: 60px;
+  }
 }
