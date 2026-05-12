@@ -129,6 +129,12 @@
   color: #aaa;
 }
 
+.GroupsPageLoading {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .GroupsPageGroups {
   display: flex;
   flex-direction: column;

@@ -5,11 +5,13 @@ import styles from './styles.module.css'
 import {
   index as departments_index,
 } from '../../services/api/v1/departments'
+import Loader from '../../components/Loader/Loader';
 
 function GroupsPage() {
   const dispatch = useDispatch();
 
   const {
+    loading,
     departments,
   } = useSelector((state) => state.departments);
 
@@ -61,7 +63,14 @@ function GroupsPage() {
 
       <ul className={styles['GroupsPageGroups']}>
         {
-          Array.from(departments).sort((a, b) => a.name.localeCompare(b.name)).map((department) => (
+          loading && (
+            <div className={styles['GroupsPageLoading']}>
+              <Loader />
+            </div>
+          )
+        }
+        {
+          !loading && Array.from(departments).sort((a, b) => a.name.localeCompare(b.name)).map((department) => (
             <li key={department.id} className={styles['GroupsPageGroup']}>
               {/* <img loading="lazy" src={department.image_url} alt="" /> */}
 
