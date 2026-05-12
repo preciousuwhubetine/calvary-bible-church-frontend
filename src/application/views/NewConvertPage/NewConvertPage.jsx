@@ -63,7 +63,7 @@ function NewConvertPage() {
       <section className={styles['NewConvertPageVideoSection']}>
         <div className={styles['NewConvertPageVideoSectionBackground']} />
         <div className={styles['NewConvertPageVideoSectionRotatedBackground']}>
-          <img fetchPriority="high" className={styles['NewConvertPageVideoSectionBackgroundImage']} src="/logo-dark.png" />
+          <img fetchPriority="high" className={styles['NewConvertPageVideoSectionBackgroundImage']} src="/icon.png" />
         </div>
 
         <h1>

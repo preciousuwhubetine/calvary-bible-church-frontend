@@ -87,7 +87,7 @@ function AboutPage() {
       <section className={styles['AboutPageWelcomeVideo']}>
         <div className={styles['AboutPageWelcomeVideoBackground']} />
         <div className={styles['AboutPageWelcomeVideoRotatedBackground']}>
-          <img className={styles['AboutPageWelcomeVideoBackgroundImage']} src="/logo-dark.png" />
+          <img className={styles['AboutPageWelcomeVideoBackgroundImage']} src="/icon.png" />
         </div>
 
         <div className={styles['AboutPageWelcomeVideoContainer']}>

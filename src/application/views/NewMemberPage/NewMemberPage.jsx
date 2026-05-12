@@ -63,7 +63,7 @@ function NewMemberPage() {
       <section className={styles['NewMemberPageVideoSection']}>
         <div className={styles['NewMemberPageVideoSectionBackground']} />
         <div className={styles['NewMemberPageVideoSectionRotatedBackground']}>
-          <img fetchPriority="high" className={styles['NewMemberPageVideoSectionBackgroundImage']} src="/logo-dark.png" />
+          <img fetchPriority="high" className={styles['NewMemberPageVideoSectionBackgroundImage']} src="/icon.png" />
         </div>
 
         <h1>

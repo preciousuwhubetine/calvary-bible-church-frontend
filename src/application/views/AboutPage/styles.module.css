@@ -456,6 +456,20 @@
   position: relative;
 }
 
+.AboutPageWorship h2,
+.AboutPageGathering h2,
+.AboutPageCoreValues h2,
+.AboutPageWhatWeDo h2 {
+  font-size: 40px;
+}
+
+.AboutPageWorship p,
+.AboutPageGathering p,
+.AboutPageCoreValues li,
+.AboutPageWhatWeDo p {
+  font-size: 24px;
+}
+
 .AboutPageWorship img,
 .AboutPageGathering img,
 .AboutPageCoreValues img,
@@ -478,7 +492,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 450px;
+  max-width: 600px;
   padding: 24px;
   position: absolute;
   right: 0;
@@ -506,7 +520,6 @@
   border-bottom-right-radius: 0;
   border-top-left-radius: 0;
   left: 0;
-  max-width: 500px;
   padding-left: 40px;
 }
 
@@ -722,6 +735,18 @@
 }
 
 @media (max-width: 650px) {
+  .AboutPageHero {
+    padding: 0;
+  }
+
+  .AboutPageBackground {
+    background-color: black;
+  }
+
+  .AboutPageHeroContent > img {
+    border-radius: 0;
+  }
+
   .AboutPageOverview h2 {
     font-size: 24px;
   }
