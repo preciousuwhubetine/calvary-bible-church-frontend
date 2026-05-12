@@ -16,6 +16,7 @@
   left: 50%;
   position: absolute;
   transform: translate(-50%, 50%);
+  width: max-content;
 }
 
 .LivestreamPageBackground div h2 {
@@ -54,6 +55,12 @@
   background-color: black;
   border-radius: 10px;
   height: 500px;
+  overflow: hidden;
+}
+
+.LivestreamPageSidebar {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .LivestreamPageSidebarControls {
@@ -85,6 +92,53 @@
   width: 48px;
 }
 
-.LivestreamPageChatMessages {
+.LivestreamPageChat {
+  padding: 8px;
+  width: 300px;
+}
 
+.LivestreamPageChatMessages li {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.LivestreamPageGive {
+  padding: 8px;
+  width: 300px;
+}
+
+.LivestreamPageShare {
+  padding: 8px;
+  width: 300px;
+}
+
+@media (max-width: 1024px) {
+  .LivestreamPageContent {
+    grid-template-columns: 1fr;
+    margin-top: 200px;
+  }
+
+  .LivestreamPageSidebar {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 32px;
+  }
+
+  .LivestreamPageSidebarControls {
+    flex-direction: row;
+  }
+
+  .LivestreamPageChat,
+  .LivestreamPageGive,
+  .LivestreamPageShare {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .LivestreamPageVideo {
+    height: 300px;
+  }
 }
