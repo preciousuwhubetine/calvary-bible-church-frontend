@@ -16,6 +16,7 @@
   left: 50%;
   position: absolute;
   transform: translate(-50%, 50%);
+  width: max-content;
 }
 
 .NewMemberPageBackground div h2 {
@@ -286,6 +287,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 48px;
   font-weight: 600;
+  line-height: 1.2;
 }
 
 .NewMemberPagePresenceText p {
@@ -386,8 +388,101 @@
   overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+  .NewMemberPageBackground {
+    height: 150px;
+  }
+
+  .NewMemberPageVideoSection {
+    margin-top: calc(200px - var(--header-height));
+  }
+
+  .NewMemberPageCommunity {
+    grid-template-columns: 1fr;
+  }
+
+  .NewMemberPageVideoSection h1 {
+    font-size: 36px;
+  }
+
+  .NewMemberPageCommunity {
+    padding: 40px 20px 120px;
+  }
+
+  .NewMemberPageCommunityText {
+    align-items: center;
+    text-align: center;
+  }
+
+  .NewMemberPageCommunityLinks {
+    display: grid;
+    gap: 40px;
+    justify-items: center;
+  }
+
+  .NewMemberPageCommunityLinks > a:first-of-type,
+  .NewMemberPageCommunityLinks > a:last-of-type,
+  .NewMemberPageCommunityLinksNumberOne,
+  .NewMemberPageCommunityLinksNumberTwo {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .NewMemberPageCommunityLinks a {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .NewMemberPageCommunityLinks a img {
+    height: 400px;
+    width: 100%;
+  }
+
+  .NewMemberPageCommunityLinksNumberTwo {
+    grid-row: 3;
+  }
+
+  .NewMemberPageCommunityLinks svg {
+    display: none;
+  }
+
+  .NewMemberPagePresence {
+    padding: 40px 20px;
+  }
+
+  .NewMemberPagePresenceContent {
+    max-width: 100%;
+  }
+
+  .NewMemberPagePresenceCircle {
+    left: 50%;
+  }
+
+  .NewMemberPagePresenceText {
+    align-items: center;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    width: 90%;
+  }
+
+  .NewMemberPageFAQ {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
 @media (max-width: 650px) {
   .NewMemberPageVideo {
     height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .NewMemberPageVideoSection h1 {
+    font-size: 24px;
   }
 }

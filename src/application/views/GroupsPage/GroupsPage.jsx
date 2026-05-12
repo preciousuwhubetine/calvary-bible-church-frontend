@@ -61,15 +61,15 @@ function GroupsPage() {
 
       <ul className={styles['GroupsPageGroups']}>
         {
-          departments.map((department) => (
+          Array.from(departments).sort((a, b) => a.name.localeCompare(b.name)).map((department) => (
             <li key={department.id} className={styles['GroupsPageGroup']}>
-              <img loading="lazy" src={department.image_url} alt="" />
+              {/* <img loading="lazy" src={department.image_url} alt="" /> */}
 
               <div className={styles['GroupsPageGroupContent']}>
                 <h3>{department.name}</h3>
                 <p>{department.description}</p>
 
-                <a href={department.whatsapp_group_link} target="_blank" rel="noopener noreferrer">
+                <a href="">
                   Join Group
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

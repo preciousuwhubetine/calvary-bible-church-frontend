@@ -104,16 +104,22 @@ function Header() {
           <div className={styles['HeaderMenu']}>
             <div className={styles['HeaderMenuLinks']}>
               <div>
-                <h3>ABOUT</h3>
+                <h3>MENU</h3>
                 <ul>
                   <li>
                     <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link to="/leadership">Leadership</Link>
+                    <Link to="/about#Branches">CBC Branches</Link>
                   </li>
                   <li>
-                    <Link to="/about#Branches">CBC Branches</Link>
+                    <Link to="/events">Events</Link>
+                  </li>
+                  <li>
+                    <Link to="/give">Give</Link>
+                  </li>
+                  <li>
+                    <Link to="/store">Store</Link>
                   </li>
                 </ul>
               </div>

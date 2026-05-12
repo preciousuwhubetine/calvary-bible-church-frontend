@@ -1,7 +1,7 @@
 .Loader {
   width: 100px;
   height: 12px;
-  border-radius: 20px;
+  border-radius: 50rem;
   background:
    linear-gradient(#fd9f2b 0 0) 0/0% no-repeat
    rgb(226, 238, 243);

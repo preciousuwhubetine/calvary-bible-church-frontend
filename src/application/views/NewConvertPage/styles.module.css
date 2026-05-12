@@ -16,6 +16,7 @@
   left: 50%;
   position: absolute;
   transform: translate(-50%, 50%);
+  width: max-content;
 }
 
 .NewConvertPageBackground div h2 {
@@ -105,7 +106,7 @@
   object-position: center top;
 }
 
-.NewConvertPageCommunity {
+.NewConvertPageBeginJourney {
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr 2fr;
@@ -114,20 +115,20 @@
   padding: 120px 20px;
 }
 
-.NewConvertPageCommunityText {
+.NewConvertPageBeginJourneyText {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.NewConvertPageCommunityText h2 {
+.NewConvertPageBeginJourneyText h2 {
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 600;
   margin: 0;
 }
 
-.NewConvertPageCommunityText p {
+.NewConvertPageBeginJourneyText p {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   margin: 0;
@@ -290,8 +291,101 @@
   overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+  .NewConvertPageBackground {
+    height: 150px;
+  }
+
+  .NewConvertPageVideoSection {
+    margin-top: calc(200px - var(--header-height));
+  }
+
+  .NewConvertPageBeginJourney {
+    grid-template-columns: 1fr;
+  }
+
+  .NewConvertPageVideoSection h1 {
+    font-size: 36px;
+  }
+
+  .NewConvertPageBeginJourney {
+    padding: 40px 20px 120px;
+  }
+
+  .NewConvertPageBeginJourneyText {
+    align-items: center;
+    text-align: center;
+  }
+
+  .NewConvertPageBeginJourneyLinks {
+    display: grid;
+    gap: 40px;
+    justify-items: center;
+  }
+
+  .NewConvertPageBeginJourneyLinks > a:first-of-type,
+  .NewConvertPageBeginJourneyLinks > a:last-of-type,
+  .NewConvertPageBeginJourneyLinksNumberOne,
+  .NewConvertPageBeginJourneyLinksNumberTwo {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .NewConvertPageBeginJourneyLinks a {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .NewConvertPageBeginJourneyLinks a img {
+    height: 400px;
+    width: 100%;
+  }
+
+  .NewConvertPageBeginJourneyLinksNumberTwo {
+    grid-row: 3;
+  }
+
+  .NewConvertPageBeginJourneyLinks svg {
+    display: none;
+  }
+
+  .NewConvertPagePresence {
+    padding: 40px 20px;
+  }
+
+  .NewConvertPagePresenceContent {
+    max-width: 100%;
+  }
+
+  .NewConvertPagePresenceCircle {
+    left: 50%;
+  }
+
+  .NewConvertPagePresenceText {
+    align-items: center;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    width: 90%;
+  }
+
+  .NewConvertPageFAQ {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
 @media (max-width: 650px) {
   .NewConvertPageVideo {
     height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .NewConvertPageVideoSection h1 {
+    font-size: 24px;
   }
 }

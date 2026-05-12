@@ -83,8 +83,8 @@ function NewConvertPage() {
         </div>
       </section>
 
-      <section className={styles['NewConvertPageCommunity']}>
-        <div className={styles['NewConvertPageCommunityText']}>
+      <section className={styles['NewConvertPageBeginJourney']}>
+        <div className={styles['NewConvertPageBeginJourneyText']}>
           <h2>Begin Your Journey In Christ</h2>
           <p>
             We celebrate your decision to follow Jesus and stand ready to nurture your faith.
