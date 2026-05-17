@@ -44,11 +44,11 @@ function GivePage() {
           <div className={`${styles['GivePageAccountsToggleIndicator']} ${currentView === 'naira' ? styles['GivePageAccountsToggleIndicatorNaira'] : styles['GivePageAccountsToggleIndicatorDomiciliary']}`}/>
 
           <button className={`${ currentView === 'naira' ? styles['GivePageAccountsToggleButtonActive'] : '' } ${styles['GivePageAccountsToggleButton']}`} onClick={() => setCurrentView('naira')}>
-            Naira accounts
+            NGN accounts
           </button>
 
           <button className={`${ currentView === 'domiciliary' ? styles['GivePageAccountsToggleButtonActive'] : '' } ${styles['GivePageAccountsToggleButton']}`} onClick={() => setCurrentView('domiciliary')}>
-            Domiciliary accounts
+            DOM accounts
           </button>
         </div>
 
