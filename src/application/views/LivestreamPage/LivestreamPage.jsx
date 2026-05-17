@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import styles from './styles.module.css'
+import { toast } from 'sonner'
 
 function LivestreamPage() {
   const [chatVisible, setChatVisible] = useState(false)
   const [giveVisible, setGiveVisible] = useState(false)
   const [shareVisible, setShareVisible] = useState(false)
+  const [currentGiveTab, setcurrentGiveTab] = useState('naira')
 
   const toggleChat = () => {
     if (!chatVisible) {
@@ -74,11 +76,11 @@ function LivestreamPage() {
             <li>
               <button onClick={toggleGive}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                  <path d="M4 14V34H34V14H4Z" stroke="#FC8E33" stroke-width="2.71429" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M2 8H36V14H2V8Z" stroke="#FC8E33" stroke-width="2.71429" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M19 8V34" stroke="#FC8E33" stroke-width="2.71429" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M19 8C19 8 14 2 11 4C8 6 11 8 19 8Z" stroke="#FC8E33" stroke-width="2.71429" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                  <path d="M19 8C19 8 24 2 27 4C30 6 27 8 19 8Z" stroke="#FC8E33" stroke-width="2.71429" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path d="M4 14V34H34V14H4Z" stroke="#FC8E33" strokeWidth="2.71429" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 8H36V14H2V8Z" stroke="#FC8E33" strokeWidth="2.71429" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M19 8V34" stroke="#FC8E33" strokeWidth="2.71429" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M19 8C19 8 14 2 11 4C8 6 11 8 19 8Z" stroke="#FC8E33" strokeWidth="2.71429" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                  <path d="M19 8C19 8 24 2 27 4C30 6 27 8 19 8Z" stroke="#FC8E33" strokeWidth="2.71429" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
                 </svg>
               </button>
 
@@ -112,9 +114,180 @@ function LivestreamPage() {
           {
             giveVisible && (
               <div className={styles['LivestreamPageGive']}>
-                <h3>
-                  Support the ministry
-                </h3>
+                <section className={styles['GivePageAccounts']}>
+                  <div className={styles['GivePageAccountsToggle']}>
+                    <div className={`${styles['GivePageAccountsToggleIndicator']} ${currentGiveTab === 'naira' ? styles['GivePageAccountsToggleIndicatorNaira'] : styles['GivePageAccountsToggleIndicatorDomiciliary']}`}/>
+
+                    <button className={`${ currentGiveTab === 'naira' ? styles['GivePageAccountsToggleButtonActive'] : '' } ${styles['GivePageAccountsToggleButton']}`} onClick={() => setcurrentGiveTab('naira')}>
+                      NGN accounts
+                    </button>
+
+                    <button className={`${ currentGiveTab === 'domiciliary' ? styles['GivePageAccountsToggleButtonActive'] : '' } ${styles['GivePageAccountsToggleButton']}`} onClick={() => setcurrentGiveTab('domiciliary')}>
+                      DOM accounts
+                    </button>
+                  </div>
+
+                  {
+                    currentGiveTab === 'naira' && (
+                      <ul>
+                        <li>
+                          <img loading="lazy" src="/gtbank.jpg" />
+
+                          <div>
+                            <h3>0016453018</h3>
+
+                            <button onClick={() => navigator.clipboard.writeText('0016453018').then(() => toast('Account number copied'))}>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                <path d="M8.94922 16.4044C8.94922 12.1872 8.94922 10.0771 10.26 8.76782C11.5693 7.45703 13.6794 7.45703 17.8966 7.45703H22.3703C26.5875 7.45703 28.6976 7.45703 30.0069 8.76782C31.3176 10.0771 31.3176 12.1872 31.3176 16.4044V23.8605C31.3176 28.0777 31.3176 30.1878 30.0069 31.4971C28.6976 32.8079 26.5875 32.8079 22.3703 32.8079H17.8966C13.6794 32.8079 11.5693 32.8079 10.26 31.4971C8.94922 30.1878 8.94922 28.0777 8.94922 23.8605V16.4044Z" stroke="black" strokeWidth="1.34211"/>
+                                <path d="M8.94829 28.3333C7.7618 28.3333 6.6239 27.862 5.78492 27.023C4.94594 26.184 4.47461 25.0461 4.47461 23.8596V14.9122C4.47461 9.28883 4.47461 6.47637 6.22233 4.73014C7.97005 2.98391 10.781 2.98242 16.4044 2.98242H22.3693C23.5558 2.98242 24.6937 3.45376 25.5327 4.29273C26.3717 5.13171 26.843 6.26961 26.843 7.45611" stroke="black" strokeWidth="1.34211"/>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li>
+                          <img loading="lazy" src="/zenith.png" />
+
+                          <div>
+                            <h3>1010342016</h3>
+
+                            <button onClick={() => navigator.clipboard.writeText('1010342016').then(() => toast('Account number copied'))}>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                <path d="M8.94922 16.4044C8.94922 12.1872 8.94922 10.0771 10.26 8.76782C11.5693 7.45703 13.6794 7.45703 17.8966 7.45703H22.3703C26.5875 7.45703 28.6976 7.45703 30.0069 8.76782C31.3176 10.0771 31.3176 12.1872 31.3176 16.4044V23.8605C31.3176 28.0777 31.3176 30.1878 30.0069 31.4971C28.6976 32.8079 26.5875 32.8079 22.3703 32.8079H17.8966C13.6794 32.8079 11.5693 32.8079 10.26 31.4971C8.94922 30.1878 8.94922 28.0777 8.94922 23.8605V16.4044Z" stroke="black" strokeWidth="1.34211"/>
+                                <path d="M8.94829 28.3333C7.7618 28.3333 6.6239 27.862 5.78492 27.023C4.94594 26.184 4.47461 25.0461 4.47461 23.8596V14.9122C4.47461 9.28883 4.47461 6.47637 6.22233 4.73014C7.97005 2.98391 10.781 2.98242 16.4044 2.98242H22.3693C23.5558 2.98242 24.6937 3.45376 25.5327 4.29273C26.3717 5.13171 26.843 6.26961 26.843 7.45611" stroke="black" strokeWidth="1.34211"/>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li>
+                          <img loading="lazy" src="/fbn.jpg" />
+
+                          <div>
+                            <h3>2018457003</h3>
+
+                            <button onClick={() => navigator.clipboard.writeText('2018457003').then(() => toast('Account number copied'))}>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                <path d="M8.94922 16.4044C8.94922 12.1872 8.94922 10.0771 10.26 8.76782C11.5693 7.45703 13.6794 7.45703 17.8966 7.45703H22.3703C26.5875 7.45703 28.6976 7.45703 30.0069 8.76782C31.3176 10.0771 31.3176 12.1872 31.3176 16.4044V23.8605C31.3176 28.0777 31.3176 30.1878 30.0069 31.4971C28.6976 32.8079 26.5875 32.8079 22.3703 32.8079H17.8966C13.6794 32.8079 11.5693 32.8079 10.26 31.4971C8.94922 30.1878 8.94922 28.0777 8.94922 23.8605V16.4044Z" stroke="black" strokeWidth="1.34211"/>
+                                <path d="M8.94829 28.3333C7.7618 28.3333 6.6239 27.862 5.78492 27.023C4.94594 26.184 4.47461 25.0461 4.47461 23.8596V14.9122C4.47461 9.28883 4.47461 6.47637 6.22233 4.73014C7.97005 2.98391 10.781 2.98242 16.4044 2.98242H22.3693C23.5558 2.98242 24.6937 3.45376 25.5327 4.29273C26.3717 5.13171 26.843 6.26961 26.843 7.45611" stroke="black" strokeWidth="1.34211"/>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li>
+                          <img loading="lazy" src="stanbic-bank.png" />
+
+                          <div>
+                            <h3>0015067615</h3>
+
+                            <button onClick={() => navigator.clipboard.writeText('0015067615').then(() => toast('Account number copied'))}>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                <path d="M8.94922 16.4044C8.94922 12.1872 8.94922 10.0771 10.26 8.76782C11.5693 7.45703 13.6794 7.45703 17.8966 7.45703H22.3703C26.5875 7.45703 28.6976 7.45703 30.0069 8.76782C31.3176 10.0771 31.3176 12.1872 31.3176 16.4044V23.8605C31.3176 28.0777 31.3176 30.1878 30.0069 31.4971C28.6976 32.8079 26.5875 32.8079 22.3703 32.8079H17.8966C13.6794 32.8079 11.5693 32.8079 10.26 31.4971C8.94922 30.1878 8.94922 28.0777 8.94922 23.8605V16.4044Z" stroke="black" strokeWidth="1.34211"/>
+                                <path d="M8.94829 28.3333C7.7618 28.3333 6.6239 27.862 5.78492 27.023C4.94594 26.184 4.47461 25.0461 4.47461 23.8596V14.9122C4.47461 9.28883 4.47461 6.47637 6.22233 4.73014C7.97005 2.98391 10.781 2.98242 16.4044 2.98242H22.3693C23.5558 2.98242 24.6937 3.45376 25.5327 4.29273C26.3717 5.13171 26.843 6.26961 26.843 7.45611" stroke="black" strokeWidth="1.34211"/>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div>
+                            <h3>Power Partners</h3>
+                            <img loading="lazy" src="/fbn.jpg" />
+                          </div>
+
+                          <div>
+                            <h3>0016453018</h3>
+
+                            <button onClick={() => navigator.clipboard.writeText('0016453018').then(() => toast('Account number copied'))}>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                <path d="M8.94922 16.4044C8.94922 12.1872 8.94922 10.0771 10.26 8.76782C11.5693 7.45703 13.6794 7.45703 17.8966 7.45703H22.3703C26.5875 7.45703 28.6976 7.45703 30.0069 8.76782C31.3176 10.0771 31.3176 12.1872 31.3176 16.4044V23.8605C31.3176 28.0777 31.3176 30.1878 30.0069 31.4971C28.6976 32.8079 26.5875 32.8079 22.3703 32.8079H17.8966C13.6794 32.8079 11.5693 32.8079 10.26 31.4971C8.94922 30.1878 8.94922 28.0777 8.94922 23.8605V16.4044Z" stroke="black" strokeWidth="1.34211"/>
+                                <path d="M8.94829 28.3333C7.7618 28.3333 6.6239 27.862 5.78492 27.023C4.94594 26.184 4.47461 25.0461 4.47461 23.8596V14.9122C4.47461 9.28883 4.47461 6.47637 6.22233 4.73014C7.97005 2.98391 10.781 2.98242 16.4044 2.98242H22.3693C23.5558 2.98242 24.6937 3.45376 25.5327 4.29273C26.3717 5.13171 26.843 6.26961 26.843 7.45611" stroke="black" strokeWidth="1.34211"/>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div>
+                            <h3>Club 50</h3>
+                            <img loading="lazy" src="/fcmb.jpg" />
+                          </div>
+
+                          <div>
+                            <h3>0016453018</h3>
+
+                            <button onClick={() => navigator.clipboard.writeText('0016453018').then(() => toast('Account number copied'))}>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                <path d="M8.94922 16.4044C8.94922 12.1872 8.94922 10.0771 10.26 8.76782C11.5693 7.45703 13.6794 7.45703 17.8966 7.45703H22.3703C26.5875 7.45703 28.6976 7.45703 30.0069 8.76782C31.3176 10.0771 31.3176 12.1872 31.3176 16.4044V23.8605C31.3176 28.0777 31.3176 30.1878 30.0069 31.4971C28.6976 32.8079 26.5875 32.8079 22.3703 32.8079H17.8966C13.6794 32.8079 11.5693 32.8079 10.26 31.4971C8.94922 30.1878 8.94922 28.0777 8.94922 23.8605V16.4044Z" stroke="black" strokeWidth="1.34211"/>
+                                <path d="M8.94829 28.3333C7.7618 28.3333 6.6239 27.862 5.78492 27.023C4.94594 26.184 4.47461 25.0461 4.47461 23.8596V14.9122C4.47461 9.28883 4.47461 6.47637 6.22233 4.73014C7.97005 2.98391 10.781 2.98242 16.4044 2.98242H22.3693C23.5558 2.98242 24.6937 3.45376 25.5327 4.29273C26.3717 5.13171 26.843 6.26961 26.843 7.45611" stroke="black" strokeWidth="1.34211"/>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    )
+                  }
+
+                  {
+                    currentGiveTab === 'domiciliary' && (
+                      <ul>
+                        <li>
+                          <img loading="lazy" src="/gtbank.jpg" />
+
+                          <div>
+                            <h3>0016453118</h3>
+
+                            <button onClick={() => navigator.clipboard.writeText('0016453118').then(() => toast('Account number copied'))}>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                <path d="M8.94922 16.4044C8.94922 12.1872 8.94922 10.0771 10.26 8.76782C11.5693 7.45703 13.6794 7.45703 17.8966 7.45703H22.3703C26.5875 7.45703 28.6976 7.45703 30.0069 8.76782C31.3176 10.0771 31.3176 12.1872 31.3176 16.4044V23.8605C31.3176 28.0777 31.3176 30.1878 30.0069 31.4971C28.6976 32.8079 26.5875 32.8079 22.3703 32.8079H17.8966C13.6794 32.8079 11.5693 32.8079 10.26 31.4971C8.94922 30.1878 8.94922 28.0777 8.94922 23.8605V16.4044Z" stroke="black" strokeWidth="1.34211"/>
+                                <path d="M8.94829 28.3333C7.7618 28.3333 6.6239 27.862 5.78492 27.023C4.94594 26.184 4.47461 25.0461 4.47461 23.8596V14.9122C4.47461 9.28883 4.47461 6.47637 6.22233 4.73014C7.97005 2.98391 10.781 2.98242 16.4044 2.98242H22.3693C23.5558 2.98242 24.6937 3.45376 25.5327 4.29273C26.3717 5.13171 26.843 6.26961 26.843 7.45611" stroke="black" strokeWidth="1.34211"/>
+                              </svg>
+                            </button>
+                          </div>
+
+                          <h4>Dollars</h4>
+                        </li>
+
+                        <li>
+                          <img loading="lazy" src="/zenith.png" />
+
+                          <div>
+                            <h3>0016453132</h3>
+
+                            <button onClick={() => navigator.clipboard.writeText('0016453132').then(() => toast('Account number copied'))}>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                <path d="M8.94922 16.4044C8.94922 12.1872 8.94922 10.0771 10.26 8.76782C11.5693 7.45703 13.6794 7.45703 17.8966 7.45703H22.3703C26.5875 7.45703 28.6976 7.45703 30.0069 8.76782C31.3176 10.0771 31.3176 12.1872 31.3176 16.4044V23.8605C31.3176 28.0777 31.3176 30.1878 30.0069 31.4971C28.6976 32.8079 26.5875 32.8079 22.3703 32.8079H17.8966C13.6794 32.8079 11.5693 32.8079 10.26 31.4971C8.94922 30.1878 8.94922 28.0777 8.94922 23.8605V16.4044Z" stroke="black" strokeWidth="1.34211"/>
+                                <path d="M8.94829 28.3333C7.7618 28.3333 6.6239 27.862 5.78492 27.023C4.94594 26.184 4.47461 25.0461 4.47461 23.8596V14.9122C4.47461 9.28883 4.47461 6.47637 6.22233 4.73014C7.97005 2.98391 10.781 2.98242 16.4044 2.98242H22.3693C23.5558 2.98242 24.6937 3.45376 25.5327 4.29273C26.3717 5.13171 26.843 6.26961 26.843 7.45611" stroke="black" strokeWidth="1.34211"/>
+                              </svg>
+                            </button>
+                          </div>
+
+                          <h4>Pounds</h4>
+                        </li>
+                      </ul>
+                    )
+                  }
+                </section>
+
+                <section className={styles['GiveOnline']}>
+                    <div className={styles['GiveOnlineContent']}>
+                      <svg className={styles['GiveOnlineCircle']} xmlns="http://www.w3.org/2000/svg" width="93" height="93" viewBox="0 0 93 93" fill="none">
+                        <circle cx="46.5" cy="46.5" r="44" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
+                      </svg>
+
+                      <div>
+                        <h2>Give Online</h2>
+
+                        <p>Use the button below to give via card, transfer, or mobile options. Every gift goes directly into ministry efforts as we transform lives, raise disciples, and reach the nations with the Gospel.</p>
+
+                        <button onClick={() => toast('Give with Paystack coming soon!')}>
+                          <span>Pay With</span>
+                          <img loading="lazy" src="/paystack.png" />
+                        </button>
+                      </div>
+                    </div>
+                </section>
               </div>
             )
           }

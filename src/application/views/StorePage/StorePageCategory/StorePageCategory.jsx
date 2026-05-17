@@ -99,6 +99,7 @@ function StorePageCategory() {
               <h5>{capitalizeFirstLetter(store_item.item_type)}</h5>
               <h3>{store_item.title}</h3>
               <h4>{store_item.price}</h4>
+              <p>{store_item.description}</p>
               <div>
                 <button>Add to cart</button>
                 {/* <button>
@@ -107,7 +108,6 @@ function StorePageCategory() {
                   </svg>
                 </button> */}
               </div>
-              <p>{store_item.description}</p>
             </li>
           ))
         }
