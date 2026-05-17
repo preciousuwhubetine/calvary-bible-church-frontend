@@ -259,6 +259,7 @@
   flex-direction: column;
   gap: 60px;
   padding: 100px 20px;
+  z-index: -1;
 }
 
 .HomePageLatestSermon h2 {
@@ -618,7 +619,8 @@
 
 .HomePageEvents ul li {
   align-items: start;
-  background-color: #e5e5e5;
+  background-color: #6c696944;
+  backdrop-filter: blur(16.685823440551758px);
   border-radius: 8px;
   display: grid;
   flex: 0 0 auto;
@@ -1236,7 +1238,7 @@
 
 @media (max-width: 750px) {
   .HomePageGrayBackground {
-    top: 51%;
+    display: none;
   }
 
   .HomePageHero {
@@ -1347,6 +1349,7 @@
   }
 
   .HomePageEventsHeader h2 {
+    font-size: 24px;
     text-align: center;
   }
 
@@ -1356,12 +1359,19 @@
 
   .HomePageEvents ul li {
     flex: 0 0 100%;
+    gap: 0;
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 0;
   }
 
   .HomePageEvents ul li img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     height: 200px;
+  }
+
+  .HomePageEvents ul li > div {
+    padding: 20px;
   }
 
   .HomePageEvents ul li > div h3 {
@@ -1415,7 +1425,7 @@
   }
 
   .HomePageSneakPeek h2 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .HomePageSneakPeek ul {
@@ -1432,7 +1442,7 @@
   }
 
   .HomePageLeadership h2 {
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
   }
 
@@ -1441,7 +1451,8 @@
   }
 
   .HomePageTestimoniesHeader h2 {
-    font-size: 32px;
+    font-size: 24px;
+    max-width: 350px;
   }
 
   .HomePageFeedback {
@@ -1452,7 +1463,7 @@
   }
 
   .HomePageFeedback h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .HomePageFeedback img {
@@ -1476,6 +1487,14 @@
 @media (max-width: 500px) {
   .HomePageHeroCircle {
     right: 15%;
+  }
+
+  .HomePageGrayBackground {
+    display: none;
+  }
+
+  .HomePageLatestSermon {
+    padding: 40px 20px 100px;
   }
 
   .HomePageLatestSermon ul li h3 {
