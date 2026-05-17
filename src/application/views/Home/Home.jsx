@@ -236,7 +236,7 @@ function HomePage() {
             Raising a People of Power, Purpose & Dominion
           </h1>
           <p>
-            Worship and serve god with us for six months, and experience a major testimony in your life!
+            Worship and serve God with us for six months, and experience a major testimony in your life!
           </p>
 
           <div className={styles['HomePageHeroContentActions']}>
@@ -705,7 +705,7 @@ function HomePage() {
 
       <section className={styles['HomePageTestimonies']} id="testimonies">
         <div className={styles['HomePageTestimoniesHeader']}>
-          <h2>See What the Lord Is Doing</h2>
+          <h2>See What The Lord Is Doing</h2>
         </div>
 
         <ul>

@@ -106,7 +106,8 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   height: 200px;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center 82%;
   width: 100%;
 }
 

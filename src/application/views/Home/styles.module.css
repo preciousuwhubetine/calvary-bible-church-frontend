@@ -623,7 +623,8 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   height: 200px;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center 82%;
   width: 100%;
 }
 
@@ -1215,10 +1216,17 @@
 
   .HomePageLeadershipContent {
     grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+  }
+
+  .HomePageLeadershipContentMain {
     padding: 20px;
   }
 
   .HomePageLeadershipContent img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     grid-row: 1;
     height: 400px;
     object-position: center 10%;

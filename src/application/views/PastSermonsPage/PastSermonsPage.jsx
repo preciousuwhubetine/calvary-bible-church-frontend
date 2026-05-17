@@ -8,13 +8,6 @@ function PastSermonsPage() {
           <h2>
            PAST SERMONS
           </h2>
-
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
-              <path d="M0 0H20V2H19V16H12.414L16.414 20L15 21.414L10 16.414L5 21.414L3.586 20L7.586 16H1V2H0V0ZM3 2V14H17V2H3ZM8 4.5L12.667 8L8 11.5V4.5Z" fill="#FC8E33"/>
-            </svg>
-          </span>
-
         </div>
       </div>
 
