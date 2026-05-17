@@ -22,15 +22,19 @@ function StorePageCategories() {
 
   return (
     <section className={styles['StorePageCategories']}>
-      <div className={styles['StorePageCategoriesHeader']}>
-        <h2>Categories</h2>
+      {
+        !store_item_categories_loading && (
+          <div className={styles['StorePageCategoriesHeader']}>
+            <h2>Categories</h2>
 
-        <div>
-          <svg className={styles['StorePageCategoriesLine']} xmlns="http://www.w3.org/2000/svg" width="994" height="5" viewBox="0 0 994 5" fill="none">
-            <path d="M0 2.5H993.5" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
-          </svg>
-        </div>
-      </div>
+            <div>
+              <svg className={styles['StorePageCategoriesLine']} xmlns="http://www.w3.org/2000/svg" width="994" height="5" viewBox="0 0 994 5" fill="none">
+                <path d="M0 2.5H993.5" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
+              </svg>
+            </div>
+          </div>
+        )
+      }
 
       {
         store_item_categories_loading && (

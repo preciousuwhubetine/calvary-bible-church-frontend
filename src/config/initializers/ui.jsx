@@ -8,11 +8,13 @@ import RoutesConfiguration from '../Routes';
 
 import Header from "../../application/components/Header/Header.jsx";
 import Footer from "../../application/components/Footer/Footer.jsx";
+import { Toaster } from "sonner";
 
 export const run = async () => {
   window.reactRootElement.render(
     <BrowserRouter>
       <Provider store={store}>
+        <Toaster />
         <Header />
         <ScrollToTop />
         <main>

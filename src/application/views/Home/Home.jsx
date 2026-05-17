@@ -440,14 +440,6 @@ function HomePage() {
         {
           !events_index_loading && events.length > 0 && (
             <>
-              <svg className={styles['HomePageEventsLine']} xmlns="http://www.w3.org/2000/svg" width="1439" height="420" viewBox="0 0 1439 420" fill="none">
-                <path d="M-40 2.5H1166.5V417.5H1438.5" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
-              </svg>
-
-              <svg className={styles['HomePageEventsCircle']} xmlns="http://www.w3.org/2000/svg" width="71" height="225" viewBox="0 0 71 225" fill="none">
-                <circle cx="112.5" cy="112.5" r="110" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
-              </svg>
-
               <div className={styles['HomePageEventsContent']}>
                 <button onClick={() => {
                   const currentChild = parseInt(eventsContainerRef.current.dataset.currentChild) || 0;

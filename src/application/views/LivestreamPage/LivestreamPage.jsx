@@ -40,13 +40,6 @@ function LivestreamPage() {
           <h2>
             WATCH LIVE
           </h2>
-
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
-              <path d="M0 0H20V2H19V16H12.414L16.414 20L15 21.414L10 16.414L5 21.414L3.586 20L7.586 16H1V2H0V0ZM3 2V14H17V2H3ZM8 4.5L12.667 8L8 11.5V4.5Z" fill="#FC8E33"/>
-            </svg>
-          </span>
-
         </div>
       </div>
 
@@ -81,15 +74,11 @@ function LivestreamPage() {
             <li>
               <button onClick={toggleGive}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                  <g clipPath="url(#clip0_290_3439)">
-                    <path d="M27.1451 6.78544V20.3569M27.1451 6.78544L23.0737 1.35687M27.1451 6.78544L31.2165 1.35687M1.35938 29.8569L7.99309 35.3832C8.96863 36.1954 10.198 36.6401 11.4674 36.6399H28.9528C30.2014 36.6399 31.2165 35.6274 31.2165 34.3789C31.2165 31.8817 29.1917 29.8542 26.6918 29.8542H14.5345M36.6451 6.78544H17.6451V20.3569H36.6451V6.78544Z" stroke="#FC8E33" strokeWidth="2.71429" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M9.50223 27.1426L11.5379 29.1783C12.0779 29.7182 12.8101 30.0215 13.5737 30.0215C14.3372 30.0215 15.0695 29.7182 15.6094 29.1783C16.1493 28.6384 16.4526 27.9061 16.4526 27.1426C16.4526 26.3791 16.1493 25.6468 15.6094 25.1069L12.4499 21.9447C11.9451 21.4405 11.3458 21.0406 10.6863 20.7682C10.0268 20.4957 9.32007 20.356 8.60652 20.3569H1.35938" stroke="#FC8E33" strokeWidth="2.71429" strokeLinecap="round" strokeLinejoin="round"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_290_3439">
-                      <rect width="38" height="38" fill="white"/>
-                    </clipPath>
-                  </defs>
+                  <path d="M4 14V34H34V14H4Z" stroke="#FC8E33" stroke-width="2.71429" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 8H36V14H2V8Z" stroke="#FC8E33" stroke-width="2.71429" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19 8V34" stroke="#FC8E33" stroke-width="2.71429" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19 8C19 8 14 2 11 4C8 6 11 8 19 8Z" stroke="#FC8E33" stroke-width="2.71429" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <path d="M19 8C19 8 24 2 27 4C30 6 27 8 19 8Z" stroke="#FC8E33" stroke-width="2.71429" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                 </svg>
               </button>
 

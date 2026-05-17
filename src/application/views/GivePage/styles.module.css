@@ -45,7 +45,6 @@
 
 .GivePageHeroContent > img {
   background-color: #ccc;
-  border: 4px solid #eee;
   border-radius: 16px;
   filter: brightness(0.6);
   height: 100%;
@@ -321,8 +320,17 @@
 }
 
 @media (max-width: 750px) {
+  .GivePageHero {
+    padding: 0;
+    padding-top: calc(var(--header-height));
+  }
+
   .GivePageHeroContent {
-    height: 300px;
+    height: 200px;
+  }
+
+  .GivePageHeroContent > img {
+    border-radius: 0;
   }
 
   .GivePageHeroContent h1 {
@@ -357,7 +365,7 @@
   }
 
   .GivePageAccountsToggleButton {
-    font-size: 12px;
+    font-size: 14px;
     padding: 12px;
   }
 
@@ -414,6 +422,7 @@
 
 @media (max-width: 450px) {
   .GivePageAccounts ul {
+    padding: 0 8px;
     grid-template-columns: 1fr;
   }
 

@@ -105,7 +105,7 @@
 .HomePageHeroContent h1 {
   color: white;
   font-size: 54px;
-  font-weight: 600;
+  font-weight: 800;
   max-width: 500px;
 }
 
@@ -572,22 +572,6 @@
 .HomePageEventsHeader a svg {
   width: 16px;
   height: 16px;
-}
-
-.HomePageEventsLine {
-  position: absolute;
-  left: 0%;
-  top: 33%;
-  transform: translate(-5%, 0%);
-  width: 100%;
-  z-index: -1;
-}
-
-.HomePageEventsCircle {
-  position: absolute;
-  right: -1%;
-  top: 62%;
-  z-index: -1;
 }
 
 .HomePageEventsContent {

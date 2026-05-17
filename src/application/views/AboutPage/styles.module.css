@@ -327,27 +327,6 @@
   position: relative;
 }
 
-.AboutPageVisionLine {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  transform: translate(3%, 1%);
-  width: 100%;
-  z-index: -1;
-}
-
-.AboutPageVisionCircle {
-  border: 5px dashed #fd9f2b;
-  border-radius: 50%;
-  height: 200px;
-  left: 0;
-  position: absolute;
-  top: 0%;
-  transform: translate(-85%, -40%);
-  width: 200px;
-  z-index: -1;
-}
-
 .AboutPageVision h2 {
   font-size: 32px;
 }
@@ -452,7 +431,7 @@
 .AboutPageWhatWeDo {
   margin: 0 auto;
   max-width: var(--content-max-width);
-  padding: 100px 20px;
+  padding: 40px 20px;
   position: relative;
 }
 
@@ -460,14 +439,14 @@
 .AboutPageGathering h2,
 .AboutPageCoreValues h2,
 .AboutPageWhatWeDo h2 {
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .AboutPageWorship p,
 .AboutPageGathering p,
 .AboutPageCoreValues li,
 .AboutPageWhatWeDo p {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .AboutPageWorship img,
@@ -475,7 +454,7 @@
 .AboutPageCoreValues img,
 .AboutPageWhatWeDo img {
   border-radius: 16px;
-  height: 600px;
+  height: 400px;
   object-fit: cover;
   object-position: center bottom;
   width: 100%;
@@ -487,15 +466,14 @@
 .AboutPageWhatWeDo div {
   background-color: white;
   border-radius: 16px;
-  border-bottom-left-radius: 0;
-  bottom: 100px;
+  bottom: 80px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   max-width: 600px;
   padding: 24px;
   position: absolute;
-  right: 0;
+  right: 48px;
   width: 100%;
 }
 
@@ -507,27 +485,16 @@
   padding-left: 20px;
 }
 
-.AboutPageWorship div,
-.AboutPageCoreValues div {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-}
-
 .AboutPageGathering div,
 .AboutPageWhatWeDo div {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 0;
-  left: 0;
-  padding-left: 40px;
+  left: 40px;
 }
 
 .AboutPagePeopleAfterGodsHeart {
   align-items: flex-end;
   display: flex;
   height: 600px;
-  margin: 100px auto;
+  margin: 200px auto 100px;
   max-width: calc(  var(--content-max-width) - 40px);
   padding: 100px 20px;
   position: relative;
@@ -579,18 +546,18 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 500px;
   margin: 0 auto;
   text-align: center;
 }
 
-.AboutPagePeopleAfterGodsHeartContent h2 {
+.AboutPagePeopleAfterGodsHeartContent h1 {
   color: white;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .AboutPagePeopleAfterGodsHeartContent p {
   color: white;
+  max-width: 500px;
   font-size: 18px;
 }
 
@@ -625,11 +592,6 @@
   .AboutPageHeroCircle svg {
     height: 40px;
     width: 40px;
-  }
-
-  .AboutPageVisionLine,
-  .AboutPageVisionCircle {
-    display: none;
   }
 }
 
@@ -721,21 +683,20 @@
   .AboutPageGathering div,
   .AboutPageCoreValues div,
   .AboutPageWhatWeDo div {
-    bottom: 20px;
-    max-width: 80%;
-  }
-
-  .AboutPageGathering div,
-  .AboutPageWhatWeDo div {
-    left: 20px;
-    padding-left: 20px;
+    max-width: none;
+    padding: 20px 10px;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
   }
 
   .AboutPageWorship img,
   .AboutPageGathering img,
   .AboutPageCoreValues img,
   .AboutPageWhatWeDo img {
-    height: 350px;
+    height: 200px;
   }
 }
 
@@ -872,7 +833,7 @@
     width: 40px;
   }
 
-  .AboutPagePeopleAfterGodsHeart h2 {
+  .AboutPagePeopleAfterGodsHeart h1 {
     font-size: 32px;
   }
 

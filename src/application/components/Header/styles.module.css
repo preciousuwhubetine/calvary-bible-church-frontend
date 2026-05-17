@@ -95,7 +95,36 @@
   width: 100%;
 }
 
-.Header nav button {
+.HeaderCart {
+  align-items: center;
+  align-self: center;
+  background-color: #fd9f2b;
+  border: 1px solid white;
+  border-radius: 50rem;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.HeaderCart svg {
+  height: 20px;
+  width: 20px;
+}
+
+.HeaderCart span {
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.HeaderMenuToggle {
   align-items: center;
   align-self: center;
   background-color: black;
@@ -109,7 +138,7 @@
   padding: 8px 26px;
 }
 
-.Header nav button svg {
+.HeaderMenuToggle svg {
   width: 16px;
   height: 16px;
 }
@@ -221,6 +250,7 @@
   }
 
   .Header nav {
+    gap: 0;
     height: max-content;
     padding: 0;
   }
@@ -229,36 +259,27 @@
     display: none;
   }
 
-  .Header nav button {
+  .HeaderMenuToggle {
     background-color: white;
     color: black;
     font-size: 14px;
     padding: 8px 20px;
   }
 
-  .Header nav button svg path {
+  .HeaderMenuToggle svg path {
     fill: black;
   }
 
-  .HeaderFilled nav button {
-    background-color: black;
-    color: white;
-  }
-
-  .HeaderFilled nav button svg path {
-    fill: white;
-  }
-
-  .HeaderDark nav button {
+  .HeaderDark .HeaderMenuToggle {
     background-color: white;
     color: black;
   }
 
-  .HeaderDark nav button svg path {
+  .HeaderDark .HeaderMenuToggle svg path {
     fill: black;
   }
 
-  .Header nav button svg {
+  .HeaderMenuToggle svg {
     width: 16px;
   }
 }

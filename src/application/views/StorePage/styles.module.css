@@ -8,6 +8,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   height: 400px;
   justify-content: center;
   margin: 0 auto;
@@ -31,49 +32,16 @@
 .StorePageHeroContent h1 {
   color: white;
   font-size: 48px;
-  padding: 20px;
 }
 
 .StorePageHeroSearchCart {
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 1fr;
   gap: 16px;
   max-width: 600px;
   position: relative;
   width: 100%;
-}
-
-.StorePageHeroSearchCart button {
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  border-radius: 50rem;
-  cursor: pointer;
-  display: flex;
-  height: 48px;
-  justify-content: center;
-  width: 48px;
-}
-
-.StorePageHeroSearchCart button svg {
-  height: 28px;
-  width: 28px;
-}
-
-.StorePageHeroSearchCart span {
-  align-items: center;
-  background-color: #fd9f2b;
-  border-radius: 50%;
-  color: white;
-  display: flex;
-  font-size: 16px;
-  height: 32px;
-  justify-content: center;
-  position: absolute;
-  right: -16px;
-  top: -16px;
-  width: 32px;
 }
 
 .StorePageHeroSearch {
@@ -108,9 +76,11 @@
 @media (max-width: 768px) {
   .StorePageHero {
     padding: 0;
+    padding-top: calc(var(--header-height));
   }
 
   .StorePageHeroContent {
+    height: 200px;
     padding: 40px;
   }
 

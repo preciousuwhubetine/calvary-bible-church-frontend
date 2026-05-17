@@ -182,12 +182,6 @@ function AboutPage() {
       </section>
 
       <section className={styles['AboutPageVision']}>
-        <svg className={styles['AboutPageVisionLine']} xmlns="http://www.w3.org/2000/svg" width="1377" height="420" viewBox="0 0 1377 420" fill="none">
-          <path d="M0 2.5H1294V417.5H1540" stroke="#FD9F2B" strokeWidth="5" strokeDasharray="10 10"/>
-        </svg>
-
-        <div className={styles['AboutPageVisionCircle']} />
-
         <h2>Vision Statement</h2>
 
         <ul>
@@ -506,7 +500,7 @@ function AboutPage() {
         <img src="/about-page-people-after-gods-heart-image.jpg" alt="" />
 
         <div className={styles['AboutPagePeopleAfterGodsHeartContent']}>
-          <h2>A People After God's Heart</h2>
+          <h1>A People After God's Heart</h1>
           <p>We live to honor God, love others, and worship Him in spirit and truth.</p>
 
           <Link to="/new">

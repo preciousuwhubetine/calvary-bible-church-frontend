@@ -88,7 +88,7 @@
 
 @media (max-width: 950px) {
   .StorePageCategories {
-    padding: 0 20px;
+    padding: 0 20px 40px;
   }
 
   .StorePageCategories ul {
@@ -106,12 +106,19 @@
 }
 
 @media (max-width: 500px) {
+  .StorePageCategories {
+    gap: 40px;
+  }
+
   .StorePageCategories ul {
     grid-template-columns: 1fr;
   }
 
+  .StorePageCategories ul li a {
+    height: 150px;
+  }
+
   .StorePageCategoriesBackground {
-    transform: translate(-50%, -40px);
-    top: 0;
+    display: none;
   }
 }
