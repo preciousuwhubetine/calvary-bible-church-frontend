@@ -337,7 +337,7 @@ function HomePage() {
         {
           past_sermons.length > 0 && (
             <section className={styles['HomePageLatestSermon']}>
-              <h2>LATEST SERMON</h2>
+              <h2>Latest Sermon</h2>
 
               <div>
                 <img src={past_sermons[0].cover_image} alt="Latest Sermon" />
@@ -461,7 +461,7 @@ function HomePage() {
 
       <section className={styles['HomePageEvents']}>
         <div className={styles['HomePageEventsHeader']}>
-          <h2>UPCOMING EVENTS</h2>
+          <h2>Upcoming Events</h2>
 
           <Link to="/events">
             View All Events
@@ -632,7 +632,7 @@ function HomePage() {
       </section>
 
       <section className={styles['HomePageSneakPeek']}>
-        <h2>SNEAK PEEK</h2>
+        <h2>Sneak Peek</h2>
 
         <Slider {...sneakPeekSliderSettings}>
           <div>
@@ -684,7 +684,7 @@ function HomePage() {
       </section>
 
       <section className={styles['HomePageLeadership']}>
-        <h2>OUR LEADERSHIP</h2>
+        <h2>Our Leadership</h2>
 
         <div className={styles['HomePageLeadershipContent']}>
           <div className={styles['HomePageLeadershipContentMain']}>
@@ -705,7 +705,7 @@ function HomePage() {
 
       <section className={styles['HomePageTestimonies']} id="testimonies">
         <div className={styles['HomePageTestimoniesHeader']}>
-          <h2>SEE WHAT THE LORD IS DOING!</h2>
+          <h2>See What the Lord Is Doing!</h2>
         </div>
 
         <ul>
@@ -760,7 +760,7 @@ function HomePage() {
 
         <form onSubmit={handleFeedbackFormSubmit}>
           <div>
-            <h3>FEEDBACK FORM</h3>
+            <h3>Feedback Form</h3>
             <p>Share your feedback</p>
           </div>
 
