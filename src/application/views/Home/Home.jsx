@@ -148,7 +148,7 @@ function HomePage() {
 
   const sneakPeekSliderSettings = {
     infinite: true,
-    slidesToShow: Math.floor(window.innerWidth / 250),
+    slidesToShow: Math.round(window.innerWidth / 250),
     slidesToScroll: 1,
     autoplay: true,
     speed: 8000,
@@ -705,7 +705,7 @@ function HomePage() {
 
       <section className={styles['HomePageTestimonies']} id="testimonies">
         <div className={styles['HomePageTestimoniesHeader']}>
-          <h2>See What the Lord Is Doing!</h2>
+          <h2>See What the Lord Is Doing</h2>
         </div>
 
         <ul>

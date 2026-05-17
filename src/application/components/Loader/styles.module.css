@@ -11,3 +11,10 @@
 @keyframes l2 {
   100% {background-size:110%}
 }
+
+@media (max-width: 750px) {
+  .Loader {
+    width: 75px;
+    height: 8px;
+  }
+}

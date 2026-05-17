@@ -1440,6 +1440,30 @@
     max-width: 350px;
   }
 
+  .HomePageTestimonies ul li {
+    border: 2px dashed #fd9f2b;
+    border-bottom: 1.5px dashed #fd9f2b;
+  }
+
+  .HomePageTestimonies ul li svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .HomePageTestimonies ul li p {
+    font-size: 16px;
+  }
+
+  .HomePageTestimonies ul li div h4 {
+    font-size: 16px;
+  }
+
+  .HomePageTestimonies ul li div img {
+    border: 2px dashed #fd9f2b;
+    height: 30px;
+    width: 30px;
+  }
+
   .HomePageFeedback {
     border-radius: 0;
     gap: 100px;

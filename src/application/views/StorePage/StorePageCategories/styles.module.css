@@ -18,7 +18,7 @@
 }
 
 .StorePageCategoriesHeader h2 {
-  font-size: 40px;
+  font-size: 28px;
 }
 
 .StorePageCategoriesLine {
@@ -70,7 +70,7 @@
 
 .StorePageCategories ul li a h3 {
   color: white;
-  font-size: 28px;
+  font-size: 20px;
   text-align: center;
   position: relative;
 }

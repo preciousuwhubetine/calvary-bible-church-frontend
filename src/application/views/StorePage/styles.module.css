@@ -46,11 +46,14 @@
 
 .StorePageHeroSearch {
   align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
   border: 1px solid #eee;
   border-radius: 50rem;
   display: grid;
   grid-template-columns: max-content 1fr;
   gap: 8px;
+  max-width: 600px;
   padding: 0 16px;
   width: 100%;
 }
@@ -80,8 +83,12 @@
   }
 
   .StorePageHeroContent {
-    height: 200px;
-    padding: 40px;
+    height: 250px;
+    padding: 0 10px;
+  }
+
+  .StorePageHeroContent h1 {
+    font-size: 32px;
   }
 
   .StorePageHero img {

@@ -165,6 +165,10 @@
 }
 
 @media (max-width: 750px) {
+  .EventsPageContent {
+    padding: 24px 20px;
+  }
+
   .EventsPageHero {
     padding: 0;
     padding-top: calc(var(--header-height));
@@ -172,6 +176,7 @@
 
   .EventsPageHeroContent {
     height: 250px;
+    padding: 0 10px;
   }
 
   .EventsPageHeroContent > img {
