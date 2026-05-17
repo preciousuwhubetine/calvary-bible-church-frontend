@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { Link, useLocation } from 'react-router-dom'
 import styles from './styles.module.css'
@@ -18,13 +18,11 @@ import {
 import PrayerRequestPopup from '../../components/Popups/PrayerRequest/PrayerRequest';
 import TestimonyPopup from '../../components/Popups/Testimony/Testimony';
 import Loader from '../../components/Loader/Loader';
+import Slider from 'react-slick';
 
 function HomePage() {
   const dispatch = useDispatch();
   const location = useLocation();
-
-  const eventsContainerRef = useRef(null);
-  const sneakPeekListRef = useRef(null);
 
   const [showPrayerRequestPopup, setShowPrayerRequestPopup] = useState(false);
   const [showTestimonyPopup, setShowTestimonyPopup] = useState(false);
@@ -40,16 +38,6 @@ function HomePage() {
       }
     }
   }, [location]);
-
-  useEffect(() => {
-    window.addEventListener('resize', () => {
-      const eventsContainer = eventsContainerRef.current;
-
-      if (eventsContainer) {
-        eventsContainer.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
-      }
-    });
-  })
 
   const {
     events,
@@ -139,6 +127,72 @@ function HomePage() {
 
     return () => clearInterval(interval);
   }, [events]);
+
+  const eventsSliderSettings = {
+    infinite: true,
+    slidesToShow: window.innerWidth < 700 ? 1 : 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 200,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  };
+
+  const sneakPeekSliderSettings = {
+    infinite: true,
+    slidesToShow: Math.floor(window.innerWidth / 250),
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 8000,
+    autoplaySpeed: 200,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1800,
+        settings: {
+          slidesToShow: 8,
+        }
+      },
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 6,
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+  };
 
   return (
     <div className={styles['HomePage']}>
@@ -440,14 +494,14 @@ function HomePage() {
         {
           !events_index_loading && events.length > 0 && (
             <>
-              <div className={styles['HomePageEventsContent']}>
-                <ul data-current-child={0} ref={eventsContainerRef}>
+              <div className={styles['HomePageEventsSlider']}>
+                <Slider {...eventsSliderSettings}>
                   {
                     Array.from(events).sort((a, b) => new Date(a.start_date) - new Date(b.start_date)).map((event, index) => (
-                      <li key={index}>
+                      <div className={styles['HomePageEventsSliderItem']} key={index}>
                         <img src={event.cover_image} alt={event.title} />
 
-                        <div>
+                        <div className={styles['HomePageEventsSliderItemText']}>
                           <h3>{event.title}</h3>
 
                           <hr />
@@ -478,10 +532,10 @@ function HomePage() {
                             {event.description}
                           </p>
                         </div>
-                      </li>
+                      </div>
                     ))
                   }
-                </ul>
+                </Slider>
               </div>
 
               {
@@ -580,53 +634,53 @@ function HomePage() {
       <section className={styles['HomePageSneakPeek']}>
         <h2>SNEAK PEEK</h2>
 
-        <ul ref={sneakPeekListRef}>
-          <li>
+        <Slider {...sneakPeekSliderSettings}>
+          <div>
             <img src="/sneak-peek-image-1.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-2.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-3.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-4.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-5.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-6.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-7.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-8.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-9.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-10.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-11.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-12.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-13.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-14.jpg" />
-          </li>
-          <li>
+          </div>
+          <div>
             <img src="/sneak-peek-image-15.jpg" />
-          </li>
-        </ul>
+          </div>
+        </Slider>
       </section>
 
       <section className={styles['HomePageLeadership']}>

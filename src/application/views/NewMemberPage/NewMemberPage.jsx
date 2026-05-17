@@ -52,11 +52,6 @@ function NewMemberPage() {
           <h2>
             NEW MEMBER
           </h2>
-
-          <span>
-            ?
-          </span>
-
         </div>
       </div>
 

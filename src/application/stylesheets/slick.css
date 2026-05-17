@@ -1,0 +1,8 @@
+
+.slick-slide > div {
+  padding: 0 10px; /* horizontal gap */
+}
+
+.slick-list {
+  margin: 0 -10px; /* compensate for outer edges */
+}

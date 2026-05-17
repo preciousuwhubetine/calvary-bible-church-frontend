@@ -9,6 +9,10 @@ function Header() {
   const [filled, setFilled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const closeMenu = () => {
+    if (menuOpen) setMenuOpen(false);
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > 100) {
@@ -26,7 +30,7 @@ function Header() {
       setFilled(true);
     }
 
-    setMenuOpen(false);
+    closeMenu();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -138,9 +142,6 @@ function Header() {
                 <ul>
                   <li>
                     <Link to="/about">About Us</Link>
-                  </li>
-                  <li>
-                    <Link to="/about#Branches">CBC Branches</Link>
                   </li>
                   <li>
                     <Link to="/events">Events</Link>

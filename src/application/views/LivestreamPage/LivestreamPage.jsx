@@ -2,7 +2,7 @@ import { useState } from 'react'
 import styles from './styles.module.css'
 
 function LivestreamPage() {
-  const [chatVisible, setChatVisible] = useState(true)
+  const [chatVisible, setChatVisible] = useState(false)
   const [giveVisible, setGiveVisible] = useState(false)
   const [shareVisible, setShareVisible] = useState(false)
 

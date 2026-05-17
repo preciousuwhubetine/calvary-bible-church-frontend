@@ -52,11 +52,6 @@ function NewConvertPage() {
           <h2>
             NEW CONVERT
           </h2>
-
-          <span>
-            ?
-          </span>
-
         </div>
       </div>
 

@@ -544,7 +544,7 @@
   margin: 0 auto;
   max-width: var(--content-max-width);
   overflow-x: clip;
-  padding: 100px 0;
+  padding: 100px 20px;
   position: relative;
 }
 
@@ -552,7 +552,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
 }
 
 .HomePageEventsHeader h2 {
@@ -609,47 +608,41 @@
   width: 32px;
 }
 
-.HomePageEvents ul {
-  border-radius: 8px;
-  display: flex;
-  gap: 24px;
-  overflow: hidden;
-  scrollbar-width: none;
-}
-
-.HomePageEvents ul li {
-  align-items: start;
-  background-color: #6c696944;
+.HomePageEventsSliderItem {
+  align-items: center;
+  border: 1px solid #e4e4e4;
+  background-color: #ececec44;
   backdrop-filter: blur(16.685823440551758px);
   border-radius: 8px;
-  display: grid;
-  flex: 0 0 auto;
-  gap: 24px;
-  grid-template-columns: 1fr 1fr;
-  max-width: 900px;
-  padding: 24px;
 }
 
-.HomePageEvents ul li img {
-  background-color: black;
-  border: 1px solid #c0c0c0;
+.HomePageEventsSlider > div img {
+  backdrop-filter: blur(16.685823440551758px);
   border-radius: 8px;
-  height: 300px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 200px;
   object-fit: contain;
   width: 100%;
 }
 
-.HomePageEvents ul li > div {
+.HomePageEventsSliderItemText {
   display: flex;
   flex-direction: column;
   gap: 8px;
   justify-content: center;
+  padding: 20px;
 }
 
-.HomePageEvents ul li > div h3 {
+.HomePageEventsSliderItemText h3 {
   font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-weight: 600;
+}
+
+.HomePageEvents hr {
+  border: none;
+  border-top: 1px solid #e4e4e4;
 }
 
 .HomePageEventsDate,
@@ -780,6 +773,7 @@
 .HomePageSneakPeek {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   margin: 0 auto;
   overflow-x: clip;
   padding: 100px 0;
@@ -791,20 +785,7 @@
   text-align: center;
 }
 
-.HomePageSneakPeek ul {
-  animation: 'scroll' 10s infinite linear;
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  padding: 40px 0;
-  scrollbar-width: none;
-}
-
-.HomePageSneakPeek ul li {
-  flex: 0 0 300px;
-}
-
-.HomePageSneakPeek ul li img {
+.HomePageSneakPeek img {
   background-color: #d6d6d6;
   border: 1px solid #c0c0c0;
   border-radius: 8px;
@@ -1341,11 +1322,7 @@
 
   .HomePageEvents {
     gap: 32px;
-    padding: 40px 0;
-  }
-
-  .HomePageEventsCircle {
-    display: none;
+    padding: 40px 20px;
   }
 
   .HomePageEventsHeader h2 {
@@ -1357,28 +1334,11 @@
     display: none;
   }
 
-  .HomePageEvents ul li {
-    flex: 0 0 100%;
-    gap: 0;
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
-  .HomePageEvents ul li img {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    height: 200px;
-  }
-
-  .HomePageEvents ul li > div {
-    padding: 20px;
-  }
-
-  .HomePageEvents ul li > div h3 {
+  .HomePageEvents h3 {
     font-size: 20px;
   }
 
-  .HomePageEvents ul li p {
+  .HomePageEvents p {
     font-size: 14px;
   }
 
@@ -1421,7 +1381,7 @@
   }
 
   .HomePageSneakPeek {
-    padding: 20px 0;
+    padding: 40px 0;
   }
 
   .HomePageSneakPeek h2 {
