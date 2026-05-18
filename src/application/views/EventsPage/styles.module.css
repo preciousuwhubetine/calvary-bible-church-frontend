@@ -35,33 +35,80 @@
 
 .EventsPageHeroSearch {
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255);
   backdrop-filter: blur(3px);
-  border: 1px solid #eee;
-  border-radius: 50rem;
+  border-radius: 40px;
   display: grid;
-  grid-template-columns: max-content 1fr;
   gap: 8px;
   max-width: 600px;
   padding: 0 16px;
+  position: relative;
+  transition: 0.2s border-radius;
   width: 100%;
 }
 
 .EventsPageHeroSearch svg {
   height: 24px;
   width: 24px;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
 }
 
-.EventsPageHeroContent input {
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 16px;
-  padding: 12px 0;
+.EventsPageHeroSearchResults {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  display: grid;
+  max-height: 150px;
+  overflow-y: auto;
+  max-width: 600px;
+  scrollbar-width: none;
   width: 100%;
+  z-index: 1;
 }
 
-.EventsPageHeroContent input::placeholder {
+.EventsPageHeroSearchResults li {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bbb;
+}
+
+.EventsPageHeroSearchResults li:first-child {
+  border-bottom: none;
+  height: 40px;
+}
+
+.EventsPageHeroSearchResults li:last-child {
+  border-bottom: none;
+}
+
+.EventsPageHeroSearchResults li:hover {
+  background-color: #eee;
+}
+
+.EventsPageHeroSearch input {
+  background: white;
+  border: none;
+  color: black;
+  font-size: 16px;
+  height: 40px;
+  padding: 12px 0;
+  padding-left: 32px;
+  width: 100%;
+  z-index: 2;
+}
+
+.EventsPageHeroSearch input::placeholder {
   color: #aaa;
 }
 
@@ -176,7 +223,7 @@
   }
 
   .EventsPageHeroContent {
-    height: 250px;
+    height: 350px;
     padding: 0 10px;
   }
 
