@@ -82,6 +82,10 @@ function EventsPage() {
               placeholder="Search for an event"
               onChange={(e) => setSearchTerm(e.target.value)}
               onFocus={() => setSearchFocused(true)}
+              style={{
+                borderBottomLeftRadius: showSearchResults ? 0 : '',
+                borderBottomRightRadius: showSearchResults ? 0 : '',
+              }}
             />
           </div>
 

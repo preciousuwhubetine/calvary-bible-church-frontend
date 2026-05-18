@@ -41,7 +41,6 @@
   display: grid;
   gap: 8px;
   max-width: 600px;
-  padding: 0 16px;
   position: relative;
   transition: 0.2s border-radius;
   width: 100%;
@@ -99,11 +98,12 @@
 .EventsPageHeroSearch input {
   background: white;
   border: none;
+  border-radius: 20px;
   color: black;
   font-size: 16px;
   height: 40px;
   padding: 12px 0;
-  padding-left: 32px;
+  padding-left: 48px;
   width: 100%;
   z-index: 2;
 }
