@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './styles.module.css'
+import { getDatabase, onValue, ref, set } from 'firebase/database'
 import { toast } from 'sonner'
 
 function LivestreamPage() {
@@ -7,6 +8,8 @@ function LivestreamPage() {
   const [giveVisible, setGiveVisible] = useState(false)
   const [shareVisible, setShareVisible] = useState(false)
   const [currentGiveTab, setcurrentGiveTab] = useState('naira')
+  const [chatMessage, setChatMessage] = useState('')
+  const [chatMessages, setChatMessages] = useState([])
 
   const toggleChat = () => {
     if (!chatVisible) {
@@ -34,6 +37,39 @@ function LivestreamPage() {
 
     setShareVisible(!shareVisible)
   }
+
+  const sendChatMessage = (e) => {
+    e.preventDefault();
+
+    const database = getDatabase();
+
+    set(ref(database, 'livestream_chat_messages/' + Date.now()), {
+      message: chatMessage,
+      timestamp: Date.now(),
+      // user_id: user.id,
+      // username: `${user.first_name} ${user.last_name}`,
+    });
+
+    setChatMessage('');
+  }
+
+  useEffect(() => {
+    const database = getDatabase();
+    const messagesRef = ref(database, 'livestream_chat_messages/');
+
+    onValue(messagesRef, (snapshot) => {
+      const data = snapshot.val();
+      const messages = [];
+
+      for (let id in data) {
+        messages.push({ id, ...data[id] });
+      }
+
+      messages.sort((a, b) => a.timestamp - b.timestamp);
+
+      setChatMessages(messages);
+    });
+  }, []);
 
   return (
     <div className={styles['LivestreamPage']}>
@@ -106,7 +142,30 @@ function LivestreamPage() {
                 </h3>
 
                 <ul className={styles['LivestreamPageChatMessages']}>
+                  {
+                    chatMessages.map((msg) => (
+                      <li key={msg.id}>
+                        <div className={styles['LivestreamPageChatMessage']}>
+                          <strong>{msg.username || 'Anonymous'}:</strong> {msg.message}
+                        </div>
+                      </li>
+                    ))
+                  }
                 </ul>
+
+                <form className={styles['LivestreamPageChatForm']} onSubmit={sendChatMessage}>
+                  <input
+                    type="text"
+                    placeholder="Type your message..."
+                    value={chatMessage}
+                    onChange={(e) => setChatMessage(e.target.value)}
+                  />
+                  <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="#FC8E33"/>
+                    </svg>
+                  </button>
+                </form>
               </div>
             )
           }
