@@ -1,9 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styles from './styles.module.css'
 import { getDatabase, onValue, ref, set } from 'firebase/database'
 import { toast } from 'sonner'
+import { EmailIcon, EmailShareButton, FacebookIcon, FacebookShareButton, WhatsappIcon, WhatsappShareButton, XIcon, XShareButton } from 'react-share';
 
 function LivestreamPage() {
+  const chatMessagesRef = useRef();
   const [chatVisible, setChatVisible] = useState(false)
   const [giveVisible, setGiveVisible] = useState(false)
   const [shareVisible, setShareVisible] = useState(false)
@@ -40,6 +42,7 @@ function LivestreamPage() {
 
   const sendChatMessage = (e) => {
     e.preventDefault();
+    if (chatMessage.trim() === '') return;
 
     const database = getDatabase();
 
@@ -70,6 +73,12 @@ function LivestreamPage() {
       setChatMessages(messages);
     });
   }, []);
+
+  useEffect(() => {
+    if (chatMessagesRef.current) {
+      chatMessagesRef.current.scrollTop = chatMessagesRef.current.scrollHeight;
+    }
+  }, [chatMessages])
 
   return (
     <div className={styles['LivestreamPage']}>
@@ -137,14 +146,15 @@ function LivestreamPage() {
           {
             chatVisible && (
               <div className={styles['LivestreamPageChat']}>
-                <h3>
+                <h2>
                   Live chat
-                </h3>
+                </h2>
 
-                <ul className={styles['LivestreamPageChatMessages']}>
+                <ul className={styles['LivestreamPageChatMessages']} ref={chatMessagesRef}>
                   {
                     chatMessages.map((msg) => (
                       <li key={msg.id}>
+                        <img loading="lazy" src={`https://ui-avatars.com/api/?name=${msg.username || 'Anonymous'}&background=FC8E33&color=fff&size=128`} />
                         <div className={styles['LivestreamPageChatMessage']}>
                           <strong>{msg.username || 'Anonymous'}:</strong> {msg.message}
                         </div>
@@ -154,6 +164,7 @@ function LivestreamPage() {
                 </ul>
 
                 <form className={styles['LivestreamPageChatForm']} onSubmit={sendChatMessage}>
+                  <img title="Anonymous" src={`https://ui-avatars.com/api/?name=${'Anonymous' || 'Anonymous'}&background=FC8E33&color=fff&size=128`} />
                   <input
                     type="text"
                     placeholder="Type your message..."
@@ -161,9 +172,7 @@ function LivestreamPage() {
                     onChange={(e) => setChatMessage(e.target.value)}
                   />
                   <button type="submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="#FC8E33"/>
-                    </svg>
+                    Send
                   </button>
                 </form>
               </div>
@@ -354,9 +363,49 @@ function LivestreamPage() {
           {
             shareVisible && (
               <div className={styles['LivestreamPageShare']}>
-                <h3>
+                <h2>
                   Share this livestream
-                </h3>
+                </h2>
+
+                <ul>
+                  <li>
+                    <XShareButton
+                      title="Share title sent to X"
+                      htmlTitle="Native button tooltip"
+                      url={window.location.href}
+                      aria-label="Share on X"
+                    >
+                      <XIcon size={32} round />
+                      Share on X
+                    </XShareButton>
+                  </li>
+
+                  <li>
+                    <FacebookShareButton url={window.location.href} aria-label="Share this page on Facebook">
+                      <FacebookIcon size={32} round />
+                      Share on Facebook
+                    </FacebookShareButton>
+                  </li>
+
+                  <li>
+                    <WhatsappShareButton title="Read this next" url={window.location.href} aria-label="Share on WhatsApp">
+                      <WhatsappIcon size={32} round />
+                      Share on WhatsApp
+                    </WhatsappShareButton>
+                  </li>
+
+                  <li>
+                    <EmailShareButton
+                      subject="Take a look"
+                      body="Thought you might like this:"
+                      url={window.location.href}
+                      aria-label="Share by email"
+                    >
+                      <EmailIcon size={32} round />
+                      Share by Email
+                    </EmailShareButton>
+                  </li>
+                </ul>
               </div>
             )
           }

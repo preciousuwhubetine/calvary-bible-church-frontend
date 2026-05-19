@@ -47,8 +47,8 @@ function AboutPage() {
 
   const branchesSliderSettings = {
     infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToShow: window.innerWidth < 1300 ? Math.round(window.innerWidth / 380) : 4,
+    slidesToScroll: 1,
     autoplay: true,
     speed: 200,
     autoplaySpeed: 3000,

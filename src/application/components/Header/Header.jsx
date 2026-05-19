@@ -75,13 +75,13 @@ function Header() {
                 <span />
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/store" className={location.pathname.indexOf('/store') === 0 ? styles['HeaderLinkActive'] : ''}>
                 <div />
                 Store
                 <span />
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           {
@@ -142,10 +142,13 @@ function Header() {
           <div className={styles['HeaderMenu']}>
             <div className={styles['HeaderMenuLinks']}>
               <div>
-                <h3>MENU</h3>
+                <h3>ABOUT</h3>
                 <ul>
                   <li>
                     <Link to="/about">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/leadership">Leadership</Link>
                   </li>
                   <li>
                     <Link to="/events">Events</Link>
@@ -153,9 +156,9 @@ function Header() {
                   <li>
                     <Link to="/give">Give</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/store">Store</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 
@@ -165,7 +168,7 @@ function Header() {
                   <li>
                     <Link to="/livestream">Live service</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/past-sermons">Past sermons</Link>
                   </li>
                   <li>
@@ -173,7 +176,7 @@ function Header() {
                   </li>
                   <li>
                     <Link to="/study#bible">Bible in one year</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/house-fellowship">House fellowship</Link>
                   </li>
@@ -195,9 +198,9 @@ function Header() {
                   <li>
                     <Link to="/new-member">New members corner</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/counselling">Counselling</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 

@@ -37,7 +37,7 @@ function GroupsPage() {
             Departments & Groups
           </h1>
 
-          <img />
+          <img src="/about-page-hero-image.jpg" />
         </div>
       </section>
 

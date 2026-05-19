@@ -27,15 +27,15 @@ function Footer() {
               <li>
                 <Link to="/livestream">Live service</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/past-sermons">Past sermons</Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link to="/study#devotional">Daily devotional</Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link to="/study#bible">Bible in one year</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/house-fellowship">House fellowship</Link>
               </li>
@@ -57,9 +57,9 @@ function Footer() {
               <li>
                 <Link to="/new-member">New members corner</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/counselling">Counselling</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

@@ -89,7 +89,7 @@ function EventsPage() {
             />
           </div>
 
-          <img src="/default-bg.jpg" />
+          <img src="/about-page-hero-image.jpg" />
         </div>
       </section>
 
