@@ -78,8 +78,8 @@ function LivestreamPage() {
 
     if (!user) {
       dispatch(google_create({
-        return_to_on_success: 'livestream',
-        return_to_on_failure: 'livestream',
+        return_to_on_success: 'live',
+        return_to_on_failure: 'live',
       }))
 
       return;
