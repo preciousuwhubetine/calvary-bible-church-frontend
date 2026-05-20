@@ -41,6 +41,30 @@
   border-radius: 10px;
   height: 500px;
   overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr max-content;
+}
+
+.LivestreamPageViewerStats {
+  background-color: white;
+  border-radius: 50rem;
+  display: inline-block;
+  font-weight: 500;
+  padding: 4px 16px;
+  margin: 16px;
+  width: max-content;
+}
+
+.LivestreamPageViewerStats p{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.LivestreamPageViewerStats p svg {
+  height: 18px;
+  width: 18px;
 }
 
 .LivestreamPageSidebar {
@@ -107,8 +131,9 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-height: 300px;
   height: 100%;
-  padding: 16px;
+  padding: 8px;
   overflow-y: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -117,17 +142,20 @@
 .LivestreamPageChatMessages li {
   align-items: center;
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 24px 1fr;
   gap: 8px;
   margin-bottom: 8px;
 }
 
 .LivestreamPageChatMessages li img {
   background-color: #eee;
-  border: 1px solid #ccc;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 24px;
+  width: 24px;
+}
+
+.LivestreamPageChatMessage {
+  font-size: 13px;
 }
 
 .LivestreamPageChatForm {
@@ -135,6 +163,10 @@
   align-items: center;
   grid-template-columns: 40px 1fr max-content;
   gap: 8px;
+}
+
+.LivestreamPageChatFormNoUser {
+  display: grid;
 }
 
 .LivestreamPageChatForm img {
@@ -151,8 +183,10 @@
   border-radius: 50rem;
   height: 40px;
   padding: 8px;
+  width: 100%;
 }
 
+.LivestreamPageChatFormNoUser button,
 .LivestreamPageChatForm button {
   background-color: white;
   border: 1px solid #ccc;
@@ -162,6 +196,18 @@
   font-weight: 600;
   height: 40px;
   padding: 0 20px;
+}
+
+.LivestreamPageChatFormNoUser button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.LivestreamPageChatFormNoUser button img {
+  height: 20px;
+  width: auto;
 }
 
 .LivestreamPageGive {
@@ -254,9 +300,10 @@
   background-color: #ffecc0;
   border-radius: 16px;
   display: flex;
-  height: 200px;
+  min-height: 150px;
   flex-direction: column;
   justify-content: space-between;
+  gap: 16px;
   padding: 16px;
 }
 
@@ -378,6 +425,49 @@
   width: auto;
 }
 
+.LivestreamPageAdmin {
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+  max-width: var(--content-max-width);
+  margin: 0 auto 32px;
+}
+
+.LivestreamPageAdmin h3 {
+  display: flex;
+  gap: 4px;
+}
+
+.LivestreamPageAdminControls {
+  display: flex;
+  gap: 8px;
+}
+
+.LivestreamPageAdmin button {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50rem;
+  color: #444;
+  cursor: pointer;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.LivestreamPageAdmin form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+
+.LivestreamPageAdmin input {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 50rem;
+  height: 40px;
+  padding: 8px;
+}
+
 @media (max-width: 1024px) {
   .LivestreamPageBackground {
     display: none;
@@ -442,6 +532,22 @@
 
   .LivestreamPageChatMessages {
     max-height: 350px;
+  }
+
+  .LivestreamPageAdmin {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .LivestreamPageAdmin button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50rem;
+    color: #444;
+    cursor: pointer;
+    font-weight: 600;
+    height: 40px;
+    padding: 0 20px;
   }
 }
 
