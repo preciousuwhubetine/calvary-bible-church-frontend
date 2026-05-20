@@ -2,28 +2,34 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   height: 100vh;
   justify-content: center;
   margin: 0 auto;
   max-width: 500px;
+  text-align: center;
 }
 
-._404 h1 {
-  font-size: 64px;
-  font-weight: 700;
+._404 img {
+  height: 64px;
+  width: 64px;
 }
 
 ._404 p {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 14px;
 }
 
 ._404 a {
   align-items: center;
   color: black;
   display: flex;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
+  margin-top: 16px;
   gap: 8px;
+}
+
+._404 a svg {
+  height: 14px;
+  width: 14px;
 }
