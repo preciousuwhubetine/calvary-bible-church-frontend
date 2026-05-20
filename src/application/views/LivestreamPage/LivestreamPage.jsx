@@ -43,7 +43,7 @@ function LivestreamPage() {
     }
 
     const database = getDatabase();
-    set(ref(database, 'livestream_url/'), `https://www.youtube.com/embed/${newVideoID}?autoplay=1&mute=1`);
+    set(ref(database, 'livestream_url/'), `https://www.youtube.com/embed/${newVideoID}?autoplay=1`);
   };
 
   const toggleChat = () => {
