@@ -555,6 +555,10 @@
   .LivestreamPageVideo {
     height: 300px;
   }
+
+  .LivestreamPageAdmin form {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 450px) {
