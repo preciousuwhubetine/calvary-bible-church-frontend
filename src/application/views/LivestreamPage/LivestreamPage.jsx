@@ -43,7 +43,7 @@ function LivestreamPage() {
     }
 
     const database = getDatabase();
-    set(ref(database, 'livestream_url/'), `https://www.youtube.com/embed/${newVideoID}?autoplay=1`);
+    set(ref(database, 'livestream_url/'), newVideoID);
   };
 
   const toggleChat = () => {
@@ -175,7 +175,7 @@ function LivestreamPage() {
               <iframe
                 width="100%"
                 height="100%"
-                src={livestreamURL}
+                src={`https://www.youtube.com/embed/${livestreamURL}?autoplay=1`}
                 allowFullScreen={true}
                 allow={`autoplay; encrypted-media; picture-in-picture`}
                 title="Livestream Video"
