@@ -468,6 +468,20 @@
   padding: 8px;
 }
 
+.LivestreamPageNoStream {
+  margin-top: 200px;
+  padding: 100px 20px;
+  display: flex;
+  gap:8px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.LivestreamPageNoStream h1 {
+  margin-top: 16px;
+}
+
 @media (max-width: 1024px) {
   .LivestreamPageBackground {
     display: none;

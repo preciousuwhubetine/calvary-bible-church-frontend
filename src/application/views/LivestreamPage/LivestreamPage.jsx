@@ -123,7 +123,7 @@ function LivestreamPage() {
 
     onValue(liveStreamUrlRef, (snapshot) => {
       const data = snapshot.val();
-      setLivestreamURL(data || 'https://www.youtube.com/embed/SZvLTS7hAlU?autoplay=1&mute=1');
+      setLivestreamURL(data);
     });
   }, []);
 
@@ -544,6 +544,22 @@ function LivestreamPage() {
       }
 
       {
+        !livestreamURL && (
+          <section className={styles['LivestreamPageNoStream']}>
+            <img src="/logo-dark.png" />
+
+            <h1>
+              No Livestream Currently Active
+            </h1>
+
+            <p>
+              Please check back later.
+            </p>
+          </section>
+        )
+      }
+
+      {
         user?.is_admin && (
           <div className={styles['LivestreamPageAdmin']}>
             <div className={styles['LivestreamPageAdminHeader']}>
@@ -604,6 +620,7 @@ function LivestreamPage() {
                 type="text"
                 placeholder="Enter new video ID"
                 name="video_id"
+                defaultValue={livestreamURL}
               />
 
               <button type="submit">
