@@ -240,7 +240,7 @@ function HomePage() {
           </p>
 
           <div className={styles['HomePageHeroContentActions']}>
-            <Link to="/livestream">
+            <Link to="/live">
               Watch Live
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M2 2H22V4H21V18H14.414L18.414 22L17 23.414L12 18.414L7 23.414L5.586 22L9.586 18H3V4H2V2ZM5 4V16H19V4H5ZM10 6.5L14.667 10L10 13.5V6.5Z" fill="white"/>

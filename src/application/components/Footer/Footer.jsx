@@ -25,7 +25,7 @@ function Footer() {
             <h3>WATCH & LISTEN</h3>
             <ul>
               <li>
-                <Link to="/livestream">Live service</Link>
+                <Link to="/live">Live service</Link>
               </li>
               {/* <li>
                 <Link to="/past-sermons">Past sermons</Link>

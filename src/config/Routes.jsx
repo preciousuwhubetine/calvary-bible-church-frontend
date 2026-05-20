@@ -53,7 +53,7 @@ export default function Config () {
       <Route path="/groups" element={<GroupsPage />} />
       <Route path="/house-fellowship" element={<HouseFelllowshipPage />} />
       <Route path="/leadership" element={<LeadershipPage />} />
-      <Route path="/livestream" element={<LivestreamPage />} />
+      <Route path="/live" element={<LivestreamPage />} />
       <Route path="/maturity-class" element={<MaturityClass />} />
       <Route path="/marriage-class" element={<MarriageClass />} />
       <Route path="/membership-class" element={<MembershipClass />} />
