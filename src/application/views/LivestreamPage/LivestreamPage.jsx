@@ -93,10 +93,10 @@ function LivestreamPage() {
   }, []);
 
   useEffect(() => {
-    if (chatMessagesRef.current) {
+    if (chatMessagesRef.current && chatVisible) {
       chatMessagesRef.current.scrollTop = chatMessagesRef.current.scrollHeight;
     }
-  }, [chatMessages])
+  }, [chatMessages, chatVisible]);
 
   return (
     <div className={styles['LivestreamPage']}>
@@ -388,10 +388,10 @@ function LivestreamPage() {
                 <ul>
                   <li>
                     <XShareButton
-                      title="Share title sent to X"
-                      htmlTitle="Native button tooltip"
+                      title="Join us live!"
+                      htmlTitle="Share this livestream on X"
                       url={window.location.href}
-                      aria-label="Share on X"
+                      aria-label="Join us live! Share this livestream on X"
                     >
                       <XIcon size={32} round />
                       Share on X
@@ -399,14 +399,14 @@ function LivestreamPage() {
                   </li>
 
                   <li>
-                    <FacebookShareButton url={window.location.href} aria-label="Share this page on Facebook">
+                    <FacebookShareButton url={window.location.href} aria-label="Join us live! Share this livestream on Facebook">
                       <FacebookIcon size={32} round />
                       Share on Facebook
                     </FacebookShareButton>
                   </li>
 
                   <li>
-                    <WhatsappShareButton title="Read this next" url={window.location.href} aria-label="Share on WhatsApp">
+                    <WhatsappShareButton title="Join us live!" url={window.location.href} aria-label="Join us live! Share this livestream on WhatsApp">
                       <WhatsappIcon size={32} round />
                       Share on WhatsApp
                     </WhatsappShareButton>
@@ -414,8 +414,8 @@ function LivestreamPage() {
 
                   <li>
                     <EmailShareButton
-                      subject="Take a look"
-                      body="Thought you might like this:"
+                      subject="You Are Invited"
+                      body={"Join us live as we worship and learn from God's word together. Click the link below to join the livestream:\n\n"}
                       url={window.location.href}
                       aria-label="Share by email"
                     >
