@@ -12,6 +12,8 @@ import prayer_requests from "../application/services/api/v1/prayer_requests";
 import store_item_categories from "../application/services/api/v1/store_item_categories";
 import store_items from "../application/services/api/v1/store_items";
 import testimonies from "../application/services/api/v1/testimonies";
+import session from "../application/services/session";
+import users from "../application/services/users";
 
 export const store = configureStore({
   reducer: {
@@ -27,6 +29,9 @@ export const store = configureStore({
     store_item_categories: store_item_categories.reducer,
     store_items: store_items.reducer,
     testimonies: testimonies.reducer,
+    session: session.reducer,
+    users: users.reducer,
+
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
 })

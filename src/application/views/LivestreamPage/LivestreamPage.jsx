@@ -1,8 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 import styles from './styles.module.css'
 import { getDatabase, onValue, ref, set } from 'firebase/database'
+import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'sonner'
 import { EmailIcon, EmailShareButton, FacebookIcon, FacebookShareButton, WhatsappIcon, WhatsappShareButton, XIcon, XShareButton } from 'react-share';
+
+import {
+  create as google_create,
+} from '../../services/omni_auth/google'
 
 function LivestreamPage() {
   const chatMessagesRef = useRef();
@@ -12,6 +17,9 @@ function LivestreamPage() {
   const [currentGiveTab, setcurrentGiveTab] = useState('naira')
   const [chatMessage, setChatMessage] = useState('')
   const [chatMessages, setChatMessages] = useState([])
+
+  const user = useSelector((state) => state.session.user)
+  const dispatch = useDispatch()
 
   const toggleChat = () => {
     if (!chatVisible) {
@@ -42,6 +50,16 @@ function LivestreamPage() {
 
   const sendChatMessage = (e) => {
     e.preventDefault();
+
+    if (!user) {
+      dispatch(google_create({
+        return_to_on_success: 'livestream',
+        return_to_on_failure: 'livestream',
+      }))
+
+      return;
+    }
+
     if (chatMessage.trim() === '') return;
 
     const database = getDatabase();
@@ -49,8 +67,8 @@ function LivestreamPage() {
     set(ref(database, 'livestream_chat_messages/' + Date.now()), {
       message: chatMessage,
       timestamp: Date.now(),
-      // user_id: user.id,
-      // username: `${user.first_name} ${user.last_name}`,
+      user_id: user.id,
+      username: `${user.first_name} ${user.last_name}`,
     });
 
     setChatMessage('');
@@ -164,7 +182,7 @@ function LivestreamPage() {
                 </ul>
 
                 <form className={styles['LivestreamPageChatForm']} onSubmit={sendChatMessage}>
-                  <img title="Anonymous" src={`https://ui-avatars.com/api/?name=${'Anonymous' || 'Anonymous'}&background=FC8E33&color=fff&size=128`} />
+                  <img title="Profile pic" src={`https://ui-avatars.com/api/?name=${user?.first_name || 'None'}&background=FC8E33&color=fff&size=128`} />
                   <input
                     type="text"
                     placeholder="Type your message..."
