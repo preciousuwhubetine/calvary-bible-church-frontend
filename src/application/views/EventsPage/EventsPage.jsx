@@ -99,6 +99,16 @@ function EventsPage() {
         tabIndex={1}
       >
         {
+          !events_index_loading && events.length === 0 && (
+            <div className={styles['EventsPageEventsNoEvents']}>
+              <h3>
+                No upcoming events at the moment. Check back later!
+              </h3>
+            </div>
+          )
+        }
+
+        {
           events_index_loading ? (
             <div className={styles['EventsPageContentLoading']}>
               <Loader size={40} />

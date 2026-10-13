@@ -184,7 +184,10 @@ function AboutPage() {
               branches.map((branch) => (
                 <div className={styles['AboutPageBranch']} key={branch.id}>
                   <img src="/branch-default.jpg" />
-                  <h3>{branch.name}</h3>
+                  <div>
+                    <h3>{branch.name}</h3>
+                    <a>Learn more</a>
+                  </div>
                 </div>
               ))
             }
@@ -221,7 +224,7 @@ function AboutPage() {
 
       <section className={styles['AboutPagePillars']}>
         <div className={styles['AboutPagePillarsHeader']}>
-          <h2>7 Pillars Of Calvary</h2>
+          <h2>The Calvary Brand</h2>
 
           <p>
             The brand known as Truth of Calvary Ministries, aka Calvary
@@ -240,27 +243,7 @@ function AboutPage() {
               </p>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
-              <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-              </g>
-              <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dx="-5" dy="4"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.988235 0 0 0 0 0.556863 0 0 0 0 0.2 0 0 0 0.37 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3805_13887"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3805_13887" result="shape"/>
-                </filter>
-              </defs>
-            </svg>
+
           </li>
 
           <li>
@@ -271,27 +254,7 @@ function AboutPage() {
               </p>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
-              <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-              </g>
-              <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dx="-5" dy="4"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.988235 0 0 0 0 0.556863 0 0 0 0 0.2 0 0 0 0.37 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3805_13887"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3805_13887" result="shape"/>
-                </filter>
-              </defs>
-            </svg>
+
           </li>
 
           <li>
@@ -302,27 +265,7 @@ function AboutPage() {
               </p>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
-              <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-              </g>
-              <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dx="-5" dy="4"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.988235 0 0 0 0 0.556863 0 0 0 0 0.2 0 0 0 0.37 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3805_13887"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3805_13887" result="shape"/>
-                </filter>
-              </defs>
-            </svg>
+
           </li>
 
           <li>
@@ -333,27 +276,7 @@ function AboutPage() {
               </p>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
-              <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-              </g>
-              <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dx="-5" dy="4"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.988235 0 0 0 0 0.556863 0 0 0 0 0.2 0 0 0 0.37 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3805_13887"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3805_13887" result="shape"/>
-                </filter>
-              </defs>
-            </svg>
+
           </li>
 
           <li>
@@ -365,27 +288,7 @@ function AboutPage() {
               </p>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
-              <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-              </g>
-              <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dx="-5" dy="4"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.988235 0 0 0 0 0.556863 0 0 0 0 0.2 0 0 0 0.37 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3805_13887"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3805_13887" result="shape"/>
-                </filter>
-              </defs>
-            </svg>
+
           </li>
 
           <li>
@@ -396,27 +299,7 @@ function AboutPage() {
               </p>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
-              <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-              </g>
-              <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dx="-5" dy="4"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.988235 0 0 0 0 0.556863 0 0 0 0 0.2 0 0 0 0.37 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3805_13887"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3805_13887" result="shape"/>
-                </filter>
-              </defs>
-            </svg>
+
           </li>
 
           <li>
@@ -427,27 +310,7 @@ function AboutPage() {
               </p>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="117" height="108" viewBox="0 0 117 108" fill="none">
-              <g filter="url(#filter0_d_3805_13887)">
-                <path d="M112.762 44.6047H14.0872C9.41225 44.6047 7.4087 39.5367 11.0819 37.1273L60.4192 4.97466C61.3302 4.44137 62.3678 4.16016 63.4246 4.16016C64.4814 4.16016 65.519 4.44137 66.4299 4.97466L115.767 37.1273C119.44 39.5367 117.437 44.6047 112.762 44.6047Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M113.512 90.2988H13.3342C11.0289 90.2988 9.16016 92.159 9.16016 94.4529V106.915C9.16016 109.209 11.0289 111.069 13.3342 111.069H113.512C115.817 111.069 117.686 109.209 117.686 106.915V94.4529C117.686 92.159 115.817 90.2988 113.512 90.2988Z" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M21.6816 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M49.5098 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M77.3359 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M105.164 44.6055V90.3004" stroke="#FC8E33" strokeWidth="8.32" strokeLinecap="round" strokeLinejoin="round"/>
-              </g>
-              <defs>
-                <filter id="filter0_d_3805_13887" x="0" y="0" width="121.846" height="119.229" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dx="-5" dy="4"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.988235 0 0 0 0 0.556863 0 0 0 0 0.2 0 0 0 0.37 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3805_13887"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3805_13887" result="shape"/>
-                </filter>
-              </defs>
-            </svg>
+
           </li>
         </ul>
       </section>
@@ -479,10 +342,9 @@ function AboutPage() {
           <h2>Our Core Values</h2>
 
           <ul>
-            <li>Prayer</li>
-            <li>Worship</li>
-            <li>Community</li>
-            <li>Discipleship</li>
+            <li>Corporate</li>
+            <li>Worded</li>
+            <li>Modest</li>
           </ul>
         </div>
       </section>
@@ -492,7 +354,7 @@ function AboutPage() {
         <div>
           <h2>What We Do</h2>
           <p>
-            From small groups to community outreach, prayer gatherings, and global missions, we live out our calling to be salt and light wherever we are.
+            We have a mandate to raise, empower and release people who will live out their calling to be salt and light wherever they are.
           </p>
         </div>
       </section>

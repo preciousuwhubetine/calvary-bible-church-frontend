@@ -5,6 +5,7 @@ import {
   create as testimonies_create,
 } from '../../../services/api/v1/testimonies'
 import Loader from '../../Loader/Loader'
+import { toast } from 'sonner'
 
 function TestimonyPopup({
   close
@@ -19,10 +20,10 @@ function TestimonyPopup({
     dispatch(testimonies_create({
       testimony: data
     })).then(() => {
-      alert('Testimony submitted successfully!')
+      toast.success('Testimony submitted successfully!')
       close()
     }).catch(() => {
-      alert('Failed to submit testimony. Please try again.')
+      toast.error('Failed to submit testimony. Please try again.')
     })
   }
 

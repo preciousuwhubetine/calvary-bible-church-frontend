@@ -265,7 +265,7 @@
 .AboutPageBranch {
   align-items: flex-end;
   background-color: #e5e5e5;
-  border-radius: 8px;
+  border-radius: 15px;
   display: flex;
   flex: 0 0 300px;
   gap: 24px;
@@ -284,13 +284,19 @@
   left: 0;
   top: 0;
   width: 100%;
+  filter: brightness(0.4) blur(3px);
 }
 
-.AboutPageBranch h3 {
+.AboutPageBranch div {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
   text-align: center;
+}
+
+.AboutPageBranch div a {
+  font-size: 16px;
+  text-decoration: underline;
 }
 
 .AboutPageVision {
@@ -374,7 +380,6 @@
   border-radius: 8px;
   display: grid;
   gap: 24px;;
-  grid-template-columns: 1fr 100px;
   padding: 24px;
   position: relative;
 }
@@ -392,13 +397,6 @@
 .AboutPagePillars ul li div p {
   color: #474747;
   font-size: 16px;
-}
-
-.AboutPagePillars ul li svg {
-  bottom: 0;
-  position: absolute;
-  right: 0;
-  width: 100px;
 }
 
 .AboutPageWorship,
@@ -430,7 +428,7 @@
 .AboutPageCoreValues img,
 .AboutPageWhatWeDo img {
   border-radius: 16px;
-  height: 500px;
+  height:800px;
   object-fit: cover;
   object-position: center bottom;
   width: 100%;
@@ -672,7 +670,7 @@
   .AboutPageGathering img,
   .AboutPageCoreValues img,
   .AboutPageWhatWeDo img {
-    height: 200px;
+    height:300px;
   }
 }
 
@@ -723,7 +721,7 @@
   }
 
   .AboutPageBranches ul li h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .AboutPageVision h2 {

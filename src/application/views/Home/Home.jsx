@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { Link, useLocation } from 'react-router-dom'
 import styles from './styles.module.css'
+import { toast } from 'sonner'
 
 import {
   index as events_index,
@@ -70,11 +71,11 @@ function HomePage() {
     dispatch(feedbacks_create({
       feedback: data
     })).then(() => {
-      alert('Feedback submitted successfully!')
+      toast.success('Feedback submitted successfully!')
 
       e.target.reset();
     }).catch(() => {
-      alert('Failed to submit feedback. Please try again.')
+      toast.error('Failed to submit feedback. Please try again.')
     })
   };
 
@@ -369,9 +370,9 @@ function HomePage() {
                       </svg>
                     </Link>
 
-                    <Link to="/past-sermons">
+                    <a href="https://www.youtube.com/@cbcnigeria6960/videos" target="_blank">
                       All Sermons
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -749,17 +750,17 @@ function HomePage() {
           </div>
 
           <label>
-            Name
-            <input name="name" type="text" placeholder="Name" required />
+            Name (Optional)
+            <input name="name" type="text" placeholder="Name" />
           </label>
 
           <label>
-            Email
-            <input name="email" type="email" placeholder="Email" required />
+            Email (Optional)
+            <input name="email" type="email" placeholder="Email" />
           </label>
 
           <label>
-            Feedback
+            Feedback*
             <textarea name="comments" required rows={10} />
           </label>
 

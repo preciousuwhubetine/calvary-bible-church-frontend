@@ -129,6 +129,16 @@
   padding: 20px;
 }
 
+.EventsPageEventsNoEvents {
+  padding: 20px;
+  text-align: center;
+}
+
+.EventsPageEventsNoEvents h3 {
+  color: #c0c0c0;
+  font-size: 20px;
+}
+
 .EventsPageContent ul {
   display: flex;
   flex-wrap: wrap;

@@ -5,6 +5,8 @@ function Footer() {
   return (
     <footer className={styles['Footer']}>
       <div className={styles['FooterContent']}>
+        <img className={styles['FooterIcon']} src="/icon.png" />
+
         <div className={styles['FooterContentLinks']}>
           <div>
             <h3>ABOUT</h3>
@@ -92,6 +94,12 @@ function Footer() {
               </li>
               <li>
                 <a href="https://www.youtube.com/@mycstvglobal" target="_blank" rel="noopener noreferrer">CSTV</a>
+              </li>
+              <li>
+                <a href="https://www.ntnglobal.org" target="_blank" rel="noopener noreferrer">NTN</a>
+              </li>
+              <li>
+                <a>Teaching Centres</a>
               </li>
             </ul>
           </div>

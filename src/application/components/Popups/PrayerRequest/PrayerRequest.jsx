@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux'
+import { toast } from 'sonner'
 import styles from './styles.module.css'
 
 import {
@@ -19,10 +20,10 @@ function PrayerRequestPopup({
     dispatch(prayer_requests_create({
       prayer_request: data
     })).then(() => {
-      alert('Prayer request submitted successfully!')
+      toast.success('Prayer request submitted successfully!')
       close()
     }).catch(() => {
-      alert('Failed to submit prayer request. Please try again.')
+      toast.error('Failed to submit prayer request. Please try again.')
     })
   }
 

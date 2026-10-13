@@ -3,7 +3,12 @@ import styles from './styles.module.css'
 function LeadershipPage() {
   return (
     <div className={styles['LeadershipPage']}>
-      <h2>Our Leadership</h2>
+      <div className={styles['LeadershipPageHeading']}>
+        <h2>Our Leadership</h2>
+        <p>
+          At Calvary Bible Church, we are blessed with a team of visionary leaders who are committed to guiding our congregation with wisdom, integrity, and a deep passion for serving God and the community. Each leader brings unique gifts and experiences, contributing to the growth and spiritual development of our church family. Their dedication to fostering a nurturing environment allows members to thrive in their faith journey, equipping them to make a positive impact in the world.
+        </p>
+      </div>
 
       <ul>
         <li>
