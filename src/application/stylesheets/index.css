@@ -133,6 +133,15 @@ section {
   }
 }
 
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 950px) {
   :root {
     --header-height: 80px;

@@ -92,9 +92,9 @@ function AboutPage() {
           </div>
 
           <h1>
-            ABOUT
+            About
             <br />
-            CALVARY BIBLE CHURCH
+            Calvary Bible Church
           </h1>
 
           <img fetchPriority="high" src="/about-page-hero-image.jpg" />
@@ -183,7 +183,7 @@ function AboutPage() {
             {
               branches.map((branch) => (
                 <div className={styles['AboutPageBranch']} key={branch.id}>
-                  <img src={branch.branch_image} />
+                  <img src="/branch-default.jpg" />
                   <h3>{branch.name}</h3>
                 </div>
               ))
@@ -474,7 +474,7 @@ function AboutPage() {
       </section>
 
       <section className={styles['AboutPageCoreValues']}>
-        <img src="/about-page-section-bg-2.jpg" alt="Worship" />
+        <img src="/about-page-core-values.jpg" alt="Worship" />
         <div>
           <h2>Our Core Values</h2>
 

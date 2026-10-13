@@ -28,7 +28,7 @@
   text-underline-offset: 2px;
 }
 
-.LeadershipPage ul li:first-child {
+.LeadershipPage ul li {
   background-color: #fff0cd;
   border-radius: 16px;
   display: grid;
@@ -39,59 +39,32 @@
   padding: 20px;
 }
 
-.LeadershipPage ul li:first-child img {
+.LeadershipPage ul li img {
   background-color: #e5e5e5;
   border-radius: 16px;
   height: 100%;
+  max-height: 400px;
   object-fit: cover;
-  object-position: center 5%;
+  object-position: center 30%;
   width: 100%;
 }
 
-.LeadershipPage ul li:first-child div {
+.LeadershipPage ul li:nth-child(1) img {
+  object-position: center 0%;
+}
+
+.LeadershipPage ul li div {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.LeadershipPage ul li:first-child div h3 {
+.LeadershipPage ul li div h3 {
   font-size: 28px;
 }
 
-.LeadershipPage ul li:first-child div p {
+.LeadershipPage ul li div p {
   font-size: 18px;
-}
-
-.LeadershipPage ul li:first-child div a {
-  font-size: 18px;
-  margin-top: auto;
-}
-
-.LeadershipPage ul li:not(:first-child) {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.LeadershipPage ul li:not(:first-child) img {
-  background-color: #e5e5e5;
-  border-radius: 16px;
-  height: 300px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.LeadershipPage ul li:not(:first-child) div {
-  background-color: #fff0cd;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 20px;
-}
-
-.LeadershipPage ul li:not(:first-child) div h3 {
-  font-size: 24px;
 }
 
 @media (max-width: 1024px) {
@@ -99,7 +72,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .LeadershipPage ul li:first-child {
+  .LeadershipPage ul li {
     grid-column: span 2;
   }
 }
@@ -109,19 +82,19 @@
     grid-template-columns: 1fr;
   }
 
-  .LeadershipPage ul li:first-child {
+  .LeadershipPage ul li {
     grid-template-columns: 1fr;
     grid-column: span 1;
     padding: 0;
     gap: 0;
   }
 
-  .LeadershipPage ul li:first-child img {
+  .LeadershipPage ul li img {
     border-radius: 0;
     height: 400px;
   }
 
-  .LeadershipPage ul li:first-child div {
+  .LeadershipPage ul li div {
     padding: 20px;
   }
 }

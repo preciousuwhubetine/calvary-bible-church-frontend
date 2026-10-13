@@ -35,7 +35,7 @@ function HouseFelllowshipPage() {
             House Fellowship
           </h1>
 
-          <img />
+          <img src="/about-page-hero-image.jpg" />
         </div>
       </section>
 

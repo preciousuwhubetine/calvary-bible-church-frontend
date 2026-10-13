@@ -8,10 +8,10 @@ function UnderConstruction({
   return (
     <div className={styles['UnderConstruction']}>
       <h1>Coming Soon!</h1>
-      <p>This {pageName} is currently being work on, please check back at a later date</p>
+      <p>The {pageName} is currently being worked on. Please check back at a later date.</p>
 
       <Link to="/">
-        Go back to Home
+        Homepage
 
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M2.0013 8H13.668" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

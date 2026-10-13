@@ -715,27 +715,11 @@ function HomePage() {
             </svg>
 
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro illum debitis natus tempore necessitatibus sequi similique dolore, tenetur quo iusto eius amet quia, quisquam, omnis sapiente cupiditate laboriosam delectus.
+              After marrying in 1998, I faced a 17-year fertility battle involving elevated prolactin, painful tube flushes, recurring fibroids, and endometriosis that required multiple surgeries. At one point, doctors even debated removing my womb while I was on the operating table. Despite immense societal pressure, a miscarriage, and deep grief, I anchored my soul in God’s Word. Through divine intervention and prophetic words, my faith was rewarded when I miraculously conceived and welcomed a set of twins in 2015.
             </p>
 
             <div>
-              <img />
-              <h4>John Doe</h4>
-            </div>
-          </li>
-
-          <li>
-            <svg width="60" height="47" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.7901 46.2831C5.35909 46.2831 -0.000104851 40.5341 -0.000104851 32.4466C-0.000104851 17.0511 9.84134 4.48131 26.2113 -0.0009277L26.601 1.07092C11.4978 5.65059 1.36406 16.2716 1.26661 32.8364C2.53333 28.4516 6.13861 24.2616 12.3748 24.2616C18.5135 24.2616 22.9957 28.9388 22.9957 35.4672C22.9957 41.8008 18.8058 46.2831 11.7901 46.2831ZM44.9197 46.2831C38.4887 46.2831 33.1295 40.5341 33.1295 32.4466C33.1295 17.0511 42.9709 4.48131 59.3409 -0.0009277L59.7306 1.07092C44.6274 5.65059 34.4937 16.2716 34.3962 32.8364C35.6629 28.4516 39.2682 24.2616 45.5044 24.2616C51.6431 24.2616 56.1253 28.9388 56.1253 35.4672C56.1253 41.8008 51.9354 46.2831 44.9197 46.2831Z" fill="black"/>
-            </svg>
-
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro illum debitis natus tempore necessitatibus sequi similique dolore, tenetur quo iusto eius amet quia, quisquam, omnis sapiente cupiditate laboriosam delectus.
-            </p>
-
-            <div>
-              <img />
-              <h4>John Doe</h4>
+              <h4>Mr Chukwudi & Pastor Ify Osita</h4>
             </div>
           </li>
         </ul>
