@@ -237,7 +237,7 @@ function HomePage() {
             Raising a People of Power, Purpose & Dominion
           </h1>
           <p>
-            Worship and serve God with us for six months, and experience a major testimony in your life!
+            Worship and serve God with us for six months and experience a notable testimony traceable to your becoming a member of the family.
           </p>
 
           <div className={styles['HomePageHeroContentActions']}>
