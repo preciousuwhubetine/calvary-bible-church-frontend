@@ -68,6 +68,12 @@
   width: 100%;
 }
 
+.HouseFelllowshipPageContentLoading {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .HouseFelllowshipPageContent ul {
   display: flex;
   flex-direction: column;

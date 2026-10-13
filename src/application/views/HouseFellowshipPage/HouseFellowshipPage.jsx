@@ -5,6 +5,7 @@ import {
   index as house_fellowship_centres_index,
 } from '../../services/api/v1/house_fellowship_centres'
 import { useEffect } from 'react';
+import Loader from '../../components/Loader/Loader';
 
 function HouseFelllowshipPage() {
   const dispatch = useDispatch();
@@ -15,6 +16,7 @@ function HouseFelllowshipPage() {
 
   const {
     house_fellowship_centres,
+    loading
   } = useSelector((state) => state.house_fellowship_centres);
 
   return (
@@ -40,6 +42,12 @@ function HouseFelllowshipPage() {
       </section>
 
       <section className={styles['HouseFelllowshipPageContent']}>
+        {
+          loading &&
+          <div className={styles['HouseFelllowshipPageContentLoading']}>
+            <Loader />
+          </div>
+        }
         <ul>
           {
             house_fellowship_centres.map((house_fellowship_centre) => (
@@ -50,7 +58,7 @@ function HouseFelllowshipPage() {
                   <h4>Coordinator</h4>
                   <div>
                     <span>
-                      <img loading="lazy" src={house_fellowship_centre.coordinator_image} />
+                      {/* <img loading="lazy" src={house_fellowship_centre.coordinator_image} /> */}
                       {house_fellowship_centre.coordinator_name}
                     </span>
 
