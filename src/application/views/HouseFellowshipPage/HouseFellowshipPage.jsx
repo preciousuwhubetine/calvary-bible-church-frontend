@@ -1,23 +1,14 @@
-import { useSelector, useDispatch } from 'react-redux'
 import styles from './styles.module.css'
 
-import {
-  index as house_fellowship_centres_index,
-} from '../../services/api/v1/house_fellowship_centres'
-import { useEffect } from 'react';
-import Loader from '../../components/Loader/Loader';
-
 function HouseFelllowshipPage() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(house_fellowship_centres_index({}));
-  }, [dispatch]);
-
-  const {
-    house_fellowship_centres,
-    loading
-  } = useSelector((state) => state.house_fellowship_centres);
+  const house_fellowship_centres = [
+    {
+      id: 1,
+      name: 'House Fellowship Centre 1',
+      coordinator_name: 'John Doe',
+      coordinator_phone: '+1234567890',
+    },
+  ]
 
   return (
     <div className={styles['HouseFelllowshipPage']}>
@@ -37,21 +28,11 @@ function HouseFelllowshipPage() {
             House Fellowship
           </h1>
 
-          <p>
-            Join us every Sunday by 5:00pm for our House Fellowship sessions, where we come together to grow in faith, share experiences, and build a strong community of believers. Find a House Fellowship near you and be part of a supportive and nurturing environment that fosters spiritual growth and meaningful connections.
-          </p>
-
           <img src="/about-page-hero-image.jpg" />
         </div>
       </section>
 
       <section className={styles['HouseFelllowshipPageContent']}>
-        {
-          loading &&
-          <div className={styles['HouseFelllowshipPageContentLoading']}>
-            <Loader />
-          </div>
-        }
         <ul>
           {
             house_fellowship_centres.map((house_fellowship_centre) => (

@@ -1,0 +1,19 @@
+.PrivacyPolicyPageContent {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 160px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.PrivacyPolicyPageContent section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.PrivacyPolicyPageContent ul {
+  list-style: disc;
+  padding-left: 20px;
+}

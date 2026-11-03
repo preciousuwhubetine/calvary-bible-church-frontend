@@ -905,10 +905,9 @@
 
 .HomePageTestimonies ul {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
   margin: 0 auto;
-  max-width: 950px;
 }
 
 .HomePageTestimonies ul li {

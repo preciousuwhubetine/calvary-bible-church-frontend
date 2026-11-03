@@ -8,26 +8,46 @@ function NewConvertPage() {
 
   const questions = [
     {
+      question: "What should I expect on my first Sunday Service?",
+      answer: "On your first visit, expect a warm welcome, a beautiful ambiance, genuine love, and an uplifting word and worship experience."
+    },
+    {
       question: "What does it mean to be a new convert?",
-      answer: "Becoming a new convert means you have embraced Jesus Christ as your Lord and Savior, received the Holy Spirit, and begun a lifelong journey of faith and obedience."
+      answer: "Being a new convert means being renewed in spirit, soul, and body by giving your life to Jesus and being consistently nurtured in the Word of God. We are here to guide you through every step of this process."
+    },
+    {
+      question: "How do I become a member at CBC?",
+      answer: "You can become a member by completing the first level of our Leadership Academy, known as the Membership Class."
     },
     {
       question: "How can I grow spiritually at CBC?",
-      answer: "To join, simply attend our next Membership class - held monthly on the first Sunday after service. You will meet our leadership team, learn CBC’s vision and values, and connect with a mentor who will guide your first steps."
+      answer: "You can grow with us by regularly attending our Sunday, Wednesday, and special services, and by yielding to the teaching of God's Word through total submission to the Holy Spirit. We are a Bible-believing church."
     },
     {
       question: "How do I get baptized?",
-      answer: "To join, simply attend our next Membership class - held monthly on the first Sunday after service. You will meet our leadership team, learn CBC’s vision and values, and connect with a mentor who will guide your first steps."
+      answer: "We observe two forms of baptism: Baptism in the Holy Spirit, administered by any of our ordained ministers with the evidence of speaking in tongues; and Water Baptism, conducted twice a year by total immersion according to our church calendar. Specific dates are announced during our services."
     },
     {
-      question: "How can I connect with a believers' group?",
-      answer: "To join, simply attend our next Membership class - held monthly on the first Sunday after service. You will meet our leadership team, learn CBC’s vision and values, and connect with a mentor who will guide your first steps."
+      question: "Where can I connect with other members?",
+      answer: "You can connect through our fellowships, departments, and our online community @cbcnigeria."
+    },
+    {
+      question: "How can I connect with a believers group?",
+      answer: "You can join any of our fellowship groups: House Fellowship, Men’s & Women’s Fellowships, Singles Fellowship, or Couples Fellowship. For more information, call: +234 802 301 7462"
+    },
+    {
+      question: "How can I serve on a ministry team?",
+      answer: "You can serve by joining any of our existing departments based on your giftings, training, or calling."
+    },
+    {
+      question: "Who can I contact for Pastoral Care?",
+      answer: "You can reach our Pastor in charge of Pastoral Care directly at: +234 806 020 0632"
     },
     {
       question: "Who can I meet for prayer and guidance?",
-      answer: "To join, simply attend our next Membership class - held monthly on the first Sunday after service. You will meet our leadership team, learn CBC’s vision and values, and connect with a mentor who will guide your first steps."
+      answer: "You can schedule an appointment with any of our ministers or pastors. You are also welcome to visit the church office or call us at: +234 802 301 7462"
     },
-  ]
+  ];
 
   useEffect(() => {
     let player;

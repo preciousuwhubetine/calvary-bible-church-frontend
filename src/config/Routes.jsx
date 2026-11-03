@@ -21,10 +21,12 @@ import NewPage from "../application/views/NewPage/NewPage"
 import NewConvertPage from "../application/views/NewConvertPage/NewConvertPage"
 import NewMemberPage from "../application/views/NewMemberPage/NewMemberPage"
 import PastSermonsPage from "../application/views/PastSermonsPage/PastSermonsPage"
+import PrivacyPolicyPage from "../application/views/PrivacyPolicyPage/PrivacyPolicyPage"
 import StorePage from "../application/views/StorePage/StorePage"
 import StorePageCategories from "../application/views/StorePage/StorePageCategories/StorePageCategories"
 import StorePageCategory from "../application/views/StorePage/StorePageCategory/StorePageCategory"
 import StudyPage from "../application/views/StudyPage/StudyPage"
+import TermsAndConditionsPage from "../application/views/TermsAndConditionsPage/TermsAndConditionsPage"
 
 export default function Config () {
   const location = useLocation();
@@ -63,11 +65,13 @@ export default function Config () {
       <Route path="/new-member" element={<NewMemberPage />} />
       <Route path="/new-convert" element={<NewConvertPage />} />
       <Route path="/past-sermons" element={<PastSermonsPage />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       <Route path="/store" element={<StorePage />}>
         <Route path="/store" element={<StorePageCategories />} />
         <Route path="/store/category/:categoryId/:categoryName" element={<StorePageCategory />} />
       </Route>
       <Route path="/study" element={<StudyPage />} />
+      <Route path="/terms-and-conditions" element={<TermsAndConditionsPage />} />
       <Route path="/" element={<HomePage />} />
       <Route path="*" element={<_404 />} />
     </Routes>

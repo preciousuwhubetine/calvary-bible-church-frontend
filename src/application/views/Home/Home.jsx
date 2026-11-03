@@ -712,15 +712,53 @@ function HomePage() {
         <ul>
           <li>
             <svg width="60" height="47" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.7901 46.2831C5.35909 46.2831 -0.000104851 40.5341 -0.000104851 32.4466C-0.000104851 17.0511 9.84134 4.48131 26.2113 -0.0009277L26.601 1.07092C11.4978 5.65059 1.36406 16.2716 1.26661 32.8364C2.53333 28.4516 6.13861 24.2616 12.3748 24.2616C18.5135 24.2616 22.9957 28.9388 22.9957 35.4672C22.9957 41.8008 18.8058 46.2831 11.7901 46.2831ZM44.9197 46.2831C38.4887 46.2831 33.1295 40.5341 33.1295 32.4466C33.1295 17.0511 42.9709 4.48131 59.3409 -0.0009277L59.7306 1.07092C44.6274 5.65059 34.4937 16.2716 34.3962 32.8364C35.6629 28.4516 39.2682 24.2616 45.5044 24.2616C51.6431 24.2616 56.1253 28.9388 56.1253 35.4672C56.1253 41.8008 51.9354 46.2831 44.9197 46.2831Z" fill="black"/>
-            </svg>
+              <path d="M11.7901 46.2831C5.35909 46.2831 -0.000104851 40.5341 -0.000104851 32.4466C-0.000104851 17.0511 9.84134 4.48131 26.2113 -0.0009277L26.601 1.07092C11.4978 5.65059 1.36406 16.2716 1.26661 32.8364C2.53333 28.4516 6.13861 24.2616 12.3748 24.2616C18.5135 24.2616 22.9957 28.9388 22.9957 35.4672C22.9957 41.8008 18.8058 46.2831 11.7901 46.2831ZM44.9197 46.2831C38.4887 46.2831 33.1295 40.5341 33.1295 32.4466C33.1295 17.0511 42.9709 4.48131 59.3409 -0.0009277L59.7306 1.07092C44.6274 5.65059 34.4937 16.2716 34.3962 32.8364C35.6629 28.4516 39.2682 24.2616 45.5044 24.2616C51.6431 24.2616 56.1253 28.9388 56.1253 35.4672C56.1253 41.8008 51.9354 46.2831 44.9197 46.2831Z" fill="black"/></svg>
 
             <p>
-              After marrying in 1998, I faced a 17-year fertility battle involving elevated prolactin, painful tube flushes, recurring fibroids, and endometriosis that required multiple surgeries. At one point, doctors even debated removing my womb while I was on the operating table. Despite immense societal pressure, a miscarriage, and deep grief, I anchored my soul in God’s Word. Through divine intervention and prophetic words, my faith was rewarded when I miraculously conceived and welcomed a set of twins in 2015.
+              After marrying in 1998, I endured a 17-year fertility battle involving elevated prolactin, painful tube flushes, recurring fibroids, and endometriosis that required multiple surgeries. Doctors even debated removing my womb during one operation. Despite societal pressure, a miscarriage, and deep grief, I anchored my soul in God’s Word. Through divine intervention and prophetic words, my faith was rewarded when I miraculously conceived and welcomed twins in 2015.
             </p>
 
             <div>
-              <h4>Mr Chukwudi & Pastor Ify Osita</h4>
+              <h4>Mr Chukwudi &amp; Pastor Ify Osita</h4>
+            </div>
+          </li>
+
+          <li>
+            <svg width="60" height="47" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.7901 46.2831C5.35909 46.2831 -0.000104851 40.5341 -0.000104851 32.4466C-0.000104851 17.0511 9.84134 4.48131 26.2113 -0.0009277L26.601 1.07092C11.4978 5.65059 1.36406 16.2716 1.26661 32.8364C2.53333 28.4516 6.13861 24.2616 12.3748 24.2616C18.5135 24.2616 22.9957 28.9388 22.9957 35.4672C22.9957 41.8008 18.8058 46.2831 11.7901 46.2831ZM44.9197 46.2831C38.4887 46.2831 33.1295 40.5341 33.1295 32.4466C33.1295 17.0511 42.9709 4.48131 59.3409 -0.0009277L59.7306 1.07092C44.6274 5.65059 34.4937 16.2716 34.3962 32.8364C35.6629 28.4516 39.2682 24.2616 45.5044 24.2616C51.6431 24.2616 56.1253 28.9388 56.1253 35.4672C56.1253 41.8008 51.9354 46.2831 44.9197 46.2831Z" fill="black"/></svg>
+
+            <p>
+              My husband was promoted at work, but for weeks the official promotion letter was withheld despite his follow-ups. I took the matter to God in prayer, asking Him to touch the hearts of those responsible. That same week, he received the letter. I return all the glory to God for making me a testifier, and I pray for many more testimonies in Jesus’ name.
+            </p>
+
+            <div>
+              <h4>Sis. Rebecca</h4>
+            </div>
+          </li>
+
+          <li>
+            <svg width="60" height="47" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.7901 46.2831C5.35909 46.2831 -0.000104851 40.5341 -0.000104851 32.4466C-0.000104851 17.0511 9.84134 4.48131 26.2113 -0.0009277L26.601 1.07092C11.4978 5.65059 1.36406 16.2716 1.26661 32.8364C2.53333 28.4516 6.13861 24.2616 12.3748 24.2616C18.5135 24.2616 22.9957 28.9388 22.9957 35.4672C22.9957 41.8008 18.8058 46.2831 11.7901 46.2831ZM44.9197 46.2831C38.4887 46.2831 33.1295 40.5341 33.1295 32.4466C33.1295 17.0511 42.9709 4.48131 59.3409 -0.0009277L59.7306 1.07092C44.6274 5.65059 34.4937 16.2716 34.3962 32.8364C35.6629 28.4516 39.2682 24.2616 45.5044 24.2616C51.6431 24.2616 56.1253 28.9388 56.1253 35.4672C56.1253 41.8008 51.9354 46.2831 44.9197 46.2831Z" fill="black"/></svg>
+
+            <p>
+              After waiting 14 years for another child, I became pregnant, then discovered a lump in my breast. After my son’s birth, it was diagnosed as Stage 3 breast cancer. By God’s grace, I went through chemotherapy and surgery; my son is now 7 and I am alive. I later survived diabetes and COVID-19. After joining Calvary Bible Church in 2025, I needed urgent surgery, and the church’s love and support overwhelmed my family. Today, I am cancer-free. What God has done is a miracle!
+            </p>
+
+            <div>
+              <h4>Mrs. Debola Onotafe</h4>
+            </div>
+          </li>
+
+          <li>
+            <svg width="60" height="47" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.7901 46.2831C5.35909 46.2831 -0.000104851 40.5341 -0.000104851 32.4466C-0.000104851 17.0511 9.84134 4.48131 26.2113 -0.0009277L26.601 1.07092C11.4978 5.65059 1.36406 16.2716 1.26661 32.8364C2.53333 28.4516 6.13861 24.2616 12.3748 24.2616C18.5135 24.2616 22.9957 28.9388 22.9957 35.4672C22.9957 41.8008 18.8058 46.2831 11.7901 46.2831ZM44.9197 46.2831C38.4887 46.2831 33.1295 40.5341 33.1295 32.4466C33.1295 17.0511 42.9709 4.48131 59.3409 -0.0009277L59.7306 1.07092C44.6274 5.65059 34.4937 16.2716 34.3962 32.8364C35.6629 28.4516 39.2682 24.2616 45.5044 24.2616C51.6431 24.2616 56.1253 28.9388 56.1253 35.4672C56.1253 41.8008 51.9354 46.2831 44.9197 46.2831Z" fill="black"/></svg>
+
+            <p>
+              After completing NYSC in December 2025, I moved to Lagos and searched for a job through rejections and months of waiting, staying prayerful. After six months, I was offered a job, and though confirmation was delayed, God reassured me through His Word at church. Soon after, I received the employment letter. It was the exact job on my prayer request sheet, close to home and aligned with my values. I thank God and Calvary Bible Church. To God alone be the glory!
+            </p>
+
+            <div>
+              <h4>Sis. Halimatu S.</h4>
             </div>
           </li>
         </ul>

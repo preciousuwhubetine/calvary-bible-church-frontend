@@ -1,0 +1,19 @@
+.TermsAndConditionsPageContent {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 160px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.TermsAndConditionsPageContent section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.TermsAndConditionsPageContent ul {
+  list-style: disc;
+  padding-left: 20px;
+}
