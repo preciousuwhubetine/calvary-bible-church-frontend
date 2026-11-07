@@ -117,45 +117,6 @@ function LeadershipPage() {
             </p>
           </div>
         </li>
-
-        <li>
-          <img src="/leadership-stephen-shola-gbolahan.jpg" />
-
-          <div>
-            <h3>Pastor Stephen Shola Gbolahan</h3>
-            <p>
-              Pastor Stephen Shola-Gbolahan is the Resident Pastor of Calvary Bible Church in Houston, Texas, and a dynamic teacher of God's word. Driven by a passion to help believers walk in their God-ordained destinies, his vision is to raise exceptional Christians who light up the world through godly living.
-
-              Marked by a life of prayer, holiness, and the word, his ministry focuses on compassionately teaching, training, and guiding believers to lead within their spheres of influence. He is happily married to Omonigho, who serves alongside him in ministry, and together they are blessed with children.
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <img src="/leadership-oladipupo-timothy-clement.jpg" />
-
-          <div>
-            <h3>Pastor Oladipupo Timothy Clement</h3>
-            <p>
-              Oladipupo Timothy Clement is an ordained minister and Resident Pastor of Calvary Bible Church's Gbagada Centre in Lagos. Passionate about God and people, he champions African economic emancipation through various ministry and business platforms.
-
-              A strategist, conference speaker, and author of books like *Financial Freedom Masterguide*, he holds theological degrees up to a Doctorate in Clinical Counselling and an MBA from Business School Netherlands. A bi-vocational pastor, he also serves on boards for companies like LIFEPAGE and Cedro Construction. He is married to Omolara, and they have three children.
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <img src="/leadership-wisdom-ezekiel.jpg" />
-
-          <div>
-            <h3>Pastor Wisdom Ezekiel</h3>
-            <p>
-              Pastor Wisdom Ahamefula Ezekiel is a leading African investor, serial entrepreneur, pastor, and philanthropist. As Co-Founder of Pertinence Group, he oversees a multi-sector conglomerate spanning real estate, finance, and tech across multiple countries. He also serves as Chairman/CEO of Rush Towers, Resident Pastor of Calvary Bible Church Festac, and leads the Wisdom Ezekiel Cares Foundation.
-
-              Holding an Executive MBA, a Harvard certification, and credentials from Arden University, he is a seasoned speaker and author of books like The Real Money of Lagos. Through initiatives like 10X Africa and the Wealth Summit, he continues to empower individuals and inspire changemakers globally.
-            </p>
-          </div>
-        </li>
       </ul>
     </div>
   )
