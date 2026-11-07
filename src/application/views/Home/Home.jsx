@@ -341,7 +341,8 @@ function HomePage() {
               <h2>Latest Sermon</h2>
 
               <div>
-                <img src={past_sermons[0].cover_image} alt="Latest Sermon" />
+                {/* <img src={past_sermons[0].cover_image} alt="Latest Sermon" /> */}
+                <img src="https://i3.ytimg.com/vi/WR4KpXO2JTQ/maxresdefault.jpg" alt="Latest Sermon" />
 
                 <ul>
                   <li>
