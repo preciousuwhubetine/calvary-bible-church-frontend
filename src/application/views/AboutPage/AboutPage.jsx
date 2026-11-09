@@ -327,7 +327,7 @@ function AboutPage() {
       </section>
 
       <section className={styles['AboutPageGathering']}>
-        <img src="/about-page-section-bg-1.jpg" alt="Gathering" />
+        <img src="/about-page-core-values.jpg" alt="Gathering" />
         <div>
           <h2>Where two or three are gathered, He is there.</h2>
           <p>
@@ -337,7 +337,7 @@ function AboutPage() {
       </section>
 
       <section className={styles['AboutPageCoreValues']}>
-        <img src="/about-page-core-values.jpg" alt="Worship" />
+        <img src="/about-page-section-bg-1.jpg" alt="Core Values" />
         <div>
           <h2>Our Core Values</h2>
 
@@ -350,7 +350,7 @@ function AboutPage() {
       </section>
 
       <section className={styles['AboutPageWhatWeDo']}>
-        <img src="/about-page-section-bg-1.jpg" alt="Gathering" />
+        <img src="/about-page-section-bg-1.jpg" alt="What we do" />
         <div>
           <h2>What We Do</h2>
           <p>
