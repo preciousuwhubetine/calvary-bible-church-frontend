@@ -91,7 +91,7 @@ function LeadershipPage() {
             <p>
               Pastor Ifeanyi Osita is a Christian minister, teacher, author, and Family Systems Engineer dedicated to raising godly women, strengthening families, and building strong marriages. Serving on the Pastoral Board of Truth of Calvary Ministries, she leads the Women of Grace and oversees the church's Maintenance and First Aid departments.
 
-              As a healthcare professional, she is a seasoned Medical Laboratory Scientist. She is also the author of *Finding Purpose in Your Wait*. Through her counseling, leadership, and mentorship, she remains deeply committed to advancing God's Kingdom.
+              As a healthcare professional, she is a seasoned Medical Laboratory Scientist. She is also the author of <b>Finding Purpose in Your Wait</b>. Through her counseling, leadership, and mentorship, she remains deeply committed to advancing God's Kingdom.
             </p>
           </div>
         </li>
