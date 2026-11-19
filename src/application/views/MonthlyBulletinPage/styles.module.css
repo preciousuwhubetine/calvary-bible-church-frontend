@@ -1,0 +1,134 @@
+.MonthlyBulletinPageBackground {
+  background-color: #e8e8e8;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.MonthlyBulletinPageHero {
+  padding: 0 20px;
+  padding-top: calc(var(--header-height) + 20px);
+  overflow-x: clip;
+}
+
+.MonthlyBulletinPageHeroContent {
+  align-items: flex-end;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 40px;
+  position: relative;
+  background-color: #111;
+  border-radius: 20px;
+}
+
+.MonthlyBulletinPageHeroCircle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 10%;
+  transform: translateY(-50%);
+  top: 100%;
+  z-index: 2;
+}
+
+.MonthlyBulletinPageHeroCircle img {
+  animation: 10s 'rotate' linear infinite;
+  position: absolute;
+  z-index: -1;
+}
+
+.MonthlyBulletinPageHeroCircle div {
+  align-items: center;
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
+  border-radius: 50%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+}
+
+.MonthlyBulletinPageHeroContent h2 {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  color: rgb(11, 11, 11);
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.14);
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+  font-size: 160px;
+}
+
+.MonthlyBulletinPageHeroText {
+  display: flex;
+  flex-direction: column;
+}
+
+.MonthlyBulletinPageHeroText h1 {
+  color: white;
+  font-size: 48px;
+}
+
+.MonthlyBulletinPageHeroText p {
+  color: rgb(255, 185, 30);
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .MonthlyBulletinPageHeroCircle {
+    right: 15%;
+  }
+
+  .MonthlyBulletinPageHeroCircle div {
+    height: 60px;
+    width: 60px;
+  }
+
+  .MonthlyBulletinPageHeroCircle img {
+    width: 150px;
+  }
+
+  .MonthlyBulletinPageHeroCircle svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .MonthlyBulletinPageHeroContent h2 {
+    font-size: 100px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .MonthlyBulletinPageHeroContent {
+    height: 300px;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  .MonthlyBulletinPageHero h1 {
+    font-size: 32px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 650px) {
+  .MonthlyBulletinPageHero {
+    padding: 0;
+  }
+
+  .MonthlyBulletinPageHeroContent > img {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .MonthlyBulletinPageHero h1 {
+    padding: 60px 20px;
+  }
+}

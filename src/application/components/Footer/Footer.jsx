@@ -20,6 +20,9 @@ function Footer() {
               <li>
                 <Link to="/about#Branches">CBC Branches</Link>
               </li>
+              <li>
+                <Link to="/new-breed-creed">New Breed Creed</Link>
+              </li>
             </ul>
           </div>
 
@@ -58,6 +61,9 @@ function Footer() {
               </li>
               <li>
                 <Link to="/new-member">New members corner</Link>
+              </li>
+              <li>
+                <Link to="/monthly-bulletin">Monthly bulletin</Link>
               </li>
               {/* <li>
                 <Link to="/counselling">Counselling</Link>

@@ -1,0 +1,320 @@
+.NewBreedCreedPageBackground {
+  background-color: #e8e8e8;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.NewBreedCreedPageHero {
+  padding: 0 20px;
+  padding-top: calc(var(--header-height) + 20px);
+  overflow-x: clip;
+}
+
+.NewBreedCreedPageHeroContent {
+  align-items: flex-end;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 40px;
+  position: relative;
+  background-color: #111;
+  border-radius: 20px;
+}
+
+.NewBreedCreedPageHeroCircle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 10%;
+  transform: translateY(-50%);
+  top: 100%;
+  z-index: 2;
+}
+
+.NewBreedCreedPageHeroCircle img {
+  animation: 10s 'rotate' linear infinite;
+  position: absolute;
+  z-index: -1;
+}
+
+.NewBreedCreedPageHeroCircle div {
+  align-items: center;
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, #FFB91E 0%, #FC8E33 54.74%);
+  border-radius: 50%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+}
+
+.NewBreedCreedPageHeroContent h2 {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  color: rgb(11, 11, 11);
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.14);
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+  font-size: 160px;
+}
+
+.NewBreedCreedPageHeroText {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewBreedCreedPageHeroText h1 {
+  color: white;
+  font-size: 48px;
+}
+
+.NewBreedCreedPageHeroText p {
+  color: rgb(255, 185, 30);
+  font-weight: 500;
+}
+
+.NewBreedCreedPageOverview {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 3fr;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: var(--content-max-width);
+  padding: 100px 20px;
+}
+
+.NewBreedCreedPageOverview h2 {
+  font-size: 32px;
+}
+
+.NewBreedCreedPageOverviewText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.NewBreedCreedPageOverviewText p {
+  font-size: 18px;
+}
+
+.NewBreedCreedPageOverviewNote {
+  border: 1px solid #e5e5e5;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.NewBreedCreedPageOverviewNote span {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.NewBreedCreedPageDeclaration {
+  background-color: #111;
+  color: white;
+}
+
+.NewBreedCreedPageDeclarationContent {
+  max-width: calc(var(--content-max-width) - 40px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 20px;
+  font-size: 18px;
+}
+
+.NewBreedCreedPageDeclarationContent hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.NewBreedCreedPageDeclarationContentHeading {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewBreedCreedPageDeclarationContentHeading p {
+  color: rgb(255, 185, 30);
+}
+
+.NewBreedCreedPageDeclarationContentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  align-items: center;
+}
+
+.NewBreedCreedPageDeclarationContentSection h3 {
+  color: rgb(255, 185, 30);
+  font-size: 20px;
+}
+
+.NewBreedCreedPageDeclarationContentFinal {
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, rgb(255, 185, 30), rgb(252, 142, 51) 54.74%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  gap: 4px;
+  border-radius: 14px;
+  width: max-content;
+  margin: 0 auto;
+  padding: 40px 60px;
+}
+
+.NewBreedCreedPageDeclarationContentFinal h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.NewBreedCreedPageLiveItOutContent {
+  max-width: calc(var(--content-max-width) - 40px);
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.NewBreedCreedPageLiveItOutContentHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.NewBreedCreedPageLiveItOutContent ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.NewBreedCreedPageLiveItOutContent ul li {
+  height: 100%;
+  display: grid;
+}
+
+.NewBreedCreedPageLiveItOutContent ul li a {
+  text-decoration: none;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  gap: 20px;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+}
+
+.NewBreedCreedPageLiveItOutContent ul li a div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.NewBreedCreedPageLiveItOutContent ul li a p {
+  color: rgb(71, 71, 71);
+}
+
+.NewBreedCreedPageLiveItOutContent ul li a span {
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #111;
+  border-radius: 50%;
+}
+
+@media (max-width: 1100px) {
+  .NewBreedCreedPageHeroCircle {
+    right: 15%;
+  }
+
+  .NewBreedCreedPageHeroCircle div {
+    height: 60px;
+    width: 60px;
+  }
+
+  .NewBreedCreedPageHeroCircle img {
+    width: 150px;
+  }
+
+  .NewBreedCreedPageHeroCircle svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .NewBreedCreedPageHeroContent h2 {
+    font-size: 100px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .NewBreedCreedPageHeroContent {
+    height: 300px;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  .NewBreedCreedPageHero h1 {
+    font-size: 32px;
+    max-width: 400px;
+  }
+
+  .NewBreedCreedPageOverview {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .NewBreedCreedPageLiveItOutContent ul {
+    grid-template-columns: 1fr;
+  }
+
+  .NewBreedCreedPageHeroContent h2 {
+    font-size: 60px;
+    right: 20px;
+    top: 80px;
+  }
+}
+
+@media (max-width: 650px) {
+  .NewBreedCreedPageHero {
+    padding: 0;
+  }
+
+  .NewBreedCreedPageHeroContent > img {
+    border-radius: 0;
+  }
+
+  .NewBreedCreedPageOverview h2 {
+    font-size: 24px;
+  }
+
+  .NewBreedCreedPageOverview p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .NewBreedCreedPageHero h1 {
+    padding: 60px 20px;
+  }
+}

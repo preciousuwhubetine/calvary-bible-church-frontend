@@ -17,7 +17,9 @@ import MaturityClass from "../application/views/MaturityClass/MaturityClass"
 import MembershipClass from "../application/views/MembershipClass/MembershipClass"
 import MinisterialClass from "../application/views/MinisterialClass/MinisterialClass"
 import MissionsClass from "../application/views/MissionsClass/MissionsClass"
+import MonthlyBulletin from "../application/views/MonthlyBulletinPage/MonthlyBulletinPage"
 import NewPage from "../application/views/NewPage/NewPage"
+import NewBreedCreedPage from "../application/views/NewBreedCreedPage/NewBreedCreedPage"
 import NewConvertPage from "../application/views/NewConvertPage/NewConvertPage"
 import NewMemberPage from "../application/views/NewMemberPage/NewMemberPage"
 import PastSermonsPage from "../application/views/PastSermonsPage/PastSermonsPage"
@@ -61,7 +63,9 @@ export default function Config () {
       <Route path="/membership-class" element={<MembershipClass />} />
       <Route path="/ministerial-class" element={<MinisterialClass />} />
       <Route path="/missions" element={<MissionsClass />} />
+      <Route path="/monthly-bulletin" element={<MonthlyBulletin />} />
       <Route path="/new" element={<NewPage />} />
+      <Route path="/new-breed-creed" element={<NewBreedCreedPage />} />
       <Route path="/new-member" element={<NewMemberPage />} />
       <Route path="/new-convert" element={<NewConvertPage />} />
       <Route path="/past-sermons" element={<PastSermonsPage />} />
