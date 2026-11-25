@@ -107,7 +107,8 @@
   border: 1px solid #e5e5e5;
   padding: 16px;
   border-radius: 8px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 40px 1fr;
   align-items: center;
   gap: 16px;
 }
@@ -177,6 +178,7 @@
   width: max-content;
   margin: 0 auto;
   padding: 40px 60px;
+  max-width: 100%;
 }
 
 .NewBreedCreedPageDeclarationContentFinal h3 {
@@ -315,6 +317,6 @@
 
 @media (max-width: 500px) {
   .NewBreedCreedPageHero h1 {
-    padding: 60px 20px;
+    padding: 0 0 60px;
   }
 }
