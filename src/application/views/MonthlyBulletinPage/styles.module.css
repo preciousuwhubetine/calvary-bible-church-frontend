@@ -79,6 +79,265 @@
   font-weight: 500;
 }
 
+.MonthlyBulletinPageLoader {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MonthlyBulletinPageContent {
+  padding: 100px 20px;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.MonthlyBulletinPageContentIntro {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+}
+
+.MonthlyBulletinPageContentIntroImage {
+  height: 400px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.MonthlyBulletinPageContentIntroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.MonthlyBulletinPageContentIntroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.MonthlyBulletinPageContentIntroTextHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.MonthlyBulletinPageContentIntroText h4,
+.MonthlyBulletinPageContentIntroText h5 {
+  color: rgb(85, 85, 85);
+}
+
+.MonthlyBulletinPageContentIntroText a {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid black;
+  text-decoration: none;
+  width: max-content;
+  border-radius: 50rem;
+  padding: 4px 12px;
+}
+
+.MonthlyBulletinPageContentBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 50rem;
+  background: rgb(255, 243, 224);
+  color: rgb(138, 75, 0);
+}
+
+.MonthlyBulletinPageContentBadge span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgb(252, 142, 51);
+}
+
+.MonthlyBulletinPageContentIntroTextHeader p {
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+}
+
+.MonthlyBulletinPageContentIntroTextTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.MonthlyBulletinPageContentMain > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #555;
+}
+
+.MonthlyBulletinPageContentMain h2 {
+  border-left: 8px solid #fd9f2b;
+  color: black;
+  padding-left: 12px;
+}
+
+.MonthlyBulletinPagePastEditions {
+  background-color: #ddd;
+}
+
+.MonthlyBulletinPagePastEditionsContent {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.MonthlyBulletinPagePastEditionsHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.MonthlyBulletinPagePastEditions ul {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.MonthlyBulletinPagePastEditions ul li {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.MonthlyBulletinPagePastEditions ul li img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.MonthlyBulletinPagePastEditionsItem {
+  position: relative;
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.MonthlyBulletinPagePastEditionsItem h2,
+.MonthlyBulletinPagePastEditionsItem p,
+.MonthlyBulletinPagePastEditionsItem span {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.MonthlyBulletinPagePastEditionsItem span {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgb(255, 185, 30);
+  color: rgb(11, 11, 11);
+}
+
+.MonthlyBulletinPagePastEditionsItemDownload {
+  padding: 16px;
+}
+
+.MonthlyBulletinPagePastEditions ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+  border-radius: 50rem;
+  border: 1px solid rgb(11, 11, 11);
+}
+
+.MonthlyBulletinPageFooterContent {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 100px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.MonthlyBulletinPageFooterHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.MonthlyBulletinPageFooterHeader p {
+  color: rgb(85, 85, 85);
+}
+
+.MonthlyBulletinPageFooterContent form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: flex-end;
+  gap: 8px;
+  width: 100%;
+}
+
+.MonthlyBulletinPageFooterContent form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.MonthlyBulletinPageFooterContent form input {
+  padding: 16px;
+  border-radius: 50rem;
+  border: 1px solid #ccc;
+}
+
+.MonthlyBulletinPageFooterContent form button {
+  height: 48px;
+  padding: 0px 28px;
+  border: 0px;
+  border-radius: 800px;
+  background: radial-gradient(133.33% 122.42% at 52.23% 0%, rgb(255, 185, 30), rgb(252, 142, 51) 54.74%);
+  color: rgb(0, 0, 0);
+  font-style: inherit;
+  font-variant: inherit;
+  font-stretch: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-optical-sizing: inherit;
+  font-size-adjust: inherit;
+  font-kerning: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-language-override: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 @media (max-width: 1100px) {
   .MonthlyBulletinPageHeroCircle {
     right: 15%;
@@ -115,6 +374,18 @@
     font-size: 32px;
     max-width: 400px;
   }
+
+  .MonthlyBulletinPageContentIntro {
+    grid-template-columns: 1fr;
+  }
+
+  .MonthlyBulletinPageFooterContent {
+    grid-template-columns: 1fr;
+  }
+
+  .MonthlyBulletinPageFooterContent form {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 650px) {
@@ -124,6 +395,11 @@
 
   .MonthlyBulletinPageHeroContent > img {
     border-radius: 0;
+  }
+
+  .MonthlyBulletinPagePastEditions ul li {
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }
 

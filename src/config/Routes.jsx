@@ -63,7 +63,7 @@ export default function Config () {
       <Route path="/membership-class" element={<MembershipClass />} />
       <Route path="/ministerial-class" element={<MinisterialClass />} />
       <Route path="/missions" element={<MissionsClass />} />
-      <Route path="/monthly-bulletin" element={<MonthlyBulletin />} />
+      <Route path="/monthly-bulletin/*" element={<MonthlyBulletin />} />
       <Route path="/new" element={<NewPage />} />
       <Route path="/new-breed-creed" element={<NewBreedCreedPage />} />
       <Route path="/new-member" element={<NewMemberPage />} />
