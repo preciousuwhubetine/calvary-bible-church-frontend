@@ -250,7 +250,7 @@ function Header() {
             <div className={styles['HeaderMenuSlogan']}>
               <h3>CALVARY BIBLE CHURCH</h3>
 
-              <p>Raising an army for Christ</p>
+              <p>The Turning Point</p>
             </div>
 
             <div className={styles['HeaderMenuSocials']}>
