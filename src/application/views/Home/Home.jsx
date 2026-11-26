@@ -234,7 +234,7 @@ function HomePage() {
           </div>
 
           <h1>
-            Raising a People of Power, Purpose & Dominion
+            Raising a People of Power, Purpose, Purity, Maturity and Dominion with a Global Mentality.
           </h1>
           <p>
             Worship and serve God with us for six months and experience a notable testimony traceable to your becoming a member of the family.

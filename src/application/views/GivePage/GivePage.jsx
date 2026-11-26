@@ -59,7 +59,7 @@ function GivePage() {
                 <img loading="lazy" src="/gtbank.jpg" />
 
                 <div>
-                  <h3>0016453018</h3>
+                  <h3>0016453101</h3>
 
                   <button onClick={() => navigator.clipboard.writeText('0016453018').then(() => toast('Account number copied'))}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -122,7 +122,7 @@ function GivePage() {
                 </div>
 
                 <div>
-                  <h3>0016453018</h3>
+                  <h3>2029090547</h3>
 
                   <button onClick={() => navigator.clipboard.writeText('0016453018').then(() => toast('Account number copied'))}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -140,7 +140,7 @@ function GivePage() {
                 </div>
 
                 <div>
-                  <h3>0016453018</h3>
+                  <h3>0320413015</h3>
 
                   <button onClick={() => navigator.clipboard.writeText('0016453018').then(() => toast('Account number copied'))}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">

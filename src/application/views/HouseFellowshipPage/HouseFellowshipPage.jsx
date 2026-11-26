@@ -4,9 +4,120 @@ function HouseFelllowshipPage() {
   const house_fellowship_centres = [
     {
       id: 1,
-      name: 'House Fellowship Centre 1',
-      coordinator_name: 'John Doe',
-      coordinator_phone: '+1234567890',
+      name: 'Abaranje/Ijegun',
+      coordinator_name: 'Bro. Abbott Mitchel',
+      coordinator_phone: '+2348108911116',
+      addresses: [
+        '12-14, Akwu-Iwu Street, Nepa Bus-Stop, Ijegun.',
+        '12, Sikiru Orilowo Street, Okerube, Abaranje.',
+      ],
+    },
+    {
+      id: 2,
+      name: 'Ikotun',
+      coordinator_name: 'Sis. Adenike Onasanya',
+      coordinator_phone: '+2348038400191',
+      addresses: [
+        '60, Ikotun Road, Foursquare Bus-Stop, Ikotun.',
+        '12, Johnson Barovbe Street, Pab Bus-Stop, Ikotun.',
+        '5, John Akpati Street, White House B/Stop, Governor Road, Ikotun.',
+      ],
+    },
+    {
+      id: 3,
+      name: 'Egbe-Liasu Road',
+      coordinator_name: 'Min. Ayodele Joshua',
+      coordinator_phone: '+2348034611875',
+      addresses: [
+        '65, Kolawole Street, off Liasu Road, Egbe.',
+        '3, Okwodunni Street, off Liasu Road, Egbe.',
+        '18, Osawe Street, off Liasu Road, Egbe.',
+        '3, Adesanya Street, Olajide Avenue, Liasu Road, Egbe.',
+        '7, Alake Lakonko Street, off Liasu Road, Egbe.',
+      ],
+    },
+    {
+      id: 4,
+      name: 'Egbe/Ejigbo',
+      coordinator_name: 'Bro. Jonathan Chimamkpam',
+      coordinator_phone: '+2348090518271',
+      addresses: [
+        '16, Aguleri Street, Cele Bus-Stop, Egbe.',
+        '36, Okunogbe Street, Paldof Avenue, Hostel Bus-Stop, Egbe.',
+        '23, Ilufunmi Street, off Ejigbo Road.',
+        '30, Ailegun Street, Bucknor Road, Ejigbo.',
+        '51, Yusuf Street, Orilowo Bus-Stop, Ejigbo.',
+      ],
+    },
+    {
+      id: 5,
+      name: 'Council',
+      coordinator_name: 'Sis. Franca Asakomhe',
+      coordinator_phone: '+2348033834726',
+      addresses: [
+        '9, Commander Akingbade Street, off Princess Abiola Street, Nobex Bus-Stop, Ikotun.',
+        '3, Jemi Alade Street, Jemi Alade Estate, Council Bus-Stop, Ikotun.',
+        '10, Adimula Street, Council Bus-Stop, Ikotun.',
+        '5B, Fatai Fayemi Street, opp. Reno Supermarket, Liasu.',
+        '9, Memudu Bada Street, off Omonile Junction, Nobex Bus-Stop, Ikotun.',
+      ],
+    },
+    {
+      id: 6,
+      name: 'Idimu',
+      coordinator_name: 'Min. Muyiwa Alabi',
+      coordinator_phone: '+2348089525960',
+      addresses: [
+        '10, Church Street, Orisunbare Roundabout, beside Orisunbare Health Centre and PM Petrol Filling Station, Orisunbare.',
+        '14, Olajide Bakare Street, Idimu.',
+        '1, Adebiaye Street, off Ewenla Bus-Stop, Idimu.',
+        '34, Abio Frank Crescent, Church Bus-Stop, Idimu Road, Ejigbo.',
+      ],
+    },
+    {
+      id: 7,
+      name: 'Igando/Egan/Iba',
+      coordinator_name: 'Sis. Anne Uwhubetine',
+      coordinator_phone: '+2348102562331',
+      addresses: [
+        '31, Abel Onwuka Street, Idowu Egba Bus-Stop, Igando.',
+        '81, Igando Road, opp. Moshalashi Bus-Stop, Ikotun-Igando Road, Ikotun.',
+        '11, Assam Esso Street, Oko-filling Bus-Stop, Igando.',
+        '31B, Adurogbola Street, Akesan Bus-Stop, Igando-Iyana Iba Road, Lagos.',
+        '16, Kings Avenue, Lanre Bus-Stop, Igando. House 185B, A Wing, Post Service Estate, opp. Lasu, Ojo, Lagos.',
+      ],
+    },
+    {
+      id: 8,
+      name: 'Isheri Olofin',
+      coordinator_name: 'Bro. Kayode Bethel',
+      coordinator_phone: '+2348035185258',
+      addresses: [
+        '15, Flat 13, Kotangora Estate, Isheri Olofin.',
+        '8, Compassionate Street, Idowu Egba Bus-Stop, Isheri.',
+        'Plot 6, Alhaji Arinola Street, Graceland Estate, Isheri.',
+        '16, Ariyo Street, Isheri Roundabout, beside Sterling Bank, Isheri Olofin.',
+      ],
+    },
+    {
+      id: 9,
+      name: 'Egbeda/Shasha',
+      coordinator_name: 'Bro. Musa Aminu',
+      coordinator_phone: '+2348038244411',
+      addresses: [
+        '10, Omu Aran, Unity Estate, Abule Odu Bus-Stop, Egbeda.',
+      ],
+    },
+    {
+      id: 10,
+      name: 'Abule Egba/Gowon Estate/Abesan Estate',
+      coordinator_name: 'Min. Simeon Saidi',
+      coordinator_phone: '+2348033584111',
+      addresses: [
+        '23, Bunmi Gbamibade Street, Water Bus-Stop, Ipaja, Lagos. Block 385, Flat 2, Abesan Estate, Ipaja.',
+        '26, Unity Road, off Alakuko Road, Alakuko Bus-Stop, Lagos.',
+        '2, Bello Balogun Close, Winners Estate, off Agbe Road, Abule Egba.',
+      ],
     },
   ]
 
@@ -55,6 +166,20 @@ function HouseFelllowshipPage() {
                       {house_fellowship_centre.coordinator_phone}
                     </span>
                   </div>
+                </div>
+
+                <div className={styles['HouseFelllowshipPageContentAddresses']}>
+                  <h4>Addresses</h4>
+
+                  <ul>
+                    {
+                      house_fellowship_centre.addresses.map((address, index) => (
+                        <li key={index}>
+                          {address}
+                        </li>
+                      ))
+                    }
+                  </ul>
                 </div>
               </li>
             ))

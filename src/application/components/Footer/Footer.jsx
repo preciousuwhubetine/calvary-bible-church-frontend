@@ -1,9 +1,28 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
 
 function Footer() {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    const links = document.getElementById('footer').getElementsByTagName('a');
+
+    for (let i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', scrollToTop);
+    }
+
+    return () => {
+      for (let i = 0; i < links.length; i++) {
+        links[i].removeEventListener('click', scrollToTop);
+      }
+    };
+  });
+
   return (
-    <footer className={styles['Footer']}>
+    <footer className={styles['Footer']} id="footer">
       <div className={styles['FooterContent']}>
         <img className={styles['FooterIcon']} src="/icon.png" />
 

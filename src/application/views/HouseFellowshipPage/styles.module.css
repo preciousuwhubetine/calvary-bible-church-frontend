@@ -150,12 +150,56 @@
   gap: 4px;
 }
 
+.HouseFelllowshipPageContentAddresses {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.HouseFelllowshipPageContentAddresses ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.HouseFelllowshipPageContentAddresses ul li {
+  list-style: disc !important;
+}
+
 @media (max-width: 768px) {
+  .HouseFelllowshipPageHero {
+    padding: 0;
+    padding-top: var(--header-height);
+  }
+
+  .HouseFelllowshipPageHeroContent {
+    height: 300px;
+  }
+
+  .HouseFelllowshipPageHeroContent img {
+    border-radius: 0;
+    border: none;
+  }
+
+  .HouseFelllowshipPageHeroCircle {
+    right: 20%;
+  }
+
   .HouseFelllowshipPageHeroContent h1 {
     font-size: 32px;
   }
 
   .HouseFelllowshipPageHeroContent p {
     font-size: 16px;
+  }
+
+  .HouseFelllowshipPageContent {
+    padding: 150px 20px;
+  }
+
+  .HouseFelllowshipPageContentCoordinator div {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
   }
 }
